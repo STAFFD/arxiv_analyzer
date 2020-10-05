@@ -7,7 +7,7 @@ import subprocess
 import re
 
 path = {
-    "zipFolder": "arxiv",
+    "zipFolder": "arxiv_ZIP",
     "folder": "arxiv_2020_9"
 }
 keywords = ["3d", "point cloud", "point set", "mesh"]
