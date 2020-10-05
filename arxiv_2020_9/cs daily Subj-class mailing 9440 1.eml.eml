@@ -1,0 +1,1257 @@
+Delivered-To: brucelu2013@gmail.com
+Received: by 2002:ab4:a48c:0:0:0:0:0 with SMTP id ds12csp960494ecb;
+        Fri, 25 Sep 2020 00:47:20 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJyvaZzGjyqK0fjU/U6kjAUqsbL8cm4GY5J9jq+Q7zJ5PF6qTVSw11v+kWiQ9WwF+OrYDMjc
+X-Received: by 2002:ac8:1b57:: with SMTP id p23mr3065040qtk.180.1601020040090;
+        Fri, 25 Sep 2020 00:47:20 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1601020040; cv=none;
+        d=google.com; s=arc-20160816;
+        b=W5J//GZu0YDvG1KUOFr1eYU5+SfMLiLS3n9FtCXg0yK2TtXCNUq5d6CnPD8scZuVNi
+         6/8NWE7fduLEHq9ouvba4ChU7WPxPuJgmOuI87Kormd6atEkxN/1SbqLkVtrSmpucFMb
+         UlNfyejvqsNGDBVAY3rv9L7TQkzdsTRwABzj/VJXEtpAjMgIqRdUHznJVmPY7mHWMpG7
+         7+fiE8UN1Hv5m626ndX0ZxGb+sLge4QRWcKSorlCU9kRMkJV11shNDcrlN6nh6GipKcB
+         ZWWkJWy8P2Xc+MZehn8sLlbZeZa5bJADEKwZLR4IvVMEbxsHLh82oUYRwYY00XSgup4r
+         bfxQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=subject:to:reply-to:from:precedence:message-id:date;
+        bh=KU8cWZ/IzOCqgbS03WgN7zi7lgVczcRj6SDNirSNHK0=;
+        b=RpPZIQCqs3aHYYtOD1UOdkBRDKv0MfRWcB4sbZx6A44ueALOcFtGbxEIH7gJKgLP/a
+         hTQNbsR5BSdDUYlThrrLryGcxt3HdoG7nEwUknNnkdzT8ly3B5vtZb602NSOx+d1/KJN
+         LNueNahRPQYJO5nv3G+uEm9a1J4v/zumdK55AeTaUWUWWqwtwzH54/NnsZ9RtWkKw+iv
+         RlSdVNaUSW06n0/05x7gaWr89ycCHukZLWcJj91KQrvR6j/6CbXFGT7R03wWsDFKm1vb
+         gUygJB4oUCTgQwgxtuixQER3ZtHmjvFh00HKmQmbwqPd8WEHDPa9N2oad9V6lG0BIXGI
+         Owbg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=pass (google.com: domain of no-reply@arxiv.org designates 128.84.4.11 as permitted sender) smtp.mailfrom=no-reply@arxiv.org;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=arxiv.org
+Return-Path: <no-reply@arxiv.org>
+Received: from lib-arxiv-015.serverfarm.cornell.edu (mail.arxiv.org. [128.84.4.11])
+        by mx.google.com with ESMTPS id m17si1098492qkg.151.2020.09.25.00.47.19
+        for <brucelu2013@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Fri, 25 Sep 2020 00:47:20 -0700 (PDT)
+Received-SPF: pass (google.com: domain of no-reply@arxiv.org designates 128.84.4.11 as permitted sender) client-ip=128.84.4.11;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of no-reply@arxiv.org designates 128.84.4.11 as permitted sender) smtp.mailfrom=no-reply@arxiv.org;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=arxiv.org
+Received: from lib-arxiv-007.serverfarm.cornell.edu (lib-arxiv-007.serverfarm.cornell.edu [128.84.4.12])
+	by lib-arxiv-015.serverfarm.cornell.edu (8.14.4/8.14.4) with ESMTP id 08P7lI0N000849;
+	Fri, 25 Sep 2020 03:47:18 -0400
+Received: from lib-arxiv-007.serverfarm.cornell.edu (localhost [127.0.0.1])
+	by lib-arxiv-007.serverfarm.cornell.edu (8.14.4/8.14.4) with ESMTP id 08P7lIXM051594;
+	Fri, 25 Sep 2020 03:47:18 -0400
+Received: (from e-prints@localhost)
+	by lib-arxiv-007.serverfarm.cornell.edu (8.14.4/8.14.4/Submit) id 08P7lIHF051593;
+	Fri, 25 Sep 2020 03:47:18 -0400
+Date: Fri, 25 Sep 2020 03:47:18 -0400
+Message-Id: <202009250747.08P7lIHF051593@lib-arxiv-007.serverfarm.cornell.edu>
+X-Authentication-Warning: lib-arxiv-007.serverfarm.cornell.edu: e-prints set sender to no-reply@arXiv.org using -f
+Precedence: bulk
+From: no-reply@arXiv.org (send mail ONLY to cs)
+Reply-To: cs@arXiv.org
+To: rabble@arXiv.org (cs daily title/abstract distribution)
+Subject: cs daily Subj-class mailing 9440 1
+Content-Type: text/plain
+MIME-Version: 1.0
+
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Send any comments regarding submissions directly to submitter.
+------------------------------------------------------------------------------
+Archives at http://arxiv.org/
+To unsubscribe, e-mail To: cs@arXiv.org, Subject: cancel
+------------------------------------------------------------------------------
+ Submissions to:
+Computer Vision and Pattern Recognition
+Discrete Mathematics
+Emerging Technologies
+Graphics
+ received from  Wed 23 Sep 20 18:00:00 GMT  to  Thu 24 Sep 20 18:00:00 GMT
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+\\
+arXiv:2009.11342
+Date: Wed, 23 Sep 2020 19:16:26 GMT   (3605kb,D)
+
+Title: Insights on Evaluation of Camera Re-localization Using Relative Pose
+  Regression
+Authors: Amir Shalev (1,2), Omer Achrack (2), Brian Fulkerson, and Ben-Zion
+  Bobrovsky (1) ((1) Tel-Aviv-University, (2) Intel)
+Categories: cs.CV cs.AI
+Comments: Accepted at ECCV 2020 joint workshop of UAVision and VisDrone
+\\
+  We consider the problem of relative pose regression in visual relocalization.
+Recently, several promising approaches have emerged in this area. We claim that
+even though they demonstrate on the same datasets using the same split to train
+and test, a faithful comparison between them was not available since on
+currently used evaluation metric, some approaches might perform favorably,
+while in reality performing worse. We reveal a tradeoff between accuracy and
+the 3D volume of the regressed subspace. We believe that unlike other
+relocalization approaches, in the case of relative pose regression, the
+regressed subspace 3D volume is less dependent on the scene and more affect by
+the method used to score the overlap, which determined how closely sampled
+viewpoints are. We propose three new metrics to remedy the issue mentioned
+above. The proposed metrics incorporate statistics about the regression
+subspace volume. We also propose a new pose regression network that serves as a
+new baseline for this task. We compare the performance of our trained model on
+Microsoft 7-Scenes and Cambridge Landmarks datasets both with the standard
+metrics and the newly proposed metrics and adjust the overlap score to reveal
+the tradeoff between the subspace and performance. The results show that the
+proposed metrics are more robust to different overlap threshold than the
+conventional approaches. Finally, we show that our network generalizes well,
+specifically, training on a single scene leads to little loss of performance on
+the other scenes.
+\\ ( https://arxiv.org/abs/2009.11342 ,  3605kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2009.11362
+Date: Wed, 23 Sep 2020 20:13:35 GMT   (724kb,D)
+
+Title: Dense Forecasting of Wildfire Smoke Particulate Matter Using Sparsity
+  Invariant Convolutional Neural Networks
+Authors: Renhao Wang, Ashutosh Bhudia, Brandon Dos Remedios, Minnie Teng,
+  Raymond Ng
+Categories: cs.CV cs.LG
+Comments: Submitted to the 2020 NeurIPS Workshop on Machine learning in Public
+  Health
+\\
+  Accurate forecasts of fine particulate matter (PM 2.5) from wildfire smoke
+are crucial to safeguarding cardiopulmonary public health. Existing forecasting
+systems are trained on sparse and inaccurate ground truths, and do not take
+sufficient advantage of important spatial inductive biases. In this work, we
+present a convolutional neural network which preserves sparsity invariance
+throughout, and leverages multitask learning to perform dense forecasts of PM
+2.5values. We demonstrate that our model outperforms two existing smoke
+forecasting systems during the 2018 and 2019 wildfire season in British
+Columbia, Canada, predicting PM 2.5 at a grid resolution of 10 km, 24 hours in
+advance with high fidelity. Most interestingly, our model also generalizes to
+meaningful smoke dispersion patterns despite training with irregularly
+distributed ground truth PM 2.5 values available in only 0.5% of grid cells.
+\\ ( https://arxiv.org/abs/2009.11362 ,  724kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2009.11425
+Date: Thu, 24 Sep 2020 00:44:05 GMT   (1170kb)
+
+Title: FTN: Foreground-Guided Texture-Focused Person Re-Identification
+Authors: Donghaisheng Liu, Shoudong Han, Yang Chen, Chenfei Xia, Jun Zhao
+Categories: cs.CV
+Comments: 9 pages,5 figures, 3 tables
+\\
+  Person re-identification (Re-ID) is a challenging task as persons are often
+in different backgrounds. Most recent Re-ID methods treat the foreground and
+background information equally for person discriminative learning, but can
+easily lead to potential false alarm problems when different persons are in
+similar backgrounds or the same person is in different backgrounds. In this
+paper, we propose a Foreground-Guided Texture-Focused Network (FTN) for Re-ID,
+which can weaken the representation of unrelated background and highlight the
+attributes person-related in an end-to-end manner. FTN consists of a semantic
+encoder (S-Enc) and a compact foreground attention module (CFA) for Re-ID task,
+and a texture-focused decoder (TF-Dec) for reconstruction task. Particularly,
+we build a foreground-guided semi-supervised learning strategy for TF-Dec
+because the reconstructed ground-truths are only the inputs of FTN weighted by
+the Gaussian mask and the attention mask generated by CFA. Moreover, a new
+gradient loss is introduced to encourage the network to mine the texture
+consistency between the inputs and the reconstructed outputs. Our FTN is
+computationally efficient and extensive experiments on three commonly used
+datasets Market1501, CUHK03 and MSMT17 demonstrate that the proposed method
+performs favorably against the state-of-the-art methods.
+\\ ( https://arxiv.org/abs/2009.11425 ,  1170kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2009.11429
+Date: Thu, 24 Sep 2020 00:58:48 GMT   (3236kb)
+
+Title: Automatic identification of fossils and abiotic grains during carbonate
+  microfacies analysis using deep convolutional neural networks
+Authors: Xiaokang Liu, Haijun Song
+Categories: cs.CV eess.IV
+Comments: 36 pages, 9 figures, and 2 tables
+\\
+  Petrographic analysis based on microfacies identification in thin sections is
+widely used in sedimentary environment interpretation and paleoecological
+reconstruction. Fossil recognition from microfacies is an essential procedure
+for petrographers to complete this task. Distinguishing the morphological and
+microstructural diversity of skeletal fragments requires extensive prior
+knowledge of fossil morphotypes in microfacies and long training sessions under
+the microscope. This requirement engenders certain challenges for
+sedimentologists and paleontologists, especially novices. However, a machine
+classifier can help address this challenge. We collected a microfacies image
+dataset comprising both public data from 1,149 references and our own materials
+(including a total of 30,815 images of 22 fossil and abiotic grain groups). We
+employed a high-performance workstation to implement four classic deep
+convolutional neural networks (DCNNs), which have proven to be highly efficient
+in computer vision over the last several years. Our framework uses a transfer
+learning technique, which reuses the pre-trained parameters that are trained on
+a larger ImageNet dataset as initialization for the network to achieve high
+accuracy with low computing costs. We obtained up to 95% of the top one and 99%
+of the top three test accuracies in the Inception ResNet v2 architecture. The
+machine classifier exhibited 0.99 precision on minerals, such as dolomite and
+pyrite. Although it had some difficulty on samples having similar morphologies,
+such as the bivalve, brachiopod, and ostracod, it nevertheless obtained 0.88
+precision. Our machine learning framework demonstrated high accuracy with
+reproducibility and bias avoidance that was comparable to those of human
+classifiers. Its application can thus eliminate much of the tedious, manually
+intensive efforts by human experts conducting routine identification.
+\\ ( https://arxiv.org/abs/2009.11429 ,  3236kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2009.11433
+Date: Thu, 24 Sep 2020 01:04:18 GMT   (78kb)
+
+Title: Unifying data for fine-grained visual species classification
+Authors: Sayali Kulkarni, Tomer Gadot, Chen Luo, Tanya Birch, Eric Fegraus
+Categories: cs.CV cs.LG
+\\
+  Wildlife monitoring is crucial to nature conservation and has been done by
+manual observations from motion-triggered camera traps deployed in the field.
+Widespread adoption of such in-situ sensors has resulted in unprecedented data
+volumes being collected over the last decade. A significant challenge exists to
+process and reliably identify what is in these images efficiently. Advances in
+computer vision are poised to provide effective solutions with custom AI models
+built to automatically identify images of interest and label the species in
+them. Here we outline the data unification effort for the Wildlife Insights
+platform from various conservation partners, and the challenges involved. Then
+we present an initial deep convolutional neural network model, trained on 2.9M
+images across 465 fine-grained species, with a goal to reduce the load on human
+experts to classify species in images manually. The long-term goal is to enable
+scientists to make conservation recommendations from near real-time analysis of
+species abundance and population health.
+\\ ( https://arxiv.org/abs/2009.11433 ,  78kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2009.11446
+Date: Thu, 24 Sep 2020 01:50:24 GMT   (3793kb,D)
+
+Title: 3D Object Localization Using 2D Estimates for Computer Vision
+  Applications
+Authors: Taha Hasan Masood Siddique and Muhammad Usman
+Categories: cs.CV cs.RO
+\\
+  A technique for object localization based on pose estimation and camera
+calibration is presented. The 3-dimensional (3D) coordinates are estimated by
+collecting multiple 2-dimensional (2D) images of the object and are utilized
+for the calibration of the camera. The calibration steps involving a number of
+parameter calculation including intrinsic and extrinsic parameters for the
+removal of lens distortion, computation of object's size and camera's position
+calculation are discussed. A transformation strategy to estimate the 3D pose
+using the 2D images is presented. The proposed method is implemented on MATLAB
+and validation experiments are carried out for both pose estimation and camera
+calibration.
+\\ ( https://arxiv.org/abs/2009.11446 ,  3793kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2009.11458
+Date: Thu, 24 Sep 2020 02:45:29 GMT   (3800kb,D)
+
+Title: BWCFace: Open-set Face Recognition using Body-worn Camera
+Authors: Ali Almadan, Anoop Krishnan, Ajita Rattani
+Categories: cs.CV
+Journal-ref: 19th IEEE International Conference On Machine Learning And
+  Applications 2020 | Miami, Florida
+\\
+  With computer vision reaching an inflection point in the past decade, face
+recognition technology has become pervasive in policing, intelligence
+gathering, and consumer applications. Recently, face recognition technology has
+been deployed on bodyworn cameras to keep officers safe, enabling situational
+awareness and providing evidence for trial. However, limited academic research
+has been conducted on this topic using traditional techniques on datasets with
+small sample size. This paper aims to bridge the gap in the state-of-the-art
+face recognition using bodyworn cameras (BWC). To this aim, the contribution of
+this work is two-fold: (1) collection of a dataset called BWCFace consisting of
+a total of 178K facial images of 132 subjects captured using the body-worn
+camera in in-door and daylight conditions, and (2) open-set evaluation of the
+latest deep-learning-based Convolutional Neural Network (CNN) architectures
+combined with five different loss functions for face identification, on the
+collected dataset. Experimental results on our BWCFace dataset suggest a
+maximum of 33.89% Rank-1 accuracy obtained when facial features are extracted
+using SENet-50 trained on a large scale VGGFace2 facial image dataset. However,
+performance improved up to a maximum of 99.00% Rank-1 accuracy when pretrained
+CNN models are fine-tuned on a subset of identities in our BWCFace dataset.
+Equivalent performances were obtained across body-worn camera sensor models
+used in existing face datasets. The collected BWCFace dataset and the
+pretrained/ fine-tuned algorithms are publicly available to promote further
+research and development in this area. A downloadable link of this dataset and
+the algorithms is available by contacting the authors.
+\\ ( https://arxiv.org/abs/2009.11458 ,  3800kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2009.11491
+Date: Thu, 24 Sep 2020 04:56:10 GMT   (47720kb,D)
+
+Title: Understanding Fairness of Gender Classification Algorithms Across
+  Gender-Race Groups
+Authors: Anoop Krishnan, Ali Almadan, Ajita Rattani
+Categories: cs.CV cs.AI cs.LG
+Comments: 19th IEEE International Conference On Machine Learning And
+  Applications 2020 | Miami, Florida
+\\
+  Automated gender classification has important applications in many domains,
+such as demographic research, law enforcement, online advertising, as well as
+human-computer interaction. Recent research has questioned the fairness of this
+technology across gender and race. Specifically, the majority of the studies
+raised the concern of higher error rates of the face-based gender
+classification system for darker-skinned people like African-American and for
+women. However, to date, the majority of existing studies were limited to
+African-American and Caucasian only. The aim of this paper is to investigate
+the differential performance of the gender classification algorithms across
+gender-race groups. To this aim, we investigate the impact of (a) architectural
+differences in the deep learning algorithms and (b) training set imbalance, as
+a potential source of bias causing differential performance across gender and
+race. Experimental investigations are conducted on two latest large-scale
+publicly available facial attribute datasets, namely, UTKFace and FairFace. The
+experimental results suggested that the algorithms with architectural
+differences varied in performance with consistency towards specific gender-race
+groups. For instance, for all the algorithms used, Black females (Black race in
+general) always obtained the least accuracy rates. Middle Eastern males and
+Latino females obtained higher accuracy rates most of the time. Training set
+imbalance further widens the gap in the unequal accuracy rates across all
+gender-race groups. Further investigations using facial landmarks suggested
+that facial morphological differences due to the bone structure influenced by
+genetic and environmental factors could be the cause of the least performance
+of Black females and Black race, in general.
+\\ ( https://arxiv.org/abs/2009.11491 ,  47720kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2009.11528
+Date: Thu, 24 Sep 2020 07:36:58 GMT   (6813kb,D)
+
+Title: MimicDet: Bridging the Gap Between One-Stage and Two-Stage Object
+  Detection
+Authors: Xin Lu, Quanquan Li, Buyu Li, Junjie Yan
+Categories: cs.CV
+Comments: ECCV 2020
+\\
+  Modern object detection methods can be divided into one-stage approaches and
+two-stage ones. One-stage detectors are more efficient owing to straightforward
+architectures, but the two-stage detectors still take the lead in accuracy.
+Although recent work try to improve the one-stage detectors by imitating the
+structural design of the two-stage ones, the accuracy gap is still significant.
+In this paper, we propose MimicDet, a novel and efficient framework to train a
+one-stage detector by directly mimic the two-stage features, aiming to bridge
+the accuracy gap between one-stage and two-stage detectors. Unlike conventional
+mimic methods, MimicDet has a shared backbone for one-stage and two-stage
+detectors, then it branches into two heads which are well designed to have
+compatible features for mimicking. Thus MimicDet can be end-to-end trained
+without the pre-train of the teacher network. And the cost does not increase
+much, which makes it practical to adopt large networks as backbones. We also
+make several specialized designs such as dual-path mimicking and staggered
+feature pyramid to facilitate the mimicking process. Experiments on the
+challenging COCO detection benchmark demonstrate the effectiveness of MimicDet.
+It achieves 46.1 mAP with ResNeXt-101 backbone on the COCO test-dev set, which
+significantly surpasses current state-of-the-art methods.
+\\ ( https://arxiv.org/abs/2009.11528 ,  6813kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2009.11534
+Date: Thu, 24 Sep 2020 07:51:44 GMT   (3112kb,D)
+
+Title: Multi-Scale Profiling of Brain Multigraphs by Eigen-based
+  Cross-Diffusion and Heat Tracing for Brain State Profiling
+Authors: Mustafa Saglam and Islem Rekik
+Categories: cs.CV
+\\
+  The individual brain can be viewed as a highly-complex multigraph (i.e. a set
+of graphs also called connectomes), where each graph represents a unique
+connectional view of pairwise brain region (node) relationships such as
+function or morphology. Due to its multifold complexity, understanding how
+brain disorders alter not only a single view of the brain graph, but its
+multigraph representation at the individual and population scales, remains one
+of the most challenging obstacles to profiling brain connectivity for
+ultimately disentangling a wide spectrum of brain states (e.g., healthy vs.
+disordered). In this work, while cross-pollinating the fields of spectral graph
+theory and diffusion models, we unprecedentedly propose an eigen-based
+cross-diffusion strategy for multigraph brain integration, comparison, and
+profiling. Specifically, we first devise a brain multigraph fusion model guided
+by eigenvector centrality to rely on most central nodes in the cross-diffusion
+process. Next, since the graph spectrum encodes its shape (or geometry) as if
+one can hear the shape of the graph, for the first time, we profile the fused
+multigraphs at several diffusion timescales by extracting the compact
+heat-trace signatures of their corresponding Laplacian matrices. Here, we
+reveal for the first time autistic and healthy profiles of morphological brain
+multigraphs, derived from T1-w magnetic resonance imaging (MRI), and
+demonstrate their discriminability in boosting the classification of unseen
+samples in comparison with state-of-the-art methods. This study presents the
+first step towards hearing the shape of the brain multigraph that can be
+leveraged for profiling and disentangling comorbid neurological disorders,
+thereby advancing precision medicine.
+\\ ( https://arxiv.org/abs/2009.11534 ,  3112kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2009.11553
+Date: Thu, 24 Sep 2020 08:51:44 GMT   (2831kb,D)
+
+Title: Multi-View Brain HyperConnectome AutoEncoder For Brain State
+  Classification
+Authors: Alin Banka, Inis Buzi and Islem Rekik
+Categories: cs.CV
+\\
+  Graph embedding is a powerful method to represent graph neurological data
+(e.g., brain connectomes) in a low dimensional space for brain connectivity
+mapping, prediction and classification. However, existing embedding algorithms
+have two major limitations. First, they primarily focus on preserving
+one-to-one topological relationships between nodes (i.e., regions of interest
+(ROIs) in a connectome), but they have mostly ignored many-to-many
+relationships (i.e., set to set), which can be captured using a hyperconnectome
+structure. Second, existing graph embedding techniques cannot be easily adapted
+to multi-view graph data with heterogeneous distributions. In this paper, while
+cross-pollinating adversarial deep learning with hypergraph theory, we aim to
+jointly learn deep latent embeddings of subject0specific multi-view brain
+graphs to eventually disentangle different brain states. First, we propose a
+new simple strategy to build a hyperconnectome for each brain view based on
+nearest neighbour algorithm to preserve the connectivities across pairs of
+ROIs. Second, we design a hyperconnectome autoencoder (HCAE) framework which
+operates directly on the multi-view hyperconnectomes based on hypergraph
+convolutional layers to better capture the many-to-many relationships between
+brain regions (i.e., nodes). For each subject, we further regularize the
+hypergraph autoencoding by adversarial regularization to align the distribution
+of the learned hyperconnectome embeddings with that of the input
+hyperconnectomes. We formalize our hyperconnectome embedding within a geometric
+deep learning framework to optimize for a given subject, thereby designing an
+individual-based learning framework. Our experiments showed that the learned
+embeddings by HCAE yield to better results for brain state classification
+compared with other deep graph embedding methods methods.
+\\ ( https://arxiv.org/abs/2009.11553 ,  2831kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2009.11562
+Date: Thu, 24 Sep 2020 09:20:06 GMT   (4022kb,D)
+
+Title: Local Context Attention for Salient Object Segmentation
+Authors: Jing Tan, Pengfei Xiong, Yuwen He, Kuntao Xiao, Zhengyi Lv
+Categories: cs.CV
+\\
+  Salient object segmentation aims at distinguishing various salient objects
+from backgrounds. Despite the lack of semantic consistency, salient objects
+often have obvious texture and location characteristics in local area. Based on
+this priori, we propose a novel Local Context Attention Network (LCANet) to
+generate locally reinforcement feature maps in a uniform representational
+architecture. The proposed network introduces an Attentional Correlation Filter
+(ACF) module to generate explicit local attention by calculating the
+correlation feature map between coarse prediction and global context. Then it
+is expanded to a Local Context Block(LCB). Furthermore, an one-stage
+coarse-to-fine structure is implemented based on LCB to adaptively enhance the
+local context description ability. Comprehensive experiments are conducted on
+several salient object segmentation datasets, demonstrating the superior
+performance of the proposed LCANet against the state-of-the-art methods,
+especially with 0.883 max F-score and 0.034 MAE on DUTS-TE dataset.
+\\ ( https://arxiv.org/abs/2009.11562 ,  4022kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2009.11577
+Date: Thu, 24 Sep 2020 09:57:29 GMT   (583kb,D)
+
+Title: Cloud Cover Nowcasting with Deep Learning
+Authors: L\'ea Berthomier, Bruno Pradel and Lior Perez
+Categories: cs.CV cs.AI cs.LG
+Comments: 6 pages, 11 figures, to be published in the International Conference
+  on Image Processing Theory, Tools and Applications 2020 (IPTA 2020)
+\\
+  Nowcasting is a field of meteorology which aims at forecasting weather on a
+short term of up to a few hours. In the meteorology landscape, this field is
+rather specific as it requires particular techniques, such as data
+extrapolation, where conventional meteorology is generally based on physical
+modeling. In this paper, we focus on cloud cover nowcasting, which has various
+application areas such as satellite shots optimisation and photovoltaic energy
+production forecast.
+  Following recent deep learning successes on multiple imagery tasks, we
+applied deep convolutionnal neural networks on Meteosat satellite images for
+cloud cover nowcasting. We present the results of several architectures
+specialized in image segmentation and time series prediction. We selected the
+best models according to machine learning metrics as well as meteorological
+metrics. All selected architectures showed significant improvements over
+persistence and the well-known U-Net surpasses AROME physical model.
+\\ ( https://arxiv.org/abs/2009.11577 ,  583kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2009.11663
+Date: Mon, 21 Sep 2020 07:00:50 GMT   (611kb,D)
+
+Title: Heuristics based Mosaic of Social-Sensor Services for Scene
+  Reconstruction
+Authors: Tooba Aamir, Hai Dong and Athman Bouguettaya
+Categories: cs.CV
+Comments: 13 pages, 8 figures and 1 table. This is an accepted paper and it is
+  going to appear in the Proceedings of the 2020 21st International Conference
+  on Web Information Systems Engineering (WISE 2020), Amsterdam and Leiden,
+  Netherlands. The proceedings of WISE 2020 will be published by Springer in
+  its Lecture Notes in Computer Science series
+\\
+  We propose a heuristics-based social-sensor cloud service selection and
+composition model to reconstruct mosaic scenes. The proposed approach leverages
+crowdsourced social media images to create an image mosaic to reconstruct a
+scene at a designated location and an interval of time. The novel approach
+relies on the set of features defined on the bases of the image metadata to
+determine the relevance and composability of services. Novel heuristics are
+developed to filter out non-relevant services. Multiple machine learning
+strategies are employed to produce smooth service composition resulting in a
+mosaic of relevant images indexed by geolocation and time. The preliminary
+analytical results prove the feasibility of the proposed composition model.
+\\ ( https://arxiv.org/abs/2009.11663 ,  611kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2009.11816
+Date: Thu, 24 Sep 2020 16:53:40 GMT   (1336kb,D)
+
+Title: Attribute Propagation Network for Graph Zero-shot Learning
+Authors: Lu Liu, Tianyi Zhou, Guodong Long, Jing Jiang, Chengqi Zhang
+Categories: cs.CV cs.LG
+Comments: AAAI 2020
+\\
+  The goal of zero-shot learning (ZSL) is to train a model to classify samples
+of classes that were not seen during training. To address this challenging
+task, most ZSL methods relate unseen test classes to seen(training) classes via
+a pre-defined set of attributes that can describe all classes in the same
+semantic space, so the knowledge learned on the training classes can be adapted
+to unseen classes. In this paper, we aim to optimize the attribute space for
+ZSL by training a propagation mechanism to refine the semantic attributes of
+each class based on its neighbors and related classes on a graph of classes. We
+show that the propagated attributes can produce classifiers for zero-shot
+classes with significantly improved performance in different ZSL settings. The
+graph of classes is usually free or very cheap to acquire such as WordNet or
+ImageNet classes. When the graph is not provided, given pre-defined semantic
+embeddings of the classes, we can learn a mechanism to generate the graph in an
+end-to-end manner along with the propagation mechanism. However, this
+graph-aided technique has not been well-explored in the literature. In this
+paper, we introduce the attribute propagation network (APNet), which is
+composed of 1) a graph propagation model generating attribute vector for each
+class and 2) a parameterized nearest neighbor (NN) classifier categorizing an
+image to the class with the nearest attribute vector to the image's embedding.
+For better generalization over unseen classes, different from previous methods,
+we adopt a meta-learning strategy to train the propagation mechanism and the
+similarity metric for the NN classifier on multiple sub-graphs, each associated
+with a classification task over a subset of training classes. In experiments
+with two zero-shot learning settings and five benchmark datasets, APNet
+achieves either compelling performance or new state-of-the-art results.
+\\ ( https://arxiv.org/abs/2009.11816 ,  1336kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2009.11859
+Date: Thu, 24 Sep 2020 17:59:12 GMT   (5231kb,D)
+
+Title: Multi-Frame to Single-Frame: Knowledge Distillation for 3D Object
+  Detection
+Authors: Yue Wang and Alireza Fathi and Jiajun Wu and Thomas Funkhouser and
+  Justin Solomon
+Categories: cs.CV cs.LG
+Comments: The Workshop on Perception for Autonomous Driving at ECCV2020
+\\
+  A common dilemma in 3D object detection for autonomous driving is that
+high-quality, dense point clouds are only available during training, but not
+testing. We use knowledge distillation to bridge the gap between a model
+trained on high-quality inputs at training time and another tested on
+low-quality inputs at inference time. In particular, we design a two-stage
+training pipeline for point cloud object detection. First, we train an object
+detection model on dense point clouds, which are generated from multiple frames
+using extra information only available at training time. Then, we train the
+model's identical counterpart on sparse single-frame point clouds with
+consistency regularization on features from both models. We show that this
+procedure improves performance on low-quality data during testing, without
+additional overhead.
+\\ ( https://arxiv.org/abs/2009.11859 ,  5231kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2009.11675
+Date: Wed, 23 Sep 2020 01:01:10 GMT   (388kb,D)
+
+Title: Kirchhoff's Circuit Law Applications to Graph Simplification in Search
+  Problems
+Authors: Jaeho Choi, Joongheon Kim
+Categories: cs.DM eess.SP
+\\
+  This paper proposes a new analysis of graph using the concept of electric
+potential, and also proposes a graph simplification method based on this
+analysis. Suppose that each node in the weighted-graph has its respective
+potential value. Furthermore, suppose that the start and terminal nodes in
+graphs have maximum and zero potentials, respectively. When we let the level of
+each node be defined as the minimum number of edges/hops from the start node to
+the node, the proper potential of each level can be estimated based on
+geometric proportionality relationship. Based on the estimated potential for
+each level, we can re-design the graph for path-finding problems to be the
+electrical circuits, thus Kirchhoff's Circuit Law can be directed applicable
+for simplifying the graph for path-finding problems.
+\\ ( https://arxiv.org/abs/2009.11675 ,  388kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2009.11805
+Date: Thu, 24 Sep 2020 16:47:37 GMT   (3608kb,D)
+
+Title: Design and Evaluation of a Receiver for Wired Nano-Communication
+  Networks
+Authors: Oussama Abderrahmane Dambri and Soumaya Cherkaoui
+Categories: cs.ET cs.NI
+\\
+  In this paper, we propose a bio-inspired receiver, which detects the
+electrons transmitted through a nanowire, then, it converts the detected
+information into a blue light using bioluminescence. Using light allows the
+designed receiver to also act as a relay for the nearest gateway
+(photo-detector). We simulate the construction of the nanowire, present its
+electrical characteristics and calculate its maximum throughput for a better
+design of the receiver. The designed receiver contains two parts, a part that
+detects the transmitted electrons, which we model by using an equivalent
+circuit, and a part that converts the detected electrons into a blue light. We
+derive the analytical expressions of the equivalent circuit's components, and
+we calculate the emitted photons for each electrical pulse detected. We also
+propose modulation techniques that guaranty an effective decoding of the
+information. We send a binary message and we follow the electron detection
+process of the proposed receiver until light emission and we calculate the Bit
+Error Rate (BER) to evaluate the performance of the designed receiver. The
+results of this study show that the designed receiver can accurately detect the
+electrons sent through a conductive nanowire in wired nano-communication
+networks, and that it can also act as a relay for the nearest gateway.
+\\ ( https://arxiv.org/abs/2009.11805 ,  3608kb)
+%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-
+------------------------------------------------------------------------------
+\\
+arXiv:2009.11327 (*cross-listing*)
+Date: Wed, 23 Sep 2020 18:11:47 GMT   (10888kb,D)
+
+Title: Generative Modelling of 3D in-silico Spongiosa with Controllable
+  Micro-Structural Parameters
+Authors: Emmanuel Iarussi, Felix Thomsen and Claudio Delrieux
+Categories: eess.IV cs.CV cs.LG
+Comments: Accepted for publication in MICCAI 2020 conference
+\\
+  Research in vertebral bone micro-structure generally requires costly
+procedures to obtain physical scans of real bone with a specific pathology
+under study, since no methods are available yet to generate realistic bone
+structures in-silico. Here we propose to apply recent advances in generative
+adversarial networks (GANs) to develop such a method. We adapted style-transfer
+techniques, which have been largely used in other contexts, in order to
+transfer style between image pairs while preserving its informational content.
+In a first step, we trained a volumetric generative model in a progressive
+manner using a Wasserstein objective and gradient penalty (PWGAN-GP) to create
+patches of realistic bone structure in-silico. The training set contained 7660
+purely spongeous bone samples from twelve human vertebrae (T12 or L1) with
+isotropic resolution of 164um and scanned with a high resolution peripheral
+quantitative CT (Scanco XCT). After training, we generated new samples with
+tailored micro-structure properties by optimizing a vector z in the learned
+latent space. To solve this optimization problem, we formulated a
+differentiable goal function that leads to valid samples while compromising the
+appearance (content) with target 3D properties (style). Properties of the
+learned latent space effectively matched the data distribution. Furthermore, we
+were able to simulate the resulting bone structure after deterioration or
+treatment effects of osteoporosis therapies based only on expected changes of
+micro-structural parameters. Our method allows to generate a virtually infinite
+number of patches of realistic bone micro-structure, and thereby likely serves
+for the development of bone-biomarkers and to simulate bone therapies in
+advance.
+\\ ( https://arxiv.org/abs/2009.11327 ,  10888kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2009.11397 (*cross-listing*)
+Date: Wed, 23 Sep 2020 21:54:36 GMT   (1664kb,D)
+
+Title: Detection of Iterative Adversarial Attacks via Counter Attack
+Authors: Matthias Rottmann, Mathis Peyron, Natasa Krejic and Hanno Gottschalk
+Categories: cs.LG cs.CR cs.CV stat.ML
+MSC-class: 68T45, 62-07
+\\
+  Deep neural networks (DNNs) have proven to be powerful tools for processing
+unstructured data. However for high-dimensional data, like images, they are
+inherently vulnerable to adversarial attacks. Small almost invisible
+perturbations added to the input can be used to fool DNNs. Various attacks,
+hardening methods and detection methods have been introduced in recent years.
+Notoriously, Carlini-Wagner (CW) type attacks computed by iterative
+minimization belong to those that are most difficult to detect. In this work,
+we demonstrate that such iterative minimization attacks can by used as
+detectors themselves. Thus, in some sense we show that one can fight fire with
+fire. This work also outlines a mathematical proof that under certain
+assumptions this detector provides asymptotically optimal separation of
+original and attacked images. In numerical experiments, we obtain AUROC values
+up to 99.73% for our detection method. This distinctly surpasses state of the
+art detection rates for CW attacks from the literature. We also give numerical
+evidence that our method is robust against the attacker's choice of the method
+of attack.
+\\ ( https://arxiv.org/abs/2009.11397 ,  1664kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2009.11524 (*cross-listing*)
+Date: Thu, 24 Sep 2020 07:23:41 GMT   (3884kb,D)
+
+Title: Adversarial Brain Multiplex Prediction From a Single Network for
+  High-Order Connectional Gender-Specific Brain Mapping
+Authors: Ahmed Nebli and Islem Rekik
+Categories: eess.IV cs.CV
+\\
+  Brain connectivity networks, derived from magnetic resonance imaging (MRI),
+non-invasively quantify the relationship in function, structure, and morphology
+between two brain regions of interest (ROIs) and give insights into
+gender-related connectional differences. However, to the best of our knowledge,
+studies on gender differences in brain connectivity were limited to
+investigating pairwise (i.e., low-order) relationship ROIs, overlooking the
+complex high-order interconnectedness of the brain as a network. To address
+this limitation, brain multiplexes have been introduced to model the
+relationship between at least two different brain networks. However, this
+inhibits their application to datasets with single brain networks such as
+functional networks. To fill this gap, we propose the first work on predicting
+brain multiplexes from a source network to investigate gender differences.
+Recently, generative adversarial networks (GANs) submerged the field of medical
+data synthesis. However, although conventional GANs work well on images, they
+cannot handle brain networks due to their non-Euclidean topological structure.
+Differently, in this paper, we tap into the nascent field of geometric-GANs
+(G-GAN) to design a deep multiplex prediction architecture comprising (i) a
+geometric source to target network translator mimicking a U-Net architecture
+with skip connections and (ii) a conditional discriminator which classifies
+predicted target intra-layers by conditioning on the multiplex source
+intra-layers. Such architecture simultaneously learns the latent source network
+representation and the deep non-linear mapping from the source to target
+multiplex intra-layers. Our experiments on a large dataset demonstrated that
+predicted multiplexes significantly boost gender classification accuracy
+compared with source networks and identifies both low and high-order
+gender-specific multiplex connections.
+\\ ( https://arxiv.org/abs/2009.11524 ,  3884kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2009.11551 (*cross-listing*)
+Date: Thu, 24 Sep 2020 08:46:40 GMT   (3394kb,D)
+
+Title: Residual Feature Distillation Network for Lightweight Image
+  Super-Resolution
+Authors: Jie Liu, Jie Tang, Gangshan Wu
+Categories: eess.IV cs.CV
+Comments: accepted by ECCV2020 AIM workshop
+\\
+  Recent advances in single image super-resolution (SISR) explored the power of
+convolutional neural network (CNN) to achieve a better performance. Despite the
+great success of CNN-based methods, it is not easy to apply these methods to
+edge devices due to the requirement of heavy computation. To solve this
+problem, various fast and lightweight CNN models have been proposed. The
+information distillation network is one of the state-of-the-art methods, which
+adopts the channel splitting operation to extract distilled features. However,
+it is not clear enough how this operation helps in the design of efficient SISR
+models. In this paper, we propose the feature distillation connection (FDC)
+that is functionally equivalent to the channel splitting operation while being
+more lightweight and flexible. Thanks to FDC, we can rethink the information
+multi-distillation network (IMDN) and propose a lightweight and accurate SISR
+model called residual feature distillation network (RFDN). RFDN uses multiple
+feature distillation connections to learn more discriminative feature
+representations. We also propose a shallow residual block (SRB) as the main
+building block of RFDN so that the network can benefit most from residual
+learning while still being lightweight enough. Extensive experimental results
+show that the proposed RFDN achieve a better trade-off against the
+state-of-the-art methods in terms of performance and model complexity.
+Moreover, we propose an enhanced RFDN (E-RFDN) and won the first place in the
+AIM 2020 efficient super-resolution challenge. Code will be available at
+https://github.com/njulj/RFDN.
+\\ ( https://arxiv.org/abs/2009.11551 ,  3394kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2009.11676 (*cross-listing*)
+Date: Wed, 23 Sep 2020 12:18:41 GMT   (4033kb,D)
+
+Title: Eye Movement Feature Classification for Soccer Expertise Identification
+  in Virtual Reality
+Authors: Benedikt Hosp, Florian Schultz, Enkelejda Kasneci, Oliver H\"oner
+Categories: cs.HC cs.AI cs.CV cs.LG
+\\
+  Latest research in expertise assessment of soccer players pronounced the
+importance of perceptual skills. Former research focused either on high
+experimental control or natural presentation mode. To assess perceptual skills
+of athletes, in an optimized manner, we captured omnidirectional in-field
+scenes, showed to 12 expert, 9 intermediate and 13 novice goalkeepers from
+soccer on virtual reality glasses. All scenes where shown from the same natural
+goalkeeper perspective and ended after the return pass to the goalkeeper. Based
+on their responses and gaze behavior we classified their expertise with common
+machine learning techniques. This pilot study shows promising results for
+objective classification of goalkeepers expertise based on their gaze
+behaviour.
+\\ ( https://arxiv.org/abs/2009.11676 ,  4033kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2009.11729 (*cross-listing*)
+Date: Thu, 24 Sep 2020 14:39:42 GMT   (823kb,D)
+
+Title: Interpreting and Boosting Dropout from a Game-Theoretic View
+Authors: Hao Zhang, Sen Li, Yinchao Ma, Mingjie Li, Yichen Xie, Quanshi Zhang
+Categories: cs.LG cs.AI cs.CV stat.ML
+\\
+  This paper aims to understand and improve the utility of the dropout
+operation from the perspective of game-theoretic interactions. We prove that
+dropout can suppress the strength of interactions between input variables of
+deep neural networks (DNNs). The theoretical proof is also verified by various
+experiments. Furthermore, we find that such interactions were strongly related
+to the over-fitting problem in deep learning. Thus, the utility of dropout can
+be regarded as decreasing interactions to alleviating the significance of
+over-fitting. Based on this understanding, we propose an interaction loss to
+further improve the utility of dropout. Experimental results have shown that
+the interaction loss can effectively improve the utility of dropout and boost
+the performance of DNNs.
+\\ ( https://arxiv.org/abs/2009.11729 ,  823kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2009.11746 (*cross-listing*)
+Date: Thu, 24 Sep 2020 15:16:43 GMT   (3123kb,D)
+
+Title: Learning Graph Normalization for Graph Neural Networks
+Authors: Yihao Chen, Xin Tang, Xianbiao Qi, Chun-Guang Li, Rong Xiao
+Categories: cs.LG cs.CV
+Comments: 15 pages, 3 figures, 6 tables
+\\
+  Graph Neural Networks (GNNs) have attracted considerable attention and have
+emerged as a new promising paradigm to process graph-structured data. GNNs are
+usually stacked to multiple layers and the node representations in each layer
+are computed through propagating and aggregating the neighboring node features
+with respect to the graph. By stacking to multiple layers, GNNs are able to
+capture the long-range dependencies among the data on the graph and thus bring
+performance improvements. To train a GNN with multiple layers effectively, some
+normalization techniques (e.g., node-wise normalization, batch-wise
+normalization) are necessary. However, the normalization techniques for GNNs
+are highly task-relevant and different application tasks prefer to different
+normalization techniques, which is hard to know in advance. To tackle this
+deficiency, in this paper, we propose to learn graph normalization by
+optimizing a weighted combination of normalization techniques at four different
+levels, including node-wise normalization, adjacency-wise normalization,
+graph-wise normalization, and batch-wise normalization, in which the
+adjacency-wise normalization and the graph-wise normalization are newly
+proposed in this paper to take into account the local structure and the global
+structure on the graph, respectively. By learning the optimal weights, we are
+able to automatically select a single best or a best combination of multiple
+normalizations for a specific task. We conduct extensive experiments on
+benchmark datasets for different tasks, including node classification, link
+prediction, graph classification and graph regression, and confirm that the
+learned graph normalization leads to competitive results and that the learned
+weights suggest the appropriate normalization techniques for the specific task.
+Source code is released here https://github.com/cyh1112/GraphNormalization.
+\\ ( https://arxiv.org/abs/2009.11746 ,  3123kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2009.11839 (*cross-listing*)
+Date: Thu, 24 Sep 2020 17:37:32 GMT   (4083kb,D)
+
+Title: A Gradient Flow Framework For Analyzing Network Pruning
+Authors: Ekdeep Singh Lubana and Robert P. Dick
+Categories: cs.LG cs.CV stat.ML
+\\
+  Recent network pruning methods focus on pruning models early-on in training.
+To estimate the impact of removing a parameter, these methods use importance
+measures that were originally designed for pruning trained models. Despite
+lacking justification for their use early-on in training, models pruned using
+such measures result in surprisingly minimal accuracy loss. To better explain
+this behavior, we develop a general, gradient-flow based framework that relates
+state-of-the-art importance measures through an order of time-derivative of the
+norm of model parameters. We use this framework to determine the relationship
+between pruning measures and evolution of model parameters, establishing
+several findings related to pruning models early-on in training: (i)
+magnitude-based pruning removes parameters that contribute least to reduction
+in loss, resulting in models that converge faster than magnitude-agnostic
+methods; (ii) loss-preservation based pruning preserves first-order model
+evolution dynamics and is well-motivated for pruning minimally trained models;
+and (iii) gradient-norm based pruning affects second-order model evolution
+dynamics, and increasing gradient norm via pruning can produce poorly
+performing models. We validate our claims on several VGG-13, MobileNet-V1, and
+ResNet-56 models trained on CIFAR-10 and CIFAR-100. Code available at
+https://github.com/EkdeepSLubana/flowandprune.
+\\ ( https://arxiv.org/abs/2009.11839 ,  4083kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2009.11848 (*cross-listing*)
+Date: Thu, 24 Sep 2020 17:48:59 GMT   (6897kb,D)
+
+Title: How Neural Networks Extrapolate: From Feedforward to Graph Neural
+  Networks
+Authors: Keyulu Xu, Jingling Li, Mozhi Zhang, Simon S. Du, Ken-ichi
+  Kawarabayashi, Stefanie Jegelka
+Categories: cs.LG cs.AI cs.CV stat.ML
+\\
+  We study how neural networks trained by gradient descent extrapolate, i.e.,
+what they learn outside the support of training distribution. Previous works
+report mixed empirical results when extrapolating with neural networks: while
+multilayer perceptrons (MLPs) do not extrapolate well in simple tasks, Graph
+Neural Networks (GNNs), a structured network with MLP modules, have some
+success in more complex tasks. We provide a theoretical explanation and
+identify conditions under which MLPs and GNNs extrapolate well. We start by
+showing ReLU MLPs trained by gradient descent converge quickly to linear
+functions along any direction from the origin, which suggests ReLU MLPs cannot
+extrapolate well in most non-linear tasks. On the other hand, ReLU MLPs can
+provably converge to a linear target function when the training distribution is
+"diverse" enough. These observations lead to a hypothesis: GNNs can extrapolate
+well in dynamic programming (DP) tasks if we encode appropriate non-linearity
+in the architecture and input representation. We provide theoretical and
+empirical support for the hypothesis. Our theory explains previous
+extrapolation success and suggest their limitations: successful extrapolation
+relies on incorporating task-specific non-linearity, which often requires
+domain knowledge or extensive model search.
+\\ ( https://arxiv.org/abs/2009.11848 ,  6897kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2009.11850 (*cross-listing*)
+Date: Thu, 24 Sep 2020 17:53:17 GMT   (3326kb,D)
+
+Title: ECOVNet: An Ensemble of Deep Convolutional Neural Networks Based on
+  EfficientNet to Detect COVID-19 From Chest X-rays
+Authors: Nihad Karim Chowdhury, Md. Muhtadir Rahman, Noortaz Rezoana, Muhammad
+  Ashad Kabir
+Categories: eess.IV cs.CV
+\\
+  This paper proposed an ensemble of deep convolutional neural networks (CNN)
+based on EfficientNet, named ECOVNet, to detect COVID-19 using a large chest
+X-ray data set. At first, the open-access large chest X-ray collection is
+augmented, and then ImageNet pre-trained weights for EfficientNet is
+transferred with some customized fine-tuning top layers that are trained,
+followed by an ensemble of model snapshots to classify chest X-rays
+corresponding to COVID-19, normal, and pneumonia. The predictions of the model
+snapshots, which are created during a single training, are combined through two
+ensemble strategies, i.e., hard ensemble and soft ensemble to ameliorate
+classification performance and generalization in the related task of
+classifying chest X-rays.
+\\ ( https://arxiv.org/abs/2009.11850 ,  3326kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2009.11318 (*cross-listing*)
+Date: Wed, 23 Sep 2020 18:00:45 GMT   (1373kb,D)
+
+Title: Counting five-node subgraphs
+Authors: Steve Lawford
+Categories: math.CO cs.DM
+Comments: 26 pages, 8 figures
+\\
+  We propose exact count formulae for the 21 topologically distinct non-induced
+connected subgraphs on five nodes, in simple, unweighted and undirected graphs.
+We prove the main result using short and purely combinatorial arguments that
+can be adapted to derive count formulae for larger subgraphs. To illustrate, we
+give analytic results for some regular graphs, and present a short empirical
+application on real-world network data. We also discuss the well-known result
+that induced subgraph counts follow as linear combinations of non-induced
+counts.
+\\ ( https://arxiv.org/abs/2009.11318 ,  1373kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2009.11454 (*cross-listing*)
+Date: Thu, 24 Sep 2020 02:26:32 GMT   (3006kb)
+
+Title: Collective and synchronous dynamics of photonic spiking neurons
+Authors: Takahiro Inagaki, Kensuke Inaba, Timoth\'ee Leleu, Toshimori Honjo,
+  Takuya Ikuta, Koji Enbutsu, Takeshi Umeki, Ryoichi Kasahara, Kazuyuki Aihara,
+  Hiroki Takesue
+Categories: physics.optics cs.ET nlin.AO
+Comments: 43 pages, 9 figures
+\\
+  Nonlinear dynamics of spiking neural networks has recently attracted much
+interest as an approach to understand possible information processing in the
+brain and apply it to artificial intelligence. Since information can be
+processed by collective spiking dynamics of neurons, the fine control of
+spiking dynamics is desirable for neuromorphic devices. Here we show that
+photonic spiking neurons implemented with paired nonlinear optical oscillators
+can be controlled to generate two modes of bio-realistic spiking dynamics by
+changing the optical pump amplitude. When they are coupled in a network, we
+found that the interaction between the photonic neurons induces an effective
+change in the pump amplitude depending on the order parameter that
+characterizes synchronization. The experimental results show that the effective
+change causes spontaneous modification of the spiking modes and firing rates of
+clustered neurons, and such collective dynamics can be utilized to realize
+efficient heuristics for solving NP-hard combinatorial optimization problems.
+\\ ( https://arxiv.org/abs/2009.11454 ,  3006kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2009.11422 (*cross-listing*)
+Date: Thu, 24 Sep 2020 00:21:56 GMT   (36511kb,D)
+
+Title: An Online and Nonuniform Timeslicing Method for Network Visualisation
+Authors: Jean R. Ponciano, Claudio D. G. Linhares, Elaine R. Faria, and Bruno
+  A. N. Travencolo
+Categories: cs.SI cs.GR cs.HC
+\\
+  Visual analysis of temporal networks comprises an effective way to understand
+the network dynamics, facilitating the identification of patterns, anomalies,
+and other network properties, thus resulting in fast decision making. The
+amount of data in real-world networks, however, may result in a layout with
+high visual clutter due to edge overlapping. This is particularly relevant in
+the so-called streaming networks, in which edges are continuously arriving
+(online) and in non-stationary distribution. All three network dimensions,
+namely node, edge, and time, can be manipulated to reduce such clutter and
+improve readability. This paper presents an online and nonuniform timeslicing
+method, thus considering the underlying network structure and addressing
+streaming network analyses. We conducted experiments using two real-world
+networks to compare our method against uniform and nonuniform timeslicing
+strategies. The results show that our method automatically selects timeslices
+that effectively reduce visual clutter in periods with bursts of events. As a
+consequence, decision making based on the identification of global temporal
+patterns becomes faster and more reliable.
+\\ ( https://arxiv.org/abs/2009.11422 ,  36511kb)
+%%--%%--%%--%%--%%--%%--%%--%%--%%--%%--%%--%%--%%--%%--%%--%%--%%--%%--%%--%%
+------------------------------------------------------------------------------
+\\
+arXiv:1707.00600
+replaced with revised version Wed, 23 Sep 2020 15:02:08 GMT   (4152kb,D)
+
+Title: Zero-Shot Learning -- A Comprehensive Evaluation of the Good, the Bad
+  and the Ugly
+Authors: Yongqin Xian, Christoph H. Lampert, Bernt Schiele, Zeynep Akata
+Categories: cs.CV
+Comments: Accepted by TPAMI in July, 2018. We introduce Proposed Split Version
+  2.0 (Please download it from our project webpage). arXiv admin note:
+  substantial text overlap with arXiv:1703.04394
+\\ ( https://arxiv.org/abs/1707.00600 ,  4152kb)
+------------------------------------------------------------------------------
+\\
+arXiv:1803.08450
+replaced with revised version Thu, 24 Sep 2020 15:10:03 GMT   (3582kb,D)
+
+Title: A Comprehensive Analysis of Deep Regression
+Authors: St\'ephane Lathuili\`ere, Pablo Mesejo, Xavier Alameda-Pineda, Radu
+  Horaud
+Categories: cs.CV
+Comments: Published in IEEE TPAMI
+Journal-ref: IEEE TPAMI Volume: 42 , Issue: 9 , Sept. 1 2020
+DOI: 10.1109/TPAMI.2019.2910523
+\\ ( https://arxiv.org/abs/1803.08450 ,  3582kb)
+------------------------------------------------------------------------------
+\\
+arXiv:1910.01717
+replaced with revised version Thu, 24 Sep 2020 16:36:27 GMT   (11695kb,D)
+
+Title: On the Detection of Digital Face Manipulation
+Authors: Hao Dang, Feng Liu, Joel Stehouwer, Xiaoming Liu, Anil Jain
+Categories: cs.CV
+Comments: To appear in CVPR 2020
+\\ ( https://arxiv.org/abs/1910.01717 ,  11695kb)
+------------------------------------------------------------------------------
+\\
+arXiv:1912.06218
+replaced with revised version Thu, 24 Sep 2020 03:42:52 GMT   (32327kb,D)
+
+Title: YOLACT++: Better Real-time Instance Segmentation
+Authors: Daniel Bolya, Chong Zhou, Fanyi Xiao, Yong Jae Lee
+Categories: cs.CV cs.LG eess.IV
+Comments: Journal extension of our previous conference paper arXiv:1904.02689
+DOI: 10.1109/TPAMI.2020.3014297
+\\ ( https://arxiv.org/abs/1912.06218 ,  32327kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2003.08834
+replaced with revised version Thu, 24 Sep 2020 03:08:58 GMT   (1562kb,D)
+
+Title: J$\hat{\text{A}}$A-Net: Joint Facial Action Unit Detection and Face
+  Alignment via Adaptive Attention
+Authors: Zhiwen Shao, Zhilei Liu, Jianfei Cai, Lizhuang Ma
+Categories: cs.CV
+Comments: This paper is the extended version of arXiv:1803.05588, and is
+  accepted by International Journal of Computer Vision
+DOI: 10.1007/s11263-020-01378-z
+\\ ( https://arxiv.org/abs/2003.08834 ,  1562kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2004.06550
+replaced with revised version Thu, 24 Sep 2020 13:01:59 GMT   (8698kb,D)
+
+Title: Unsupervised Performance Analysis of 3D Face Alignment
+Authors: Mostafa Sadeghi, Sylvain Guy, Adrien Raison, Xavier Alameda-Pineda and
+  Radu Horaud
+Categories: cs.CV
+Comments: Submitted to International Journal of Computer Vision
+\\ ( https://arxiv.org/abs/2004.06550 ,  8698kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2006.07752
+replaced with revised version Thu, 24 Sep 2020 02:12:45 GMT   (7764kb,D)
+
+Title: 3D Reconstruction of Novel Object Shapes from Single Images
+Authors: Anh Thai, Stefan Stojanov, Vijay Upadhya, James M. Rehg
+Categories: cs.CV
+Comments: First two authors contributed equally
+\\ ( https://arxiv.org/abs/2006.07752 ,  7764kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2007.06889
+replaced with revised version Thu, 24 Sep 2020 14:01:27 GMT   (1173kb,D)
+
+Title: Knowledge Distillation for Multi-task Learning
+Authors: Wei-Hong Li and Hakan Bilen
+Categories: cs.CV
+Comments: We propose a knowledge distillation method for addressing the
+  imbalance problem in multi-task learning
+\\ ( https://arxiv.org/abs/2007.06889 ,  1173kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2008.02834
+replaced with revised version Thu, 24 Sep 2020 07:53:13 GMT   (26801kb,D)
+
+Title: Integration of the 3D Environment for On-Board UAV Visual Object
+  Tracking
+Authors: St\'ephane Vujasinovi\'c, Stefan Becker, Timo Breuer, Sebastian
+  Bullinger, Norbert Scherer-Negenborn, Michael Arens
+Categories: cs.CV
+Comments: Submitted to Journal of Applied Science MDPI
+\\ ( https://arxiv.org/abs/2008.02834 ,  26801kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2009.07557
+replaced with revised version Thu, 24 Sep 2020 13:08:51 GMT   (2656kb,D)
+
+Title: SLGAN: Style- and Latent-guided Generative Adversarial Network for
+  Desirable Makeup Transfer and Removal
+Authors: Daichi Horita and Kiyoharu Aizawa
+Categories: cs.CV cs.MM
+Comments: 9 pages, 9 figures
+\\ ( https://arxiv.org/abs/2009.07557 ,  2656kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2009.08123
+replaced with revised version Thu, 24 Sep 2020 11:02:28 GMT   (752kb,D)
+
+Title: DLBCL-Morph: Morphological features computed using deep learning for an
+  annotated digital DLBCL image set
+Authors: Damir Vrabac, Akshay Smit, Rebecca Rojansky, Yasodha Natkunam, Ranjana
+  H. Advani, Andrew Y. Ng, Sebastian Fernandez-Pol, Pranav Rajpurkar
+Categories: cs.CV cs.AI cs.LG
+Comments: Corrections to folder structure figure
+\\ ( https://arxiv.org/abs/2009.08123 ,  752kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2009.09237
+replaced with revised version Thu, 24 Sep 2020 04:22:11 GMT   (2611kb,D)
+
+Title: AAA: Adaptive Aggregation of Arbitrary Online Trackers with Theoretical
+  Performance Guarantee
+Authors: Heon Song, Daiki Suehiro and Seiichi Uchida
+Categories: cs.CV
+\\ ( https://arxiv.org/abs/2009.09237 ,  2611kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2009.10916
+replaced with revised version Thu, 24 Sep 2020 08:12:12 GMT   (18806kb,D)
+
+Title: CLASS: Cross-Level Attention and Supervision for Salient Objects
+  Detection
+Authors: Lv Tang and Bo Li
+Categories: cs.CV
+Comments: Full version of ACCV2020
+\\ ( https://arxiv.org/abs/2009.10916 ,  18806kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2009.10939
+replaced with revised version Thu, 24 Sep 2020 11:12:11 GMT   (9228kb,D)
+
+Title: Scene Graph to Image Generation with Contextualized Object Layout
+  Refinement
+Authors: Maor Ivgi, Yaniv Benny, Avichai Ben-David, Jonathan Berant, and Lior
+  Wolf
+Categories: cs.CV
+\\ ( https://arxiv.org/abs/2009.10939 ,  9228kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2005.00522
+replaced with revised version Tue, 22 Sep 2020 19:06:41 GMT   (916kb,D)
+
+Title: Rebooting Neuromorphic Hardware Design -- A Complexity Engineering
+  Approach
+Authors: Natesh Ganesh
+Categories: cs.ET
+\\ ( https://arxiv.org/abs/2005.00522 ,  916kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2009.08841
+replaced with revised version Wed, 23 Sep 2020 14:20:21 GMT   (377kb,D)
+
+Title: On the spatiotemporal behavior in biology-mimicking computing systems
+Authors: J\'anos V\'egh, \'Ad\'am J. Berki
+Categories: cs.ET cs.LG cs.NE
+Comments: 33 pages, 6 figures
+\\ ( https://arxiv.org/abs/2009.08841 ,  377kb)
+------------------------------------------------------------------------------
+\\
+arXiv:1906.07549 (*cross-listing*)
+replaced with revised version Thu, 24 Sep 2020 03:24:20 GMT   (858kb)
+
+Title: An Attention-Guided Deep Regression Model for Landmark Detection in
+  Cephalograms
+Authors: Zhusi Zhong, Jie Li, Zhenxi Zhang, Zhicheng Jiao, Xinbo Gao
+Categories: eess.IV cs.CV cs.LG stat.ML
+\\ ( https://arxiv.org/abs/1906.07549 ,  858kb)
+------------------------------------------------------------------------------
+\\
+arXiv:1912.10364
+replaced with revised version Thu, 24 Sep 2020 13:53:04 GMT   (8879kb,D)
+
+Title: Learning to Impute: A General Framework for Semi-supervised Learning
+Authors: Wei-Hong Li, Chuan-Sheng Foo, Hakan Bilen
+Categories: cs.LG cs.CV
+Comments: Semi-supervised Learning, Meta-Learning, Learning to impute
+\\ ( https://arxiv.org/abs/1912.10364 ,  8879kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2002.10523 (*cross-listing*)
+replaced with revised version Thu, 24 Sep 2020 15:50:10 GMT   (3152kb,D)
+
+Title: Co-VeGAN: Complex-Valued Generative Adversarial Network for Compressive
+  Sensing MR Image Reconstruction
+Authors: Bhavya Vasudeva, Puneesh Deora, Saumik Bhattacharya, Pyari Mohan
+  Pradhan
+Categories: eess.IV cs.CV cs.LG
+\\ ( https://arxiv.org/abs/2002.10523 ,  3152kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2006.04270
+replaced with revised version Wed, 23 Sep 2020 22:36:02 GMT   (3463kb)
+
+Title: EDropout: Energy-Based Dropout and Pruning of Deep Neural Networks
+Authors: Hojjat Salehinejad and Shahrokh Valaee
+Categories: cs.LG cs.CV cs.NE
+\\ ( https://arxiv.org/abs/2006.04270 ,  3463kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2007.11976
+replaced with revised version Thu, 24 Sep 2020 13:41:18 GMT   (444kb)
+
+Title: Comparative Analysis of Polynomial and Rational Approximations of
+  Hyperbolic Tangent Function for VLSI Implementation
+Authors: Mahesh Chandra
+Categories: cs.AR cs.CV
+\\ ( https://arxiv.org/abs/2007.11976 ,  444kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2008.12544 (*cross-listing*)
+replaced with revised version Thu, 24 Sep 2020 09:10:17 GMT   (2180kb,D)
+
+Title: Soft Tissue Sarcoma Co-Segmentation in Combined MRI and PET/CT Data
+Authors: Theresa Neubauer, Maria Wimmer, Astrid Berg, David Major, Dimitrios
+  Lenis, Thomas Beyer, Jelena Saponjski, Katja B\"uhler
+Categories: eess.IV cs.CV cs.LG
+Comments: Accepted for publication at Multimodal Learning for Clinical Decision
+  Support Workshop at MICCAI 2020 (edit: corrected typos and model name in Fig.
+  3, added missing circles in Table 1)
+\\ ( https://arxiv.org/abs/2008.12544 ,  2180kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2009.10769 (*cross-listing*)
+replaced with revised version Thu, 24 Sep 2020 13:10:01 GMT   (4620kb,D)
+
+Title: Cranial Implant Prediction using Low-Resolution 3D Shape Completion and
+  High-Resolution 2D Refinement
+Authors: Amirhossein Bayat, Suprosanna Shit, Adrian Kilian, J\"urgen T.
+  Liechtenstein, Jan S. Kirschke, Bjoern H. Menze
+Categories: eess.IV cs.CV
+\\ ( https://arxiv.org/abs/2009.10769 ,  4620kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2009.11008 (*cross-listing*)
+replaced with revised version Thu, 24 Sep 2020 01:31:50 GMT   (5855kb,D)
+
+Title: Attention with Multiple Sources Knowledges for COVID-19 from CT Images
+Authors: Duy M. H. Nguyen, Duy M. Nguyen, Huong Vu, Binh T. Nguyen, Fabrizio
+  Nunnari, Daniel Sonntag
+Categories: eess.IV cs.CV cs.HC
+Comments: Version 1
+\\ ( https://arxiv.org/abs/2009.11008 ,  5855kb)
+------------------------------------------------------------------------------
+\\
+arXiv:1903.01482 (*cross-listing*)
+replaced with revised version Thu, 24 Sep 2020 09:53:13 GMT   (53kb,D)
+
+Title: Upperbounds on the probability of finding marked connected components
+  using quantum walks
+Authors: Adam Glos, Nikolajs Nahimovs, Konstantin Balakirev, Kamil Khadiev
+Categories: quant-ph cs.DM math.CO
+\\ ( https://arxiv.org/abs/1903.01482 ,  53kb)
+------------------------------------------------------------------------------
+\\
+arXiv:1806.07241 (*cross-listing*)
+replaced with revised version Wed, 23 Sep 2020 03:11:57 GMT   (772kb,D)
+
+Title: NISQ circuit compilation is the travelling salesman problem on a torus
+Authors: Alexandru Paler, Alwin Zulehner, Robert Wille
+Categories: quant-ph cs.DS cs.ET cs.SE
+Comments: rewritten. added torus. showing similarity with tsp
+\\ ( https://arxiv.org/abs/1806.07241 ,  772kb)
+%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---

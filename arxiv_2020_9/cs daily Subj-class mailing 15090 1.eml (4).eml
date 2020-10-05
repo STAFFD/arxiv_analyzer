@@ -1,0 +1,1994 @@
+Delivered-To: brucelu2013@gmail.com
+Received: by 2002:a54:2e8d:0:0:0:0:0 with SMTP id s13csp4047621ecp;
+        Mon, 27 Jul 2020 01:14:22 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJyzscrubO+hPuzGW8/+HJACVjHIPd/1shxCEmE+5cK1cZXseJ7jRdaUyHBxLQ+SCbTyBShQ
+X-Received: by 2002:a0c:dc07:: with SMTP id s7mr21962182qvk.122.1595837661980;
+        Mon, 27 Jul 2020 01:14:21 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1595837661; cv=none;
+        d=google.com; s=arc-20160816;
+        b=zuWM2OAJT92baDYjbShC5d63HM5701fl55n3lHOPW3J+sFTDTsF0OS4am5KyScsnNd
+         NrJ4CaZvp+Se25TsUkoCILCsnGXZ7u7UGG3CxcKFj98XJUM/5CnJCsKx8FrVEmzXJEoJ
+         R5dy2xQCTIhgKFUtSYJIUTKuv1XdWHe24gXDnhXObw8wbAz8A/tFZFTLk5kTG0syfc0I
+         YVp8DNyGqAqys475DfeXZDvz4NZQ+kdIRCg4oEAYZNyIjc7mFwBLBrMv/QDmh5EmMSQu
+         j7vLHwe+uaGTweo1oNtnjL/SfqrU+q04jDwgVwq2iggo68wnNDVtquCEDNvEPylxfil0
+         1CeA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=subject:to:reply-to:from:precedence:message-id:date;
+        bh=jV2RGZsZ3KOHMSkJR4k9/o+d/QjlnCOhF+3fypOYJDc=;
+        b=Ly8WFxIj5zZ2NajU4NkZFYHIClHxdnjn26CZz0SusTjqC8924YXlVXhzzQ+bB5Rb7A
+         CV0tVZfqjVzUMYQLfjLdS7BlNpMQW1IK/NnCbbuuAUEWLhpHyZet8kqDkvHL4rHL/3z5
+         Ekdigbr19p1p+NmDW/fq1RTgQNOcNHn1vq6cpd10EOzQsx9ojgT2YwpnTSq6/MdGRsPC
+         gMbd8hByIcYgjVUOSaCfkTOOSg7I5QV/lzoPOZkBEZsPfCE8pQ2RTsCDJmSHqAv4+ZPJ
+         xhvlB+BGjCTgralnLuZ05pT2xUW71d0IqPF+kmruvOBxfjuwarQ+Tewl0M5sZ/2qA+31
+         ORhg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=pass (google.com: domain of no-reply@arxiv.org designates 128.84.4.11 as permitted sender) smtp.mailfrom=no-reply@arxiv.org;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=arxiv.org
+Return-Path: <no-reply@arxiv.org>
+Received: from lib-arxiv-015.serverfarm.cornell.edu (mail.arxiv.org. [128.84.4.11])
+        by mx.google.com with ESMTPS id u18si4956592qtb.184.2020.07.27.01.14.21
+        for <brucelu2013@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 27 Jul 2020 01:14:21 -0700 (PDT)
+Received-SPF: pass (google.com: domain of no-reply@arxiv.org designates 128.84.4.11 as permitted sender) client-ip=128.84.4.11;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of no-reply@arxiv.org designates 128.84.4.11 as permitted sender) smtp.mailfrom=no-reply@arxiv.org;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=arxiv.org
+Received: from lib-arxiv-007.serverfarm.cornell.edu (lib-arxiv-007.serverfarm.cornell.edu [128.84.4.12])
+	by lib-arxiv-015.serverfarm.cornell.edu (8.14.4/8.14.4) with ESMTP id 06R8ELvN031037;
+	Mon, 27 Jul 2020 04:14:21 -0400
+Received: from lib-arxiv-007.serverfarm.cornell.edu (localhost [127.0.0.1])
+	by lib-arxiv-007.serverfarm.cornell.edu (8.14.4/8.14.4) with ESMTP id 06R8ELOf012629;
+	Mon, 27 Jul 2020 04:14:21 -0400
+Received: (from e-prints@localhost)
+	by lib-arxiv-007.serverfarm.cornell.edu (8.14.4/8.14.4/Submit) id 06R8ELZ3012628;
+	Mon, 27 Jul 2020 04:14:21 -0400
+Date: Mon, 27 Jul 2020 04:14:21 -0400
+Message-Id: <202007270814.06R8ELZ3012628@lib-arxiv-007.serverfarm.cornell.edu>
+X-Authentication-Warning: lib-arxiv-007.serverfarm.cornell.edu: e-prints set sender to no-reply@arXiv.org using -f
+Precedence: bulk
+From: no-reply@arXiv.org (send mail ONLY to cs)
+Reply-To: cs@arXiv.org
+To: rabble@arXiv.org (cs daily title/abstract distribution)
+Subject: cs daily Subj-class mailing 15090 1
+Content-Type: text/plain
+MIME-Version: 1.0
+
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Send any comments regarding submissions directly to submitter.
+------------------------------------------------------------------------------
+Archives at http://arxiv.org/
+To unsubscribe, e-mail To: cs@arXiv.org, Subject: cancel
+------------------------------------------------------------------------------
+ Submissions to:
+Computational Geometry
+Computer Vision and Pattern Recognition
+Discrete Mathematics
+Emerging Technologies
+Graphics
+ received from  Thu 23 Jul 20 18:00:00 GMT  to  Fri 24 Jul 20 18:00:00 GMT
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+\\
+arXiv:2007.12330
+Date: Fri, 24 Jul 2020 03:37:07 GMT   (533kb,D)
+
+Title: Largest triangles in a polygon
+Authors: Seungjun Lee, Taekang Eom, Hee-Kap Ahn
+Categories: cs.CG
+\\
+  We study the problem of finding maximum-area triangles that can be inscribed
+in a polygon in the plane. We consider eight versions of the problem: we use
+either convex polygons or simple polygons as the container; we require the
+triangles to have either one corner with a fixed angle or all three corners
+with fixed angles; we either allow reorienting the triangle or require its
+orientation to be fixed. We present exact algorithms for all versions of the
+problem. In the case with reorientations for convex polygons with $n$ vertices,
+we also present $(1-\varepsilon)$-approximation algorithms.
+\\ ( https://arxiv.org/abs/2007.12330 ,  533kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2007.12350
+Date: Fri, 24 Jul 2020 04:53:46 GMT   (192kb,D)
+
+Title: Improving the dilation of a metric graph by adding edges
+Authors: Joachim Gudmundsson and Sampson Wong
+Categories: cs.CG
+\\
+  Most of the literature on spanners focuses on building the graph from
+scratch. This paper instead focuses on adding edges to improve an existing
+graph. A major open problem in this field is: given a graph embedded in a
+metric space, and a budget of k edges, which k edges do we add to produce a
+minimum-dilation graph? The special case where k=1 has been studied in the
+past, but no major breakthroughs have been made for k > 1. We provide the first
+positive result, an O(k)-approximation algorithm that runs in O(n^3 \log n)
+time.
+\\ ( https://arxiv.org/abs/2007.12350 ,  192kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2007.12211
+Date: Thu, 23 Jul 2020 18:47:36 GMT   (2306kb,D)
+
+Title: Learning Noise-Aware Encoder-Decoder from Noisy Labels by Alternating
+  Back-Propagation for Saliency Detection
+Authors: Jing Zhang, Jianwen Xie, Nick Barnes
+Categories: cs.CV
+Comments: ECCV2020
+\\
+  In this paper, we propose a noise-aware encoder-decoder framework to
+disentangle a clean saliency predictor from noisy training examples, where the
+noisy labels are generated by unsupervised handcrafted feature-based methods.
+The proposed model consists of two sub-models parameterized by neural networks:
+(1) a saliency predictor that maps input images to clean saliency maps, and (2)
+a noise generator, which is a latent variable model that produces noises from
+Gaussian latent vectors. The whole model that represents noisy labels is a sum
+of the two sub-models. The goal of training the model is to estimate the
+parameters of both sub-models, and simultaneously infer the corresponding
+latent vector of each noisy label. We propose to train the model by using an
+alternating back-propagation (ABP) algorithm, which alternates the following
+two steps: (1) learning back-propagation for estimating the parameters of two
+sub-models by gradient ascent, and (2) inferential back-propagation for
+inferring the latent vectors of training noisy examples by Langevin Dynamics.
+To prevent the network from converging to trivial solutions, we utilize an
+edge-aware smoothness loss to regularize hidden saliency maps to have similar
+structures as their corresponding images. Experimental results on several
+benchmark datasets indicate the effectiveness of the proposed model.
+\\ ( https://arxiv.org/abs/2007.12211 ,  2306kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2007.12212
+Date: Thu, 23 Jul 2020 18:50:03 GMT   (1542kb,D)
+
+Title: ZSCRGAN: A GAN-based Expectation Maximization Model for Zero-Shot
+  Retrieval of Images from Textual Descriptions
+Authors: Anurag Roy, Vinay Kumar Verma, Kripabandhu Ghosh, Saptarshi Ghosh
+Categories: cs.CV cs.CL cs.IR cs.LG
+\\
+  Most existing algorithms for cross-modal Information Retrieval are based on a
+supervised train-test setup, where a model learns to align the mode of the
+query (e.g., text) to the mode of the documents (e.g., images) from a given
+training set. Such a setup assumes that the training set contains an exhaustive
+representation of all possible classes of queries. In reality, a retrieval
+model may need to be deployed on previously unseen classes, which implies a
+zero-shot IR setup. In this paper, we propose a novel GAN-based model for
+zero-shot text to image retrieval. When given a textual description as the
+query, our model can retrieve relevant images in a zero-shot setup. The
+proposed model is trained using an Expectation-Maximization framework.
+Experiments on multiple benchmark datasets show that our proposed model
+comfortably outperforms several state-of-the-art zero-shot text to image
+retrieval models, as well as zero-shot classification and hashing models
+suitably used for retrieval.
+\\ ( https://arxiv.org/abs/2007.12212 ,  1542kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2007.12229
+Date: Thu, 23 Jul 2020 19:48:23 GMT   (398kb,D)
+
+Title: SeismoGlow -- Data augmentation for the class imbalance problem
+Authors: Ruy Luiz Milidi\'u and Luis Felipe M\"uller
+Categories: cs.CV cs.LG
+Comments: 10 pages
+\\
+  In several application areas, such as medical diagnosis, spam filtering,
+fraud detection, and seismic data analysis, it is very usual to find relevant
+classification tasks where some class occurrences are rare. This is the so
+called class imbalance problem, which is a challenge in machine learning. In
+this work, we propose the SeismoGlow a flow-based generative model to create
+synthetic samples, aiming to address the class imbalance. Inspired by the Glow
+model, it uses interpolation on the learned latent space to produce synthetic
+samples for one rare class. We apply our approach to the development of a
+seismogram signal quality classifier. We introduce a dataset composed
+of5.223seismograms that are distributed between the good, medium, and bad
+classes and with their respective frequencies of 66.68%,31.54%, and 1.76%. Our
+methodology is evaluated on a stratified 10-fold cross-validation setting,
+using the Miniceptionmodel as a baseline, and assessing the effects of adding
+the generated samples on the training set of each iteration. In our
+experiments, we achieve an improvement of 13.9% on the rare class F1-score,
+while not hurting the metric value for the other classes and thus observing the
+overall accuracy improvement. Our empirical findings indicate that our method
+can generate high-quality synthetic seismograms with realistic looking and
+sufficient plurality to help the Miniception model to overcome the class
+imbalance problem. We believe that our results are a step forward in solving
+both the task of seismogram signal quality classification and class imbalance.
+\\ ( https://arxiv.org/abs/2007.12229 ,  398kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2007.12256
+Date: Thu, 23 Jul 2020 21:09:28 GMT   (1014kb,D)
+
+Title: Towards Recognizing Unseen Categories in Unseen Domains
+Authors: Massimiliano Mancini, Zeynep Akata, Elisa Ricci, Barbara Caputo
+Categories: cs.CV
+Comments: Accepted to ECCV 2020
+\\
+  Current deep visual recognition systems suffer from severe performance
+degradation when they encounter new images from classes and scenarios unseen
+during training. Hence, the core challenge of Zero-Shot Learning (ZSL) is to
+cope with the semantic-shift whereas the main challenge of Domain Adaptation
+and Domain Generalization (DG) is the domain-shift. While historically ZSL and
+DG tasks are tackled in isolation, this work develops with the ambitious goal
+of solving them jointly,i.e. by recognizing unseen visual concepts in unseen
+domains. We presentCuMix (CurriculumMixup for recognizing unseen categories in
+unseen domains), a holistic algorithm to tackle ZSL, DG and ZSL+DG. The key
+idea of CuMix is to simulate the test-time domain and semantic shift using
+images and features from unseen domains and categories generated by mixing up
+the multiple source domains and categories available during training. Moreover,
+a curriculum-based mixing policy is devised to generate increasingly complex
+training samples. Results on standard SL and DG datasets and on ZSL+DG using
+the DomainNet benchmark demonstrate the effectiveness of our approach.
+\\ ( https://arxiv.org/abs/2007.12256 ,  1014kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2007.12287
+Date: Thu, 23 Jul 2020 22:58:15 GMT   (13557kb,D)
+
+Title: Body2Hands: Learning to Infer 3D Hands from Conversational Gesture Body
+  Dynamics
+Authors: Evonne Ng, Hanbyul Joo, Shiry Ginosar, Trevor Darrell
+Categories: cs.CV
+\\
+  We propose a novel learned deep prior of body motion for 3D hand shape
+synthesis and estimation in the domain of conversational gestures. Our model
+builds upon the insight that body motion and hand gestures are strongly
+correlated in non-verbal communication settings. We formulate the learning of
+this prior as a prediction task of 3D hand shape over time given body motion
+input alone. Trained with 3D pose estimations obtained from a large-scale
+dataset of internet videos, our hand prediction model produces convincing 3D
+hand gestures given only the 3D motion of the speaker's arms as input. We
+demonstrate the efficacy of our method on hand gesture synthesis from body
+motion input, and as a strong body prior for single-view image-based 3D hand
+pose estimation. We demonstrate that our method outperforms previous
+state-of-the-art approaches and can generalize beyond the monologue-based
+training data to multi-person conversations. Video results are available at
+http://people.eecs.berkeley.edu/~evonne_ng/projects/body2hands/.
+\\ ( https://arxiv.org/abs/2007.12287 ,  13557kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2007.12326
+Date: Fri, 24 Jul 2020 03:01:42 GMT   (22818kb)
+
+Title: Locality-Aware Rotated Ship Detection in High-Resolution Remote Sensing
+  Imagery Based on Multi-Scale Convolutional Network
+Authors: Lingyi Liu, Yunpeng Bai, and Ying Li
+Categories: cs.CV
+Comments: 5 pages, 8 figures
+\\
+  Ship detection has been an active and vital topic in the field of remote
+sensing for a decade, but it is still a challenging problem due to the large
+scale variations, the high aspect ratios, the intensive arrangement, and the
+background clutter disturbance. In this letter, we propose a locality-aware
+rotated ship detection (LARSD) framework based on a multi-scale convolutional
+neural network (CNN) to tackle these issues. The proposed framework applies a
+UNet-like multi-scale CNN to generate multi-scale feature maps with high-level
+semantic information in high resolution. Then, a rotated anchor-based
+regression is applied for directly predicting the probability, the edge
+distances, and the angle of ships. Finally, a locality-aware score alignment is
+proposed to fix the mismatch between classification results and location
+results caused by the independence of each subnet. Furthermore, to enlarge the
+datasets of ship detection, we build a new high-resolution ship detection
+(HRSD) dataset, where 2499 images and 9269 instances were collected from Google
+Earth with different resolutions. Experiments based on public dataset HRSC2016
+and our HRSD dataset demonstrate that our detection method achieves
+state-of-the-art performance.
+\\ ( https://arxiv.org/abs/2007.12326 ,  22818kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2007.12342
+Date: Fri, 24 Jul 2020 04:28:29 GMT   (2830kb,D)
+
+Title: CelebA-Spoof: Large-Scale Face Anti-Spoofing Dataset with Rich
+  Annotations
+Authors: Yuanhan Zhang, Zhenfei Yin, Yidong Li, Guojun Yin, Junjie Yan, Jing
+  Shao, and Ziwei Liu
+Categories: cs.CV
+Comments: To appear in ECCV 2020. Dataset is available at:
+  https://github.com/Davidzhangyuanhan/CelebA-Spoof
+\\
+  As facial interaction systems are prevalently deployed, security and
+reliability of these systems become a critical issue, with substantial research
+efforts devoted. Among them, face anti-spoofing emerges as an important area,
+whose objective is to identify whether a presented face is live or spoof.
+Though promising progress has been achieved, existing works still have
+difficulty in handling complex spoof attacks and generalizing to real-world
+scenarios. The main reason is that current face anti-spoofing datasets are
+limited in both quantity and diversity. To overcome these obstacles, we
+contribute a large-scale face anti-spoofing dataset, CelebA-Spoof, with the
+following appealing properties: 1) Quantity: CelebA-Spoof comprises of 625,537
+pictures of 10,177 subjects, significantly larger than the existing datasets.
+2) Diversity: The spoof images are captured from 8 scenes (2 environments * 4
+illumination conditions) with more than 10 sensors. 3) Annotation Richness:
+CelebA-Spoof contains 10 spoof type annotations, as well as the 40 attribute
+annotations inherited from the original CelebA dataset. Equipped with
+CelebA-Spoof, we carefully benchmark existing methods in a unified multi-task
+framework, Auxiliary Information Embedding Network (AENet), and reveal several
+valuable observations.
+\\ ( https://arxiv.org/abs/2007.12342 ,  2830kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2007.12348
+Date: Fri, 24 Jul 2020 04:46:21 GMT   (13591kb,D)
+
+Title: Unsupervised Discovery of 3D Physical Objects from Video
+Authors: Yilun Du, Kevin Smith, Tomer Ulman, Joshua Tenenbaum, Jiajun Wu
+Categories: cs.CV cs.LG
+\\
+  We study the problem of unsupervised physical object discovery. Unlike
+existing frameworks that aim to learn to decompose scenes into 2D segments
+purely based on each object's appearance, we explore how physics, especially
+object interactions, facilitates learning to disentangle and segment instances
+from raw videos, and to infer the 3D geometry and position of each object, all
+without supervision. Drawing inspiration from developmental psychology, our
+Physical Object Discovery Network (POD-Net) uses both multi-scale pixel cues
+and physical motion cues to accurately segment observable and partially
+occluded objects of varying sizes, and infer properties of those objects. Our
+model reliably segments objects on both synthetic and real scenes. The
+discovered object properties can also be used to reason about physical events.
+\\ ( https://arxiv.org/abs/2007.12348 ,  13591kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2007.12360
+Date: Fri, 24 Jul 2020 05:54:07 GMT   (1845kb,D)
+
+Title: On the Effectiveness of Image Rotation for Open Set Domain Adaptation
+Authors: Silvia Bucci, Mohammad Reza Loghmani, Tatiana Tommasi
+Categories: cs.CV
+Comments: accepted at ECCV 2020
+\\
+  Open Set Domain Adaptation (OSDA) bridges the domain gap between a labeled
+source domain and an unlabeled target domain, while also rejecting target
+classes that are not present in the source. To avoid negative transfer, OSDA
+can be tackled by first separating the known/unknown target samples and then
+aligning known target samples with the source data. We propose a novel method
+to addresses both these problems using the self-supervised task of rotation
+recognition. Moreover, we assess the performance with a new open set metric
+that properly balances the contribution of recognizing the known classes and
+rejecting the unknown samples. Comparative experiments with existing OSDA
+methods on the standard Office-31 and Office-Home benchmarks show that: (i) our
+method outperforms its competitors, (ii) reproducibility for this field is a
+crucial issue to tackle, (iii) our metric provides a reliable tool to allow
+fair open set evaluation.
+\\ ( https://arxiv.org/abs/2007.12360 ,  1845kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2007.12362
+Date: Fri, 24 Jul 2020 05:59:28 GMT   (1315kb)
+
+Title: Performance analysis of weighted low rank model with sparse image
+  histograms for face recognition under lowlevel illumination and occlusion
+Authors: K.V. Sridhar and Raghu vamshi Hemadri
+Categories: cs.CV
+Comments: 12 pages, 8 figres, 4 Tables, International conferences
+\\
+  In a broad range of computer vision applications, the purpose of Low-rank
+matrix approximation (LRMA) models is to recover the underlying low-rank matrix
+from its degraded observation. The latest LRMA methods - Robust Principal
+Component Analysis (RPCA) resort to using the nuclear norm minimization (NNM)
+as a convex relaxation of the non-convex rank minimization. However, NNM tends
+to over-shrink the rank components and treats the different rank components
+equally, limiting its flexibility in practical applications. We use a more
+flexible model, namely the Weighted Schatten p-Norm Minimization (WSNM), to
+generalize the NNM to the Schatten p-norm minimization with weights assigned to
+different singular values. The proposed WSNM not only gives a better
+approximation to the original low-rank assumption but also considers the
+importance of different rank components. In this paper, a comparison of the
+low-rank recovery performance of two LRMA algorithms- RPCA and WSNM is brought
+out on occluded human facial images. The analysis is performed on facial images
+from the Yale database and over own database , where different facial
+expressions, spectacles, varying illumination account for the facial
+occlusions. The paper also discusses the prominent trends observed from the
+experimental results performed through the application of these algorithms. As
+low-rank images sometimes might fail to capture the details of a face
+adequately, we further propose a novel method to use the image-histogram of the
+sparse images thus obtained to identify the individual in any given image.
+Extensive experimental results show, both qualitatively and quantitatively,
+that WSNM surpasses RPCA in its performance more effectively by removing facial
+occlusions, thus giving recovered low-rank images of higher PSNR and SSIM.
+\\ ( https://arxiv.org/abs/2007.12362 ,  1315kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2007.12368
+Date: Fri, 24 Jul 2020 06:19:53 GMT   (2925kb,D)
+
+Title: Self-Supervised Learning Across Domains
+Authors: Silvia Bucci, Antonio D'Innocente, Yujun Liao, Fabio Maria Carlucci,
+  Barbara Caputo, Tatiana Tommasi
+Categories: cs.CV
+\\
+  Human adaptability relies crucially on learning and merging knowledge from
+both supervised and unsupervised tasks: the parents point out few important
+concepts, but then the children fill in the gaps on their own. This is
+particularly effective, because supervised learning can never be exhaustive and
+thus learning autonomously allows to discover invariances and regularities that
+help to generalize. In this paper we propose to apply a similar approach to the
+problem of object recognition across domains: our model learns the semantic
+labels in a supervised fashion, and broadens its understanding of the data by
+learning from self-supervised signals on the same images. This secondary task
+helps the network to learn the concepts like spatial orientation and part
+correlation, while acting as a regularizer for the classification task.
+Extensive experiments confirm our intuition and show that our multi-task method
+combining supervised and self-supervised knowledge shows competitive results
+with respect to more complex domain generalization and adaptation solutions. It
+also proves its potential in the novel and challenging predictive and partial
+domain adaptation scenarios.
+\\ ( https://arxiv.org/abs/2007.12368 ,  2925kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2007.12387
+Date: Fri, 24 Jul 2020 07:23:44 GMT   (12684kb,D)
+
+Title: Commonality-Parsing Network across Shape and Appearance for Partially
+  Supervised Instance Segmentation
+Authors: Qi Fan, Lei Ke, Wenjie Pei, Chi-Keung Tang, Yu-Wing Tai
+Categories: cs.CV
+Comments: Accepted by ECCV 2020
+\\
+  Partially supervised instance segmentation aims to perform learning on
+limited mask-annotated categories of data thus eliminating expensive and
+exhaustive mask annotation. The learned models are expected to be generalizable
+to novel categories. Existing methods either learn a transfer function from
+detection to segmentation, or cluster shape priors for segmenting novel
+categories. We propose to learn the underlying class-agnostic commonalities
+that can be generalized from mask-annotated categories to novel categories.
+Specifically, we parse two types of commonalities: 1) shape commonalities which
+are learned by performing supervised learning on instance boundary prediction;
+and 2) appearance commonalities which are captured by modeling pairwise
+affinities among pixels of feature maps to optimize the separability between
+instance and the background. Incorporating both the shape and appearance
+commonalities, our model significantly outperforms the state-of-the-art methods
+on both partially supervised setting and few-shot setting for instance
+segmentation on COCO dataset.
+\\ ( https://arxiv.org/abs/2007.12387 ,  12684kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2007.12391
+Date: Fri, 24 Jul 2020 07:29:52 GMT   (6985kb,D)
+
+Title: Artificial Intelligence in the Creative Industries: A Review
+Authors: Nantheera Anantrasirichai and David Bull
+Categories: cs.CV cs.AI cs.LG
+Comments: A white paper for the Creative Industries Clusters Programme
+\\
+  This paper reviews the current state of the art in Artificial Intelligence
+(AI) technologies and applications in the context of the creative industries. A
+brief background of AI, and specifically Machine Learning (ML) algorithms, is
+provided including Convolutional Neural Network (CNNs), Generative Adversarial
+Networks (GANs), Recurrent Neural Networks (RNNs) and Deep Reinforcement
+Learning (DRL). We categorise creative applications into five groups related to
+how AI technologies are used: i) content creation, ii) information analysis,
+iii) content enhancement and post production workflows, iv) information
+extraction and enhancement, and v) data compression. We critically examine the
+successes and limitations of this rapidly advancing technology in each of these
+areas. We further differentiate between the use of AI as a creative tool and
+its potential as a creator in its own right. We foresee that, in the near
+future, machine learning-based AI will be adopted widely as a tool or
+collaborative assistant for creativity. In contrast, we observe that the
+successes of machine learning in domains with fewer constraints, where AI is
+the `creator', remain modest. The potential of AI (or its developers) to win
+awards for its original creations in competition with human creatives is also
+limited, based on contemporary technologies. We therefore conclude that, in the
+context of creative industries, maximum benefit from AI will be derived where
+its focus is human centric -- where it is designed to augment, rather than
+replace, human creativity.
+\\ ( https://arxiv.org/abs/2007.12391 ,  6985kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2007.12392
+Date: Fri, 24 Jul 2020 07:34:15 GMT   (9609kb,D)
+
+Title: An LSTM Approach to Temporal 3D Object Detection in LiDAR Point Clouds
+Authors: Rui Huang, Wanyue Zhang, Abhijit Kundu, Caroline Pantofaru, David A
+  Ross, Thomas Funkhouser, Alireza Fathi
+Categories: cs.CV cs.LG eess.IV
+Comments: To appear in ECCV 2020
+\\
+  Detecting objects in 3D LiDAR data is a core technology for autonomous
+driving and other robotics applications. Although LiDAR data is acquired over
+time, most of the 3D object detection algorithms propose object bounding boxes
+independently for each frame and neglect the useful information available in
+the temporal domain. To address this problem, in this paper we propose a sparse
+LSTM-based multi-frame 3d object detection algorithm. We use a U-Net style 3D
+sparse convolution network to extract features for each frame's LiDAR
+point-cloud. These features are fed to the LSTM module together with the hidden
+and memory features from last frame to predict the 3d objects in the current
+frame as well as hidden and memory features that are passed to the next frame.
+Experiments on the Waymo Open Dataset show that our algorithm outperforms the
+traditional frame by frame approach by 7.5% mAP@0.7 and other multi-frame
+approaches by 1.2% while using less memory and computation per frame. To the
+best of our knowledge, this is the first work to use an LSTM for 3D object
+detection in sparse point clouds.
+\\ ( https://arxiv.org/abs/2007.12392 ,  9609kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2007.12402
+Date: Fri, 24 Jul 2020 08:16:37 GMT   (1526kb,D)
+
+Title: Fully Convolutional Networks for Continuous Sign Language Recognition
+Authors: Ka Leong Cheng, Zhaoyang Yang, Qifeng Chen, Yu-Wing Tai
+Categories: cs.CV
+Comments: Accepted to ECCV2020
+\\
+  Continuous sign language recognition (SLR) is a challenging task that
+requires learning on both spatial and temporal dimensions of signing frame
+sequences. Most recent work accomplishes this by using CNN and RNN hybrid
+networks. However, training these networks is generally non-trivial, and most
+of them fail in learning unseen sequence patterns, causing an unsatisfactory
+performance for online recognition. In this paper, we propose a fully
+convolutional network (FCN) for online SLR to concurrently learn spatial and
+temporal features from weakly annotated video sequences with only
+sentence-level annotations given. A gloss feature enhancement (GFE) module is
+introduced in the proposed network to enforce better sequence alignment
+learning. The proposed network is end-to-end trainable without any
+pre-training. We conduct experiments on two large scale SLR datasets.
+Experiments show that our method for continuous SLR is effective and performs
+well in online recognition.
+\\ ( https://arxiv.org/abs/2007.12402 ,  1526kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2007.12407
+Date: Fri, 24 Jul 2020 08:37:40 GMT   (4451kb,D)
+
+Title: Visual Compositional Learning for Human-Object Interaction Detection
+Authors: Zhi Hou, Xiaojiang Peng, Yu Qiao, Dacheng Tao
+Categories: cs.CV
+Comments: Accepted in ECCV2020
+\\
+  Human-Object interaction (HOI) detection aims to localize and infer
+relationships between human and objects in an image. It is challenging because
+an enormous number of possible combinations of objects and verbs types forms a
+long-tail distribution. We devise a deep Visual Compositional Learning (VCL)
+framework, which is a simple yet efficient framework to effectively address
+this problem. VCL first decomposes an HOI representation into object and verb
+specific features, and then composes new interaction samples in the feature
+space via stitching the decomposed features. The integration of decomposition
+and composition enables VCL to share object and verb features among different
+HOI samples and images, and to generate new interaction samples and new types
+of HOI, and thus largely alleviates the long-tail distribution problem and
+benefits low-shot or zero-shot HOI detection. Extensive experiments demonstrate
+that the proposed VCL can effectively improve the generalization of HOI
+detection on HICO-DET and V-COCO and outperforms the recent state-of-the-art
+methods on HICO-DET. Code is available at https://github.com/zhihou7/VCL.
+\\ ( https://arxiv.org/abs/2007.12407 ,  4451kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2007.12421
+Date: Fri, 24 Jul 2020 09:18:41 GMT   (1808kb,D)
+
+Title: Micro-expression spotting: A new benchmark
+Authors: Thuong-Khanh Tran, Quang-Nhat Vo, Xiaopeng Hong, Xiaobai Li and
+  Guoying Zhao
+Categories: cs.CV
+\\
+  Micro-expressions (MEs) are brief and involuntary facial expressions that
+occur when people are trying to hide their true feelings or conceal their
+emotions. Based on psychology research, MEs play an important role in
+understanding genuine emotions, which leads to many potential applications.
+Therefore, ME analysis has been becoming an attractive topic for various
+research areas, such as psychology, law enforcement, and psychotherapy. In the
+computer vision field, the study of MEs can be divided into two main tasks:
+spotting and recognition, which are to identify positions of MEs in videos and
+determine the emotion category of detected MEs, respectively. Recently,
+although much research has been done, the construction of a fully automatic
+system for analyzing MEs is still far away from practice. This is because of
+two main reasons: most of the research in MEs only focuses on the recognition
+part while abandons the spotting task; current public datasets for ME spotting
+are not challenging enough to support developing a robust spotting algorithm.
+Our contributions in this paper are three folds: (1) We introduce an extension
+of the SMIC-E database, namely SMIC-E-Long database, which is a new challenging
+benchmark for ME spotting. (2) We suggest a new evaluation protocol that
+standardizes the comparison of various ME spotting techniques. (3) Extensive
+experiments with handcrafted and deep learning-based approaches on the
+SMIC-E-Long database are performed for baseline evaluation.
+\\ ( https://arxiv.org/abs/2007.12421 ,  1808kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2007.12449
+Date: Fri, 24 Jul 2020 11:12:48 GMT   (15790kb,D)
+
+Title: Learning Crisp Edge Detector Using Logical Refinement Network
+Authors: Luyan Liu, Kai Ma, Yefeng Zheng
+Categories: cs.CV
+Comments: Accepted by MICCAI2020
+\\
+  Edge detection is a fundamental problem in different computer vision tasks.
+Recently, edge detection algorithms achieve satisfying improvement built upon
+deep learning. Although most of them report favorable evaluation scores, they
+often fail to accurately localize edges and give thick and blurry boundaries.
+In addition, most of them focus on 2D images and the challenging 3D edge
+detection is still under-explored. In this work, we propose a novel logical
+refinement network for crisp edge detection, which is motivated by the logical
+relationship between segmentation and edge maps and can be applied to both 2D
+and 3D images. The network consists of a joint object and edge detection
+network and a crisp edge refinement network, which predicts more accurate,
+clearer and thinner high quality binary edge maps without any post-processing.
+Extensive experiments are conducted on the 2D nuclei images from Kaggle 2018
+Data Science Bowl and a private 3D microscopy images of a monkey brain, which
+show outstanding performance compared with state-of-the-art methods.
+\\ ( https://arxiv.org/abs/2007.12449 ,  15790kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2007.12450
+Date: Fri, 24 Jul 2020 11:14:24 GMT   (1219kb,D)
+
+Title: Multi-view adaptive graph convolutions for graph classification
+Authors: Nikolas Adaloglou, Nicholas Vretos and Petros Daras
+Categories: cs.CV cs.LG
+Comments: Accepted as a poster on ECCV 2020, camera ready version
+\\
+  In this paper, a novel multi-view methodology for graph-based neural networks
+is proposed. A systematic and methodological adaptation of the key concepts of
+classical deep learning methods such as convolution, pooling and multi-view
+architectures is developed for the context of non-Euclidean manifolds. The aim
+of the proposed work is to present a novel multi-view graph convolution layer,
+as well as a new view pooling layer making use of: a) a new hybrid Laplacian
+that is adjusted based on feature distance metric learning, b) multiple
+trainable representations of a feature matrix of a graph, using trainable
+distance matrices, adapting the notion of views to graphs and c) a multi-view
+graph aggregation scheme called graph view pooling, in order to synthesise
+information from the multiple generated views. The aforementioned layers are
+used in an end-to-end graph neural network architecture for graph
+classification and show competitive results to other state-of-the-art methods.
+\\ ( https://arxiv.org/abs/2007.12450 ,  1219kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2007.12470
+Date: Fri, 24 Jul 2020 12:11:28 GMT   (4243kb,D)
+
+Title: Map-Repair: Deep Cadastre Maps Alignment and Temporal Inconsistencies
+  Fix in Satellite Images
+Authors: Stefano Zorzi, Ksenia Bittner, Friedrich Fraundorfer
+Categories: cs.CV
+\\
+  In the fast developing countries it is hard to trace new buildings
+construction or old structures destruction and, as a result, to keep the
+up-to-date cadastre maps. Moreover, due to the complexity of urban regions or
+inconsistency of data used for cadastre maps extraction, the errors in form of
+misalignment is a common problem. In this work, we propose an end-to-end deep
+learning approach which is able to solve inconsistencies between the input
+intensity image and the available building footprints by correcting label
+noises and, at the same time, misalignments if needed. The obtained results
+demonstrate the robustness of the proposed method to even severely misaligned
+examples that makes it potentially suitable for real applications, like
+OpenStreetMap correction.
+\\ ( https://arxiv.org/abs/2007.12470 ,  4243kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2007.12494
+Date: Fri, 24 Jul 2020 12:36:09 GMT   (4636kb,D)
+
+Title: Self-Supervised Monocular 3D Face Reconstruction by Occlusion-Aware
+  Multi-view Geometry Consistency
+Authors: Jiaxiang Shang, Tianwei Shen, Shiwei Li, Lei Zhou, Mingmin Zhen, Tian
+  Fang, Long Quan
+Categories: cs.CV
+Comments: Accepted to ECCV 2020, supplementary materials included
+\\
+  Recent learning-based approaches, in which models are trained by single-view
+images have shown promising results for monocular 3D face reconstruction, but
+they suffer from the ill-posed face pose and depth ambiguity issue. In contrast
+to previous works that only enforce 2D feature constraints, we propose a
+self-supervised training architecture by leveraging the multi-view geometry
+consistency, which provides reliable constraints on face pose and depth
+estimation. We first propose an occlusion-aware view synthesis method to apply
+multi-view geometry consistency to self-supervised learning. Then we design
+three novel loss functions for multi-view consistency, including the pixel
+consistency loss, the depth consistency loss, and the facial landmark-based
+epipolar loss. Our method is accurate and robust, especially under large
+variations of expressions, poses, and illumination conditions. Comprehensive
+experiments on the face alignment and 3D face reconstruction benchmarks have
+demonstrated superiority over state-of-the-art methods. Our code and model are
+released in https://github.com/jiaxiangshang/MGCNet.
+\\ ( https://arxiv.org/abs/2007.12494 ,  4636kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2007.12515
+Date: Fri, 24 Jul 2020 13:17:46 GMT   (8839kb)
+
+Title: Deforming the Loss Surface
+Authors: Liangming Chen, Long Jin, Xiujuan Du, Shuai Li, and Mei Liu
+Categories: cs.CV cs.LG cs.NE
+Comments: 2020NIPS
+\\
+  In deep learning, it is usually assumed that the shape of the loss surface is
+fixed. Differently, a novel concept of deformation operator is first proposed
+in this paper to deform the loss surface, thereby improving the optimization.
+Deformation function, as a type of deformation operator, can improve the
+generalization performance. Moreover, various deformation functions are
+designed, and their contributions to the loss surface are further provided.
+Then, the original stochastic gradient descent optimizer is theoretically
+proved to be a flat minima filter that owns the talent to filter out the sharp
+minima. Furthermore, the flatter minima could be obtained by exploiting the
+proposed deformation functions, which is verified on CIFAR-100, with
+visualizations of loss landscapes near the critical points obtained by both the
+original optimizer and optimizer enhanced by deformation functions. The
+experimental results show that deformation functions do find flatter regions.
+Moreover, on ImageNet, CIFAR-10, and CIFAR-100, popular convolutional neural
+networks enhanced by deformation functions are compared with the corresponding
+original models, where significant improvements are observed on all of the
+involved models equipped with deformation functions. For example, the top-1
+test accuracy of ResNet-20 on CIFAR-100 increases by 1.46%, with insignificant
+additional computational overhead.
+\\ ( https://arxiv.org/abs/2007.12515 ,  8839kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2007.12519
+Date: Fri, 24 Jul 2020 13:36:52 GMT   (11774kb)
+
+Title: HEU Emotion: A Large-scale Database for Multi-modal Emotion Recognition
+  in the Wild
+Authors: Jing Chen (1), Chenhui Wang (2), Kejun Wang (1), Chaoqun Yin (1), Cong
+  Zhao (1), Tao Xu (1), Xinyi Zhang (1), Ziqiang Huang (1), Meichen Liu (1),
+  Tao Yang (1) ((1) College of Intelligent Systems Science and Engineering,
+  Harbin Engineering University, Harbin, China., (2) UCLA Department of
+  Statistics, Los Angeles, CA.)
+Categories: cs.CV cs.LG
+\\
+  The study of affective computing in the wild setting is underpinned by
+databases. Existing multimodal emotion databases in the real-world conditions
+are few and small, with a limited number of subjects and expressed in a single
+language. To meet this requirement, we collected, annotated, and prepared to
+release a new natural state video database (called HEU Emotion). HEU Emotion
+contains a total of 19,004 video clips, which is divided into two parts
+according to the data source. The first part contains videos downloaded from
+Tumblr, Google, and Giphy, including 10 emotions and two modalities (facial
+expression and body posture). The second part includes corpus taken manually
+from movies, TV series, and variety shows, consisting of 10 emotions and three
+modalities (facial expression, body posture, and emotional speech). HEU Emotion
+is by far the most extensive multi-modal emotional database with 9,951
+subjects. In order to provide a benchmark for emotion recognition, we used many
+conventional machine learning and deep learning methods to evaluate HEU
+Emotion. We proposed a Multi-modal Attention module to fuse multi-modal
+features adaptively. After multi-modal fusion, the recognition accuracies for
+the two parts increased by 2.19% and 4.01% respectively over those of
+single-modal facial expression recognition.
+\\ ( https://arxiv.org/abs/2007.12519 ,  11774kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2007.12530
+Date: Fri, 24 Jul 2020 14:07:01 GMT   (1272kb,D)
+
+Title: A Comprehensive Study on Sign Language Recognition Methods
+Authors: Nikolas Adaloglou, Theocharis Chatzis, Ilias Papastratis, Andreas
+  Stergioulas, Georgios Th. Papadopoulos, Vassia Zacharopoulou, George J.
+  Xydopoulos, Klimnis Atzakas, Dimitris Papazachariou, and Petros Daras
+Categories: cs.CV
+\\
+  In this paper, a comparative experimental assessment of computer vision-based
+methods for sign language recognition is conducted. By implementing the most
+recent deep neural network methods in this field, a thorough evaluation on
+multiple publicly available datasets is performed. The aim of the present study
+is to provide insights on sign language recognition, focusing on mapping
+non-segmented video streams to glosses. For this task, two new sequence
+training criteria, known from the fields of speech and scene text recognition,
+are introduced. Furthermore, a plethora of pretraining schemes is thoroughly
+discussed. Finally, a new RGB+D dataset for the Greek sign language is created.
+To the best of our knowledge, this is the first sign language dataset where
+sentence and gloss level annotations are provided for a video capture.
+\\ ( https://arxiv.org/abs/2007.12530 ,  1272kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2007.12540
+Date: Fri, 24 Jul 2020 14:44:46 GMT   (2389kb,D)
+
+Title: Reparameterizing Convolutions for Incremental Multi-Task Learning
+  without Task Interference
+Authors: Menelaos Kanakis, David Bruggemann, Suman Saha, Stamatios Georgoulis,
+  Anton Obukhov, Luc Van Gool
+Categories: cs.CV cs.LG
+Comments: European Conference on Computer Vision (ECCV), 2020
+\\
+  Multi-task networks are commonly utilized to alleviate the need for a large
+number of highly specialized single-task networks. However, two common
+challenges in developing multi-task models are often overlooked in literature.
+First, enabling the model to be inherently incremental, continuously
+incorporating information from new tasks without forgetting the previously
+learned ones (incremental learning). Second, eliminating adverse interactions
+amongst tasks, which has been shown to significantly degrade the single-task
+performance in a multi-task setup (task interference). In this paper, we show
+that both can be achieved simply by reparameterizing the convolutions of
+standard neural network architectures into a non-trainable shared part (filter
+bank) and task-specific parts (modulators), where each modulator has a fraction
+of the filter bank parameters. Thus, our reparameterization enables the model
+to learn new tasks without adversely affecting the performance of existing
+ones. The results of our ablation study attest the efficacy of the proposed
+reparameterization. Moreover, our method achieves state-of-the-art on two
+challenging multi-task learning benchmarks, PASCAL-Context and NYUD, and also
+demonstrates superior incremental learning capability as compared to its close
+competitors.
+\\ ( https://arxiv.org/abs/2007.12540 ,  2389kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2007.12553
+Date: Fri, 24 Jul 2020 15:01:02 GMT   (9691kb,D)
+
+Title: Style Transfer for Co-Speech Gesture Animation: A Multi-Speaker
+  Conditional-Mixture Approach
+Authors: Chaitanya Ahuja, Dong Won Lee, Yukiko I. Nakano, Louis-Philippe
+  Morency
+Categories: cs.CV cs.RO
+Comments: 24 pages, 12 figures
+Journal-ref: European Conference on Computer Vision 2020
+\\
+  How can we teach robots or virtual assistants to gesture naturally? Can we go
+further and adapt the gesturing style to follow a specific speaker? Gestures
+that are naturally timed with corresponding speech during human communication
+are called co-speech gestures. A key challenge, called gesture style transfer,
+is to learn a model that generates these gestures for a speaking agent 'A' in
+the gesturing style of a target speaker 'B'. A secondary goal is to
+simultaneously learn to generate co-speech gestures for multiple speakers while
+remembering what is unique about each speaker. We call this challenge style
+preservation. In this paper, we propose a new model, named Mix-StAGE, which
+trains a single model for multiple speakers while learning unique style
+embeddings for each speaker's gestures in an end-to-end manner. A novelty of
+Mix-StAGE is to learn a mixture of generative models which allows for
+conditioning on the unique gesture style of each speaker. As Mix-StAGE
+disentangles style and content of gestures, gesturing styles for the same input
+speech can be altered by simply switching the style embeddings. Mix-StAGE also
+allows for style preservation when learning simultaneously from multiple
+speakers. We also introduce a new dataset, Pose-Audio-Transcript-Style (PATS),
+designed to study gesture generation and style transfer. Our proposed Mix-StAGE
+model significantly outperforms the previous state-of-the-art approach for
+gesture generation and provides a path towards performing gesture style
+transfer across multiple speakers. Link to code, data, and videos:
+http://chahuja.com/mix-stage
+\\ ( https://arxiv.org/abs/2007.12553 ,  9691kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2007.12562
+Date: Fri, 24 Jul 2020 15:08:55 GMT   (5705kb,D)
+
+Title: Hallucinating Saliency Maps for Fine-Grained Image Classification for
+  Limited Data Domains
+Authors: Carola Figueroa-Flores, Bogdan Raducanu, David Berga, and Joost van de
+  Weijer
+Categories: cs.CV cs.NE
+\\
+  Most of the saliency methods are evaluated on their ability to generate
+saliency maps, and not on their functionality in a complete vision pipeline,
+like for instance, image classification. In the current paper, we propose an
+approach which does not require explicit saliency maps to improve image
+classification, but they are learned implicitely, during the training of an
+end-to-end image classification task. We show that our approach obtains similar
+results as the case when the saliency maps are provided explicitely. Combining
+RGB data with saliency maps represents a significant advantage for object
+recognition, especially for the case when training data is limited. We validate
+our method on several datasets for fine-grained classification tasks (Flowers,
+Birds and Cars). In addition, we show that our saliency estimation method,
+which is trained without any saliency groundtruth data, obtains competitive
+results on real image saliency benchmark (Toronto), and outperforms deep
+saliency models with synthetic images (SID4VAM).
+\\ ( https://arxiv.org/abs/2007.12562 ,  5705kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2007.12568
+Date: Fri, 24 Jul 2020 15:21:25 GMT   (6237kb,D)
+
+Title: The Surprising Effectiveness of Linear Unsupervised Image-to-Image
+  Translation
+Authors: Eitan Richardson and Yair Weiss
+Categories: cs.CV
+Comments: Preprint - under review
+\\
+  Unsupervised image-to-image translation is an inherently ill-posed problem.
+Recent methods based on deep encoder-decoder architectures have shown
+impressive results, but we show that they only succeed due to a strong locality
+bias, and they fail to learn very simple nonlocal transformations (e.g. mapping
+upside down faces to upright faces). When the locality bias is removed, the
+methods are too powerful and may fail to learn simple local transformations. In
+this paper we introduce linear encoder-decoder architectures for unsupervised
+image to image translation. We show that learning is much easier and faster
+with these architectures and yet the results are surprisingly effective. In
+particular, we show a number of local problems for which the results of the
+linear methods are comparable to those of state-of-the-art architectures but
+with a fraction of the training time, and a number of nonlocal problems for
+which the state-of-the-art fails while linear methods succeed.
+\\ ( https://arxiv.org/abs/2007.12568 ,  6237kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2007.12577
+Date: Fri, 24 Jul 2020 15:29:01 GMT   (23834kb,D)
+
+Title: A Lightweight Neural Network for Monocular View Generation with
+  Occlusion Handling
+Authors: Simon Evain and Christine Guillemot
+Categories: cs.CV
+Comments: Accepted at IEEE Transactions on Pattern Analysis and Machine
+  Intelligence (TPAMI) in December 2019
+DOI: 10.1109/TPAMI.2019.2960689
+\\
+  In this article, we present a very lightweight neural network architecture,
+trained on stereo data pairs, which performs view synthesis from one single
+image. With the growing success of multi-view formats, this problem is indeed
+increasingly relevant. The network returns a prediction built from disparity
+estimation, which fills in wrongly predicted regions using a occlusion handling
+technique. To do so, during training, the network learns to estimate the
+left-right consistency structural constraint on the pair of stereo input
+images, to be able to replicate it at test time from one single image. The
+method is built upon the idea of blending two predictions: a prediction based
+on disparity estimation, and a prediction based on direct minimization in
+occluded regions. The network is also able to identify these occluded areas at
+training and at test time by checking the pixelwise left-right consistency of
+the produced disparity maps. At test time, the approach can thus generate a
+left-side and a right-side view from one input image, as well as a depth map
+and a pixelwise confidence measure in the prediction. The work outperforms
+visually and metric-wise state-of-the-art approaches on the challenging KITTI
+dataset, all while reducing by a very significant order of magnitude (5 or 10
+times) the required number of parameters (6.5 M).
+\\ ( https://arxiv.org/abs/2007.12577 ,  23834kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2007.12587
+Date: Fri, 24 Jul 2020 15:38:35 GMT   (4542kb,D)
+
+Title: Machine-learned Regularization and Polygonization of Building
+  Segmentation Masks
+Authors: Stefano Zorzi, Ksenia Bittner, Friedrich Fraundorfer
+Categories: cs.CV
+\\
+  We propose a machine learning based approach for automatic regularization and
+polygonization of building segmentation masks. Taking an image as input, we
+first predict building segmentation maps exploiting generic fully convolutional
+network (FCN). A generative adversarial network (GAN) is then involved to
+perform a regularization of building boundaries to make them more realistic,
+i.e., having more rectilinear outlines which construct right angles if
+required. This is achieved through the interplay between the discriminator
+which gives a probability of input image being true and generator that learns
+from discriminator's response to create more realistic images. Finally, we
+train the backbone convolutional neural network (CNN) which is adapted to
+predict sparse outcomes corresponding to building corners out of regularized
+building segmentation results. Experiments on three building segmentation
+datasets demonstrate that the proposed method is not only capable of obtaining
+accurate results, but also of producing visually pleasing building outlines
+parameterized as polygons.
+\\ ( https://arxiv.org/abs/2007.12587 ,  4542kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2007.12622
+Date: Fri, 17 Jul 2020 09:07:51 GMT   (14278kb,D)
+
+Title: BMBC:Bilateral Motion Estimation with Bilateral Cost Volume for Video
+  Interpolation
+Authors: Junheum Park, Keunsoo Ko, Chul Lee, Chang-Su Kim
+Categories: cs.CV
+Comments: Accepted to ECCV 2020
+\\
+  Video interpolation increases the temporal resolution of a video sequence by
+synthesizing intermediate frames between two consecutive frames. We propose a
+novel deep-learning-based video interpolation algorithm based on bilateral
+motion estimation. First, we develop the bilateral motion network with the
+bilateral cost volume to estimate bilateral motions accurately. Then, we
+approximate bi-directional motions to predict a different kind of bilateral
+motions. We then warp the two input frames using the estimated bilateral
+motions. Next, we develop the dynamic filter generation network to yield
+dynamic blending filters. Finally, we combine the warped frames using the
+dynamic blending filters to generate intermediate frames. Experimental results
+show that the proposed algorithm outperforms the state-of-the-art video
+interpolation algorithms on several benchmark datasets.
+\\ ( https://arxiv.org/abs/2007.12622 ,  14278kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2007.12623
+Date: Thu, 16 Jul 2020 19:14:05 GMT   (11605kb,D)
+
+Title: Real-time Dense Reconstruction of Tissue Surface from Stereo Optical
+  Video
+Authors: Haoyin Zhou, Jagadeesan Jayender
+Categories: cs.CV
+Journal-ref: IEEE transactions on medical imaging 39, no. 2 (2019): 400-412
+\\
+  We propose an approach to reconstruct dense three-dimensional (3D) model of
+tissue surface from stereo optical videos in real-time, the basic idea of which
+is to first extract 3D information from video frames by using stereo matching,
+and then to mosaic the reconstructed 3D models. To handle the common low
+texture regions on tissue surfaces, we propose effective post-processing steps
+for the local stereo matching method to enlarge the radius of constraint, which
+include outliers removal, hole filling and smoothing. Since the tissue models
+obtained by stereo matching are limited to the field of view of the imaging
+modality, we propose a model mosaicking method by using a novel feature-based
+simultaneously localization and mapping (SLAM) method to align the models. Low
+texture regions and the varying illumination condition may lead to a large
+percentage of feature matching outliers. To solve this problem, we propose
+several algorithms to improve the robustness of SLAM, which mainly include (1)
+a histogram voting-based method to roughly select possible inliers from the
+feature matching results, (2) a novel 1-point RANSAC-based P$n$P algorithm
+called as DynamicR1PP$n$P to track the camera motion and (3) a GPU-based
+iterative closest points (ICP) and bundle adjustment (BA) method to refine the
+camera motion estimation results. Experimental results on ex- and in vivo data
+showed that the reconstructed 3D models have high resolution texture with an
+accuracy error of less than 2 mm. Most algorithms are highly parallelized for
+GPU computation, and the average runtime for processing one key frame is 76.3
+ms on stereo images with 960x540 resolution.
+\\ ( https://arxiv.org/abs/2007.12623 ,  11605kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2007.12668
+Date: Fri, 24 Jul 2020 17:35:14 GMT   (49kb,D)
+
+Title: KPRNet: Improving projection-based LiDAR semantic segmentation
+Authors: Deyvid Kochanov, Fatemeh Karimi Nejadasl, and Olaf Booij
+Categories: cs.CV cs.LG
+\\
+  Semantic segmentation is an important component in the perception systems of
+autonomous vehicles. In this work, we adopt recent advances in both image and
+point cloud segmentation to achieve a better accuracy in the task of segmenting
+LiDAR scans. KPRNet improves the convolutional neural network architecture of
+2D projection methods and utilizes KPConv [11] to replace the commonly used
+post-processing techniques with a learnable point-wise component which allows
+us to obtain more accurate 3D labels. With these improvements our model
+outperforms the current best method on the SemanticKITTI benchmark, reaching an
+mIoU of 63.1.
+\\ ( https://arxiv.org/abs/2007.12668 ,  49kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2007.12672
+Date: Fri, 24 Jul 2020 17:41:23 GMT   (7006kb,D)
+
+Title: Real-World Multi-Domain Data Applications for Generalizations to
+  Clinical Settings
+Authors: Nooshin Mojab, Vahid Noroozi, Darvin Yi, Manoj Prabhakar Nallabothula,
+  Abdullah Aleem, Phillip S. Yu, Joelle A. Hallak
+Categories: cs.CV
+\\
+  With promising results of machine learning based models in computer vision,
+applications on medical imaging data have been increasing exponentially.
+However, generalizations to complex real-world clinical data is a persistent
+problem. Deep learning models perform well when trained on standardized
+datasets from artificial settings, such as clinical trials. However, real-world
+data is different and translations are yielding varying results. The complexity
+of real-world applications in healthcare could emanate from a mixture of
+different data distributions across multiple device domains alongside the
+inevitable noise sourced from varying image resolutions, human errors, and the
+lack of manual gradings. In addition, healthcare applications not only suffer
+from the scarcity of labeled data, but also face limited access to unlabeled
+data due to HIPAA regulations, patient privacy, ambiguity in data ownership,
+and challenges in collecting data from different sources. These limitations
+pose additional challenges to applying deep learning algorithms in healthcare
+and clinical translations. In this paper, we utilize self-supervised
+representation learning methods, formulated effectively in transfer learning
+settings, to address limited data availability. Our experiments verify the
+importance of diverse real-world data for generalization to clinical settings.
+We show that by employing a self-supervised approach with transfer learning on
+a multi-domain real-world dataset, we can achieve 16% relative improvement on a
+standardized dataset over supervised baselines.
+\\ ( https://arxiv.org/abs/2007.12672 ,  7006kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2007.12684
+Date: Fri, 24 Jul 2020 17:57:54 GMT   (1061kb,D)
+
+Title: MiCo: Mixup Co-Training for Semi-Supervised Domain Adaptation
+Authors: Luyu Yang, Yan Wang, Mingfei Gao, Abhinav Shrivastava, Kilian Q.
+  Weinberger, Wei-Lun Chao, Ser-Nam Lim
+Categories: cs.CV cs.LG
+\\
+  Semi-supervised domain adaptation (SSDA) aims to adapt models from a labeled
+source domain to a different but related target domain, from which unlabeled
+data and a small set of labeled data are provided. In this paper we propose a
+new approach for SSDA, which is to explicitly decompose SSDA into two
+sub-problems: a semi-supervised learning (SSL) problem in the target domain and
+an unsupervised domain adaptation (UDA) problem across domains. We show that
+these two sub-problems yield very different classifiers, which we leverage with
+our algorithm MixUp Co-training (MiCo). MiCo applies Mixup to bridge the gap
+between labeled and unlabeled data of each individual model and employs
+co-training to exchange the expertise between the two classifiers. MiCo needs
+no adversarial and minmax training, making it easily implementable and stable.
+MiCo achieves state-of-the-art results on SSDA datasets, outperforming the
+prior art by a notable 4% margin on DomainNet.
+\\ ( https://arxiv.org/abs/2007.12684 ,  1061kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2007.12685
+Date: Tue, 30 Jun 2020 20:19:09 GMT   (415kb,D)
+
+Title: Semantic Segmentation With Multi Scale Spatial Attention For Self
+  Driving Cars
+Authors: Abhinav Sagar, RajKumar Soundrapandiyan
+Categories: cs.CV cs.LG
+Comments: 9 pages
+\\
+  In this paper, we present an architecture using multi scale feature fusion at
+various scales for accurate and efficient semantic image segmentation. We have
+used dilated convolutional layers in downsampling layers and transposed
+convolutional layers in the upsampling layers and used concat layers to merge
+them. We have used skip connections in between alternate blocks which are
+comprised of convolutional and max pooling layers. We present an in depth
+theoretical analysis of our network with training and optimization details. We
+evaluated our network on the Camvid dataset using mean accuracy per class and
+Intersection Over Union (IOU) as the evaluation metrics on the test set. Our
+model outperforms previous state of the art on semantic segmentation achieving
+mean IOU value of 74.12 while running at >100 FPS.
+\\ ( https://arxiv.org/abs/2007.12685 ,  415kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2007.12254
+Date: Thu, 23 Jul 2020 21:01:57 GMT   (452kb)
+
+Title: Anecdotal Survey of Variations in Path Stroking among Real-world
+  Implementations
+Authors: Mark J. Kilgard
+Categories: cs.GR cs.DL
+Comments: 14 pages, supplemental paper for "Polar Stroking: New Theory and
+  Methods for Stroking Paths" (SIGGRAPH 2020) arXiv:2007.00308
+ACM-class: I.3.3
+\\
+  Stroking a path is one of the two basic rendering operations in vector
+graphics standards (e.g., PostScript, PDF, SVG). We survey path stroking
+rendering results from real-world software implementations of path stroking for
+anecdotal evidence that such implementations are prone to rendering variances.
+While our survey is limited and informal, the rendering results we gathered
+indicate widespread rendering variations for simple-but-problematic stroked
+paths first identified decades ago. We conclude that creators of vector
+graphics content would benefit from a mathematically grounded standardization
+for how a stroked path should be rasterized.
+\\ ( https://arxiv.org/abs/2007.12254 ,  452kb)
+%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-
+------------------------------------------------------------------------------
+\\
+arXiv:2007.12248 (*cross-listing*)
+Date: Thu, 23 Jul 2020 20:39:40 GMT   (12912kb,D)
+
+Title: Are Visual Explanations Useful? A Case Study in Model-in-the-Loop
+  Prediction
+Authors: Eric Chu, Deb Roy, Jacob Andreas
+Categories: cs.LG cs.AI cs.CV cs.HC stat.ML
+\\
+  We present a randomized controlled trial for a model-in-the-loop regression
+task, with the goal of measuring the extent to which (1) good explanations of
+model predictions increase human accuracy, and (2) faulty explanations decrease
+human trust in the model. We study explanations based on visual saliency in an
+image-based age prediction task for which humans and learned models are
+individually capable but not highly proficient and frequently disagree. Our
+experimental design separates model quality from explanation quality, and makes
+it possible to compare treatments involving a variety of explanations of
+varying levels of quality. We find that presenting model predictions improves
+human accuracy. However, visual explanations of various kinds fail to
+significantly alter human accuracy or trust in the model - regardless of
+whether explanations characterize an accurate model, an inaccurate one, or are
+generated randomly and independently of the input image. These findings suggest
+the need for greater evaluation of explanations in downstream decision making
+tasks, better design-based tools for presenting explanations to users, and
+better approaches for generating explanations.
+\\ ( https://arxiv.org/abs/2007.12248 ,  12912kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2007.12296 (*cross-listing*)
+Date: Thu, 23 Jul 2020 23:35:22 GMT   (4100kb,D)
+
+Title: Frequency Domain-based Perceptual Loss for Super Resolution
+Authors: Shane D. Sims
+Categories: eess.IV cs.CV
+\\
+  We introduce Frequency Domain Perceptual Loss (FDPL), a loss function for
+single image super resolution (SR). Unlike previous loss functions used to
+train SR models, which are all calculated in the pixel (spatial) domain, FDPL
+is computed in the frequency domain. By working in the frequency domain we can
+encourage a given model to learn a mapping that prioritizes those frequencies
+most related to human perception. While the goal of FDPL is not to maximize the
+Peak Signal to Noise Ratio (PSNR), we found that there is a correlation between
+decreasing FDPL and increasing PSNR. Training a model with FDPL results in a
+higher average PSRN (30.94), compared to the same model trained with pixel loss
+(30.59), as measured on the Set5 image dataset. We also show that our method
+achieves higher qualitative results, which is the goal of a perceptual loss
+function. However, it is not clear that the improved perceptual quality is due
+to the slightly higher PSNR or the perceptual nature of FDPL.
+\\ ( https://arxiv.org/abs/2007.12296 ,  4100kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2007.12303 (*cross-listing*)
+Date: Fri, 24 Jul 2020 00:19:21 GMT   (5148kb,D)
+
+Title: COVID TV-UNet: Segmenting COVID-19 Chest CT Images Using Connectivity
+  Imposed U-Net
+Authors: Narges Saeedizadeh, Shervin Minaee, Rahele Kafieh, Shakib Yazdani,
+  Milan Sonka
+Categories: eess.IV cs.CV cs.LG
+\\
+  The novel corona-virus disease (COVID-19) pandemic has caused a major
+outbreak in more than 200 countries around the world, leading to a severe
+impact on the health and life of many people globally. As of mid-July 2020,
+more than 12 million people were infected, and more than 570,000 death were
+reported. Computed Tomography (CT) images can be used as an alternative to the
+time-consuming RT-PCR test, to detect COVID-19. In this work we propose a
+segmentation framework to detect chest regions in CT images, which are infected
+by COVID-19. We use an architecture similar to U-Net model, and train it to
+detect ground glass regions, on pixel level. As the infected regions tend to
+form a connected component (rather than randomly distributed pixels), we add a
+suitable regularization term to the loss function, to promote connectivity of
+the segmentation map for COVID-19 pixels. 2D-anisotropic total-variation is
+used for this purpose, and therefore the proposed model is called "TV-UNet".
+Through experimental results on a relatively large-scale CT segmentation
+dataset of around 900 images, we show that adding this new regularization term
+leads to 2\% gain on overall segmentation performance compared to the U-Net
+model. Our experimental analysis, ranging from visual evaluation of the
+predicted segmentation results to quantitative assessment of segmentation
+performance (precision, recall, Dice score, and mIoU) demonstrated great
+ability to identify COVID-19 associated regions of the lungs, achieving a mIoU
+rate of over 99\%, and a Dice score of around 86\%.
+\\ ( https://arxiv.org/abs/2007.12303 ,  5148kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2007.12411 (*cross-listing*)
+Date: Fri, 24 Jul 2020 09:00:41 GMT   (7166kb,D)
+
+Title: Interpreting Spatially Infinite Generative Models
+Authors: Chaochao Lu, Richard E. Turner, Yingzhen Li, Nate Kushman
+Categories: cs.LG cs.CV stat.ML
+Comments: ICML 2020 workshop on Human Interpretability in Machine Learning (WHI
+  2020)
+\\
+  Traditional deep generative models of images and other spatial modalities can
+only generate fixed sized outputs. The generated images have exactly the same
+resolution as the training images, which is dictated by the number of layers in
+the underlying neural network. Recent work has shown, however, that feeding
+spatial noise vectors into a fully convolutional neural network enables both
+generation of arbitrary resolution output images as well as training on
+arbitrary resolution training images. While this work has provided impressive
+empirical results, little theoretical interpretation was provided to explain
+the underlying generative process. In this paper we provide a firm theoretical
+interpretation for infinite spatial generation, by drawing connections to
+spatial stochastic processes. We use the resulting intuition to improve upon
+existing spatially infinite generative models to enable more efficient training
+through a model that we call an infinite generative adversarial network, or
+$\infty$-GAN. Experiments on world map generation, panoramic images and texture
+synthesis verify the ability of $\infty$-GAN to efficiently generate images of
+arbitrary size.
+\\ ( https://arxiv.org/abs/2007.12411 ,  7166kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2007.12415 (*cross-listing*)
+Date: Fri, 24 Jul 2020 09:12:37 GMT   (1181kb,D)
+
+Title: What and Where: Learn to Plug Adapters via NAS for Multi-Domain Learning
+Authors: Hanbin Zhao, Hao Zeng, Xin Qin, Yongjian Fu, Hui Wang, Bourahla Omar,
+  and Xi Li
+Categories: cs.LG cs.CV stat.ML
+\\
+  As an important and challenging problem, multi-domain learning (MDL)
+typically seeks for a set of effective lightweight domain-specific adapter
+modules plugged into a common domain-agnostic network. Usually, existing ways
+of adapter plugging and structure design are handcrafted and fixed for all
+domains before model learning, resulting in the learning inflexibility and
+computational intensiveness. With this motivation, we propose to learn a
+data-driven adapter plugging strategy with Neural Architecture Search (NAS),
+which automatically determines where to plug for those adapter modules.
+Furthermore, we propose a NAS-adapter module for adapter structure design in a
+NAS-driven learning scheme, which automatically discovers effective adapter
+module structures for different domains. Experimental results demonstrate the
+effectiveness of our MDL model against existing approaches under the conditions
+of comparable performance. We will release the code, baselines, and training
+statistics for all models to facilitate future research.
+\\ ( https://arxiv.org/abs/2007.12415 ,  1181kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2007.12463 (*cross-listing*)
+Date: Fri, 24 Jul 2020 11:55:28 GMT   (666kb,D)
+
+Title: Approximately Optimal Binning for the Piecewise Constant Approximation
+  of the Normalized Unexplained Variance (nUV) Dissimilarity Measure
+Authors: Attila Fazekas and Gy\"orgy Kov\'acs
+Categories: cs.LG cs.CV stat.ML
+MSC-class: 65D18
+\\
+  The recently introduced Matching by Tone Mapping (MTM) dissimilarity measure
+enables template matching under smooth non-linear distortions and also has a
+well-established mathematical background. MTM operates by binning the template,
+but the ideal binning for a particular problem is an open question. By pointing
+out an important analogy between the well known mutual information (MI) and
+MTM, we introduce the term "normalized unexplained variance" (nUV) for MTM to
+emphasize its relevance and applicability beyond image processing. Then, we
+provide theoretical results on the optimal binning technique for the nUV
+measure and propose algorithms to find approximate solutions. The theoretical
+findings are supported by numerical experiments. Using the proposed techniques
+for binning shows 4-13% increase in terms of AUC scores with statistical
+significance, enabling us to conclude that the proposed binning techniques have
+the potential to improve the performance of the nUV measure in real
+applications.
+\\ ( https://arxiv.org/abs/2007.12463 ,  666kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2007.12496 (*cross-listing*)
+Date: Thu, 23 Jul 2020 05:40:47 GMT   (1339kb,D)
+
+Title: Parkinson's Disease Detection with Ensemble Architectures based on
+  ILSVRC Models
+Authors: Tahjid Ashfaque Mostafa, Irene Cheng
+Categories: eess.IV cs.CV
+Comments: arXiv admin note: substantial text overlap with arXiv:2007.00682
+\\
+  In this work, we explore various neural network architectures using Magnetic
+Resonance (MR) T1 images of the brain to identify Parkinson's Disease (PD),
+which is one of the most common neurodegenerative and movement disorders. We
+propose three ensemble architectures combining some winning Convolutional
+Neural Network models of ImageNet Large Scale Visual Recognition Challenge
+(ILSVRC). All of our proposed architectures outperform existing approaches to
+detect PD from MR images, achieving upto 95\% detection accuracy. We also find
+that when we construct our ensemble architecture using models pretrained on the
+ImageNet dataset unrelated to PD, the detection performance is significantly
+better compared to models without any prior training. Our finding suggests a
+promising direction when no or insufficient training data is available.
+\\ ( https://arxiv.org/abs/2007.12496 ,  1339kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2007.12499 (*cross-listing*)
+Date: Thu, 23 Jul 2020 02:41:09 GMT   (210kb,D)
+
+Title: Adma: A Flexible Loss Function for Neural Networks
+Authors: Aditya Shrivastava
+Categories: cs.LG cs.CV cs.NE stat.ML
+\\
+  Highly increased interest in Artificial Neural Networks (ANNs) have resulted
+in impressively wide-ranging improvements in its structure. In this work, we
+come up with the idea that instead of static plugins that the currently
+available loss functions are, they should by default be flexible in nature. A
+flexible loss function can be a more insightful navigator for neural networks
+leading to higher convergence rates and therefore reaching the optimum accuracy
+more quickly. The insights to help decide the degree of flexibility can be
+derived from the complexity of ANNs, the data distribution, selection of
+hyper-parameters and so on. In the wake of this, we introduce a novel flexible
+loss function for neural networks. The function is shown to characterize a
+range of fundamentally unique properties from which, much of the properties of
+other loss functions are only a subset and varying the flexibility parameter in
+the function allows it to emulate the loss curves and the learning behavior of
+prevalent static loss functions. The extensive experimentation performed with
+the loss function demonstrates that it is able to give state-of-the-art
+performance on selected data sets. Thus, in all the idea of flexibility itself
+and the proposed function built upon it carry the potential to open to a new
+interesting chapter in deep learning research.
+\\ ( https://arxiv.org/abs/2007.12499 ,  210kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2007.12525 (*cross-listing*)
+Date: Fri, 24 Jul 2020 13:51:58 GMT   (1546kb,D)
+
+Title: Study of Different Deep Learning Approach with Explainable AI for
+  Screening Patients with COVID-19 Symptoms: Using CT Scan and Chest X-ray
+  Image Dataset
+Authors: Md Manjurul Ahsan, Kishor Datta Gupta, Mohammad Maminur Islam, Sajib
+  Sen, Md. Lutfar Rahman, Mohammad Shakhawat Hossain
+Categories: eess.IV cs.CV cs.LG
+Comments: This is a work in progress, it should not be relied upon without
+  context to guide clinical practice or health-related behavior and should not
+  be reported in news media as established information without consulting
+  multiple experts in the field
+\\
+  The outbreak of COVID-19 disease caused more than 100,000 deaths so far in
+the USA alone. It is necessary to conduct an initial screening of patients with
+the symptoms of COVID-19 disease to control the spread of the disease. However,
+it is becoming laborious to conduct the tests with the available testing kits
+due to the growing number of patients. Some studies proposed CT scan or chest
+X-ray images as an alternative solution. Therefore, it is essential to use
+every available resource, instead of either a CT scan or chest X-ray to conduct
+a large number of tests simultaneously. As a result, this study aims to develop
+a deep learning-based model that can detect COVID-19 patients with better
+accuracy both on CT scan and chest X-ray image dataset. In this work, eight
+different deep learning approaches such as VGG16, InceptionResNetV2, ResNet50,
+DenseNet201, VGG19, MobilenetV2, NasNetMobile, and ResNet15V2 have been tested
+on two dataset-one dataset includes 400 CT scan images, and another dataset
+includes 400 chest X-ray images studied. Besides, Local Interpretable
+Model-agnostic Explanations (LIME) is used to explain the model's
+interpretability. Using LIME, test results demonstrate that it is conceivable
+to interpret top features that should have worked to build a trust AI framework
+to distinguish between patients with COVID-19 symptoms with other patients.
+\\ ( https://arxiv.org/abs/2007.12525 ,  1546kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2007.12578 (*cross-listing*)
+Date: Fri, 24 Jul 2020 15:30:19 GMT   (2517kb,D)
+
+Title: Stain Style Transfer of Histopathology Images Via Structure-Preserved
+  Generative Learning
+Authors: Hanwen Liang, Konstantinos N. Plataniotis, Xingyu Li
+Categories: eess.IV cs.CV cs.LG
+\\
+  Computational histopathology image diagnosis becomes increasingly popular and
+important, where images are segmented or classified for disease diagnosis by
+computers. While pathologists do not struggle with color variations in slides,
+computational solutions usually suffer from this critical issue. To address the
+issue of color variations in histopathology images, this study proposes two
+stain style transfer models, SSIM-GAN and DSCSI-GAN, based on the generative
+adversarial networks. By cooperating structural preservation metrics and
+feedback of an auxiliary diagnosis net in learning, medical-relevant
+information presented by image texture, structure, and chroma-contrast features
+is preserved in color-normalized images. Particularly, the smart treat of
+chromatic image content in our DSCSI-GAN model helps to achieve noticeable
+normalization improvement in image regions where stains mix due to histological
+substances co-localization. Extensive experimentation on public histopathology
+image sets indicates that our methods outperform prior arts in terms of
+generating more stain-consistent images, better preserving histological
+information in images, and obtaining significantly higher learning efficiency.
+Our python implementation is published on
+https://github.com/hanwen0529/DSCSI-GAN.
+\\ ( https://arxiv.org/abs/2007.12578 ,  2517kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2007.12619 (*cross-listing*)
+Date: Wed, 15 Jul 2020 07:20:39 GMT   (12661kb,D)
+
+Title: Channel-Level Variable Quantization Network for Deep Image Compression
+Authors: Zhisheng Zhong, Hiroaki Akutsu and Kiyoharu Aizawa
+Categories: eess.IV cs.CV
+Comments: Proceedings of International Joint Conference on Artificial
+  Intelligence (IJCAI), 2020
+\\
+  Deep image compression systems mainly contain four components: encoder,
+quantizer, entropy model, and decoder. To optimize these four components, a
+joint rate-distortion framework was proposed, and many deep neural
+network-based methods achieved great success in image compression. However,
+almost all convolutional neural network-based methods treat channel-wise
+feature maps equally, reducing the flexibility in handling different types of
+information. In this paper, we propose a channel-level variable quantization
+network to dynamically allocate more bitrates for significant channels and
+withdraw bitrates for negligible channels. Specifically, we propose a variable
+quantization controller. It consists of two key components: the channel
+importance module, which can dynamically learn the importance of channels
+during training, and the splitting-merging module, which can allocate different
+bitrates for different channels. We also formulate the quantizer into a
+Gaussian mixture model manner. Quantitative and qualitative experiments verify
+the effectiveness of the proposed model and demonstrate that our method
+achieves superior performance and can produce much better visual
+reconstructions.
+\\ ( https://arxiv.org/abs/2007.12619 ,  12661kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2007.12625 (*cross-listing*)
+Date: Thu, 16 Jul 2020 20:50:15 GMT   (17466kb,D)
+
+Title: Accelerated Stochastic Gradient-free and Projection-free Methods
+Authors: Feihu Huang, Lue Tao, Songcan Chen
+Categories: math.OC cs.CV cs.LG
+Comments: ICML-2020, 34 pages
+\\
+  In the paper, we propose a class of accelerated stochastic gradient-free and
+projection-free (a.k.a., zeroth-order Frank-Wolfe) methods to solve the
+constrained stochastic and finite-sum nonconvex optimization. Specifically, we
+propose an accelerated stochastic zeroth-order Frank-Wolfe (Acc-SZOFW) method
+based on the variance reduced technique of SPIDER/SpiderBoost and a novel
+momentum accelerated technique. Moreover, under some mild conditions, we prove
+that the Acc-SZOFW has the function query complexity of
+$O(d\sqrt{n}\epsilon^{-2})$ for finding an $\epsilon$-stationary point in the
+finite-sum problem, which improves the exiting best result by a factor of
+$O(\sqrt{n}\epsilon^{-2})$, and has the function query complexity of
+$O(d\epsilon^{-3})$ in the stochastic problem, which improves the exiting best
+result by a factor of $O(\epsilon^{-1})$. To relax the large batches required
+in the Acc-SZOFW, we further propose a novel accelerated stochastic
+zeroth-order Frank-Wolfe (Acc-SZOFW*) based on a new variance reduced technique
+of STORM, which still reaches the function query complexity of
+$O(d\epsilon^{-3})$ in the stochastic problem without relying on any large
+batches. In particular, we present an accelerated framework of the Frank-Wolfe
+methods based on the proposed momentum accelerated technique. The extensive
+experimental results on black-box adversarial attack and robust black-box
+classification demonstrate the efficiency of our algorithms.
+\\ ( https://arxiv.org/abs/2007.12625 ,  17466kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2007.12282 (*cross-listing*)
+Date: Thu, 23 Jul 2020 22:36:36 GMT   (100kb,D)
+
+Title: On Positivity and Minimality for Second-Order Holonomic Sequences
+Authors: George Kenison, Oleksiy Klurman, Engel Lefaucheux, Florian Luca,
+  Pieter Moree, Jo\"el Ouaknine, Markus A. Whiteland, James Worrell
+Categories: math.NT cs.DM
+Comments: 38 pages
+MSC-class: 11B37, 11Y65, 68R99
+ACM-class: G.2.1
+\\
+  An infinite sequence $\langle{u_n}\rangle_{n\in\mathbb{N}}$ of real numbers
+is holonomic (also known as P-recursive or P-finite) if it satisfies a linear
+recurrence relation with polynomial coefficients. Such a sequence is said to be
+positive if each $u_n \geq 0$, and minimal if, given any other linearly
+independent sequence $\langle{v_n}\rangle_{n \in\mathbb{N}}$ satisfying the
+same recurrence relation, the ratio $u_n/v_n$ converges to $0$. In this paper,
+we focus on holonomic sequences satisfying a second-order recurrence $g_3(n)u_n
+= g_2(n)u_{n-1} + g_1(n)u_{n-2}$, where each coefficient $g_3, g_2,g_1 \in
+\mathbb{Q}[n]$ is a polynomial of degree at most $1$. We establish two main
+results. First, we show that deciding positivity for such sequences reduces to
+deciding minimality. And second, we prove that deciding minimality is
+equivalent to determining whether certain numerical expressions (known as
+periods, exponential periods, and period-like integrals) are equal to zero.
+Periods and related expressions are classical objects of study in algebraic
+geometry and number theory, and several established conjectures (notably those
+of Kontsevich and Zagier) imply that they have a decidable equality problem,
+which in turn would entail decidability of Positivity and Minimality for a
+large class of second-order holonomic sequences.
+\\ ( https://arxiv.org/abs/2007.12282 ,  100kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2007.12527 (*cross-listing*)
+Date: Fri, 24 Jul 2020 13:58:40 GMT   (95kb,D)
+
+Title: Ample completions of OMs and CUOMs
+Authors: Victor Chepoi, Kolja Knauer, Manon Philibert
+Categories: math.CO cs.DM
+Comments: 19 pages, 3 figures
+\\
+  This paper considers completions of COMs (complexes oriented matroids) to
+ample partial cubes of the same VC-dimension. We show that these exist for OMs
+(oriented matroids) and CUOMs (complexes of uniform oriented matroids). This
+implies that OMs and CUOMs satisfy the sample compression conjecture -- one of
+the central open questions of learning theory. We conjecture that every COM can
+be completed to an ample partial cube without increasing the VC-dimension.
+\\ ( https://arxiv.org/abs/2007.12527 ,  95kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2007.12371 (*cross-listing*)
+Date: Fri, 24 Jul 2020 06:35:44 GMT   (312kb,D)
+
+Title: Dopant Network Processing Units: Towards Efficient Neural-network
+  Emulators with High-capacity Nanoelectronic Nodes
+Authors: Hans-Christian Ruiz Euler, Unai Alegre-Ibarra, Bram van de Ven, Hajo
+  Broersma, Peter A. Bobbert, Wilfred G. van der Wiel
+Categories: cs.LG cs.AR cs.ET cs.NE stat.ML
+\\
+  The rapidly growing computational demands of deep neural networks require
+novel hardware designs. Recently, tunable nanoelectronic devices were developed
+based on hopping electrons through a network of dopant atoms in silicon. These
+"Dopant Network Processing Units" (DNPUs) are highly energy-efficient and have
+potentially very high throughput. By adapting the control voltages applied to
+its terminals, a single DNPU can solve a variety of linearly non-separable
+classification problems. However, using a single device has limitations due to
+the implicit single-node architecture. This paper presents a promising novel
+approach to neural information processing by introducing DNPUs as high-capacity
+neurons and moving from a single to a multi-neuron framework. By implementing
+and testing a small multi-DNPU classifier in hardware, we show that
+feed-forward DNPU networks improve the performance of a single DNPU from 77% to
+94% test accuracy on a binary classification task with concentric classes on a
+plane. Furthermore, motivated by the integration of DNPUs with memristor
+arrays, we study the potential of using DNPUs in combination with linear
+layers. We show by simulation that a single-layer MNIST classifier with only 10
+DNPUs achieves over 96% test accuracy. Our results pave the road towards
+hardware neural-network emulators that offer atomic-scale information
+processing with low latency and energy consumption.
+\\ ( https://arxiv.org/abs/2007.12371 ,  312kb)
+%%--%%--%%--%%--%%--%%--%%--%%--%%--%%--%%--%%--%%--%%--%%--%%--%%--%%--%%--%%
+------------------------------------------------------------------------------
+\\
+arXiv:1904.09526
+replaced with revised version Thu, 23 Jul 2020 20:58:34 GMT   (26kb)
+
+Title: Constructive Polynomial Partitioning for Algebraic Curves in
+  $\mathbb{R}^3$ with Applications
+Authors: Boris Aronov, Esther Ezra, and Joshua Zahl
+Categories: cs.CG
+Comments: 20 pages, 0 figures. v2: final version, to appear in SIAM J. Comput.
+  A preliminary version of this work was presented in Proc. 30th Annual
+  ACM-SIAM Sympos. Discrete Algorithms, 2019
+\\ ( https://arxiv.org/abs/1904.09526 ,  26kb)
+------------------------------------------------------------------------------
+\\
+arXiv:1810.10340
+replaced with revised version Fri, 24 Jul 2020 13:10:53 GMT   (10397kb,D)
+
+Title: Investigating Object Compositionality in Generative Adversarial Networks
+Authors: Sjoerd van Steenkiste, Karol Kurach, J\"urgen Schmidhuber, Sylvain
+  Gelly
+Categories: cs.CV cs.NE
+Comments: A preliminary version of this work (arXiv v1) appeared under the
+  title "A Case for Object Compositionality in Deep Generative Models of
+  Images" as a workshop paper at the NeurIPS2018 workshop on "Modeling the
+  Physical World: Perception, Learning, and Control", and at the NeurIPS2018
+  workshop on "Relational Representation Learning"
+MSC-class: I.2.6
+ACM-class: I.2.6
+DOI: 10.1016/j.neunet.2020.07.007
+\\ ( https://arxiv.org/abs/1810.10340 ,  10397kb)
+------------------------------------------------------------------------------
+\\
+arXiv:1909.00121
+replaced with revised version Fri, 24 Jul 2020 08:01:29 GMT   (760kb,D)
+
+Title: A Semantics-Assisted Video Captioning Model Trained with Scheduled
+  Sampling
+Authors: Haoran Chen, Ke Lin, Alexander Maye, Jianming Li and Xiaolin Hu
+Categories: cs.CV cs.CL
+Comments: 11 pages
+\\ ( https://arxiv.org/abs/1909.00121 ,  760kb)
+------------------------------------------------------------------------------
+\\
+arXiv:1909.01585
+replaced with revised version Fri, 24 Jul 2020 07:17:58 GMT   (5193kb,D)
+
+Title: Functional Asplund metrics for pattern matching, robust to variable
+  lighting conditions
+Authors: Guillaume Noyel (IPRI, SIGPH@iPRI), Michel Jourlin (LHC, IPRI)
+Categories: cs.CV cs.NA eess.SP math.FA math.NA
+Journal-ref: Image Analysis and Stereology, International Society for
+  Stereology, 2020, 39 (2), pp.53--71
+DOI: 10.5566/ias.2292
+\\ ( https://arxiv.org/abs/1909.01585 ,  5193kb)
+------------------------------------------------------------------------------
+\\
+arXiv:1911.07471
+replaced with revised version Fri, 24 Jul 2020 14:16:45 GMT   (1116kb,D)
+
+Title: Preparing Lessons: Improve Knowledge Distillation with Better
+  Supervision
+Authors: Tiancheng Wen, Shenqi Lai, Xueming Qian
+Categories: cs.CV
+\\ ( https://arxiv.org/abs/1911.07471 ,  1116kb)
+------------------------------------------------------------------------------
+\\
+arXiv:1911.11759
+replaced with revised version Fri, 24 Jul 2020 13:10:01 GMT   (39800kb,D)
+
+Title: Password-conditioned Anonymization and Deanonymization with Face
+  Identity Transformers
+Authors: Xiuye Gu, Weixin Luo, Michael S. Ryoo, Yong Jae Lee
+Categories: cs.CV cs.LG eess.IV
+Comments: ECCV 2020
+\\ ( https://arxiv.org/abs/1911.11759 ,  39800kb)
+------------------------------------------------------------------------------
+\\
+arXiv:1911.12709
+replaced with revised version Fri, 24 Jul 2020 15:42:01 GMT   (20727kb,D)
+
+Title: Continuous Adaptation for Interactive Object Segmentation by Learning
+  from Corrections
+Authors: Theodora Kontogianni, Michael Gygli, Jasper Uijlings, Vittorio Ferrari
+Categories: cs.CV
+Comments: ECCV 2020 Camera Ready
+\\ ( https://arxiv.org/abs/1911.12709 ,  20727kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2002.08721
+replaced with revised version Fri, 24 Jul 2020 11:44:02 GMT   (2914kb,D)
+
+Title: A survey on Semi-, Self- and Unsupervised Learning for Image
+  Classification
+Authors: Lars Schmarje, Monty Santarossa, Simon-Martin Schr\"oder, and Reinhard
+  Koch
+Categories: cs.CV cs.LG
+Comments: Under consideration at Computer Vision and Image Understanding
+\\ ( https://arxiv.org/abs/2002.08721 ,  2914kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2003.01711
+replaced with revised version Thu, 23 Jul 2020 21:57:18 GMT   (227kb,D)
+
+Title: BATS: Binary ArchitecTure Search
+Authors: Adrian Bulat and Brais Martinez and Georgios Tzimiropoulos
+Categories: cs.CV cs.LG
+Comments: accepted to ECCV 2020
+\\ ( https://arxiv.org/abs/2003.01711 ,  227kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2003.03744
+replaced with revised version Wed, 8 Jul 2020 12:32:51 GMT   (6539kb)
+
+Title: A Multi-scale CNN-CRF Framework for Environmental Microorganism Image
+  Segmentation
+Authors: Jinghua Zhang, Chen Li, Frank Kulwa, Xin Zhao, Changhao Sun, Zihan Li,
+  Tao Jiang, Hong Li, and Shouliang Qi
+Categories: cs.CV
+\\ ( https://arxiv.org/abs/2003.03744 ,  6539kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2003.06845
+replaced with revised version Fri, 24 Jul 2020 00:48:24 GMT   (651kb,D)
+
+Title: SF-Net: Single-Frame Supervision for Temporal Action Localization
+Authors: Fan Ma, Linchao Zhu, Yi Yang, Shengxin Zha, Gourab Kundu, Matt
+  Feiszli, Zheng Shou
+Categories: cs.CV cs.LG eess.IV
+Comments: ECCV 2020
+\\ ( https://arxiv.org/abs/2003.06845 ,  651kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2003.08505
+replaced with revised version Fri, 24 Jul 2020 01:19:10 GMT   (1619kb,D)
+
+Title: A Metric Learning Reality Check
+Authors: Kevin Musgrave, Serge Belongie, Ser-Nam Lim
+Categories: cs.CV
+Comments: Visit https://www.github.com/KevinMusgrave/powerful-benchmarker for
+  supplementary material, including the source code, configuration files, log
+  files, and interactive bayesian optimization plots
+\\ ( https://arxiv.org/abs/2003.08505 ,  1619kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2003.09764
+replaced with revised version Fri, 24 Jul 2020 12:08:55 GMT   (58271kb,D)
+
+Title: Lifespan Age Transformation Synthesis
+Authors: Roy Or-El, Soumyadip Sengupta, Ohad Fried, Eli Shechtman, Ira
+  Kemelmacher-Shlizerman
+Categories: cs.CV
+Comments: ECCV 2020 Camera-Ready version. Main Changes: 1. Added Ethics & Bias
+  statement in the supplementary material 2. Comparison figures to PyGAN [46]
+  and S2GAN [13] were removed due to copyright issues. These figures can be
+  found in the project's webpage (link is provided in the paper). 3. Added
+  links to the code and dataset (Github)
+\\ ( https://arxiv.org/abs/2003.09764 ,  58271kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2003.10399
+replaced with revised version Thu, 23 Jul 2020 21:05:40 GMT   (612kb,D)
+
+Title: Inherent Adversarial Robustness of Deep Spiking Neural Networks: Effects
+  of Discrete Input Encoding and Non-Linear Activations
+Authors: Saima Sharmin, Nitin Rathi, Priyadarshini Panda and Kaushik Roy
+Categories: cs.CV cs.NE
+Comments: Accepted in 16th European Conference on Computer Vision (ECCV 2020)
+\\ ( https://arxiv.org/abs/2003.10399 ,  612kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2004.00845
+replaced with revised version Fri, 24 Jul 2020 15:17:14 GMT   (2992kb,D)
+
+Title: Occlusion-Aware Depth Estimation with Adaptive Normal Constraints
+Authors: Xiaoxiao Long, Lingjie Liu, Christian Theobalt, and Wenping Wang
+Categories: cs.CV
+Comments: ECCV 2020
+\\ ( https://arxiv.org/abs/2004.00845 ,  2992kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2004.02753
+replaced with revised version Fri, 24 Jul 2020 09:03:55 GMT   (655kb,D)
+
+Title: Temporally Coherent Embeddings for Self-Supervised Video Representation
+  Learning
+Authors: Joshua Knights, Ben Harwood, Daniel Ward, Anthony Vanderkop, Olivia
+  Mackenzie-Ross, Peyman Moghadam
+Categories: cs.CV cs.LG eess.IV
+Comments: Under review! Project page:
+  https://csiro-robotics.github.io/TCE_Webpage/
+ACM-class: I.2.6
+\\ ( https://arxiv.org/abs/2004.02753 ,  655kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2005.08514
+replaced with revised version Fri, 24 Jul 2020 03:32:07 GMT   (3391kb,D)
+
+Title: Spatio-Temporal Graph Transformer Networks for Pedestrian Trajectory
+  Prediction
+Authors: Cunjun Yu, Xiao Ma, Jiawei Ren, Haiyu Zhao, Shuai Yi
+Categories: cs.CV cs.LG cs.RO
+Comments: ECCV camera-ready
+\\ ( https://arxiv.org/abs/2005.08514 ,  3391kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2005.08702
+replaced with revised version Fri, 24 Jul 2020 13:56:50 GMT   (10283kb,D)
+
+Title: A global method to identify trees outside of closed-canopy forests with
+  medium-resolution satellite imagery
+Authors: John Brandt, Fred Stolle
+Categories: cs.CV cs.LG eess.IV
+\\ ( https://arxiv.org/abs/2005.08702 ,  10283kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2005.09027
+replaced with revised version Fri, 24 Jul 2020 10:24:02 GMT   (612kb,D)
+
+Title: Efficient Image Gallery Representations at Scale Through Multi-Task
+  Learning
+Authors: Benjamin Gutelman and Pavel Levin
+Categories: cs.CV cs.IR cs.LG
+Comments: Proceedings of the 43rd International ACM SIGIR Conference on
+  Research and Development in Information Retrieval
+DOI: 10.1145/3397271.3401433
+\\ ( https://arxiv.org/abs/2005.09027 ,  612kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2006.05682
+replaced with revised version Thu, 23 Jul 2020 19:16:39 GMT   (14093kb,D)
+
+Title: H3DNet: 3D Object Detection Using Hybrid Geometric Primitives
+Authors: Zaiwei Zhang, Bo Sun, Haitao Yang, Qixing Huang
+Categories: cs.CV
+\\ ( https://arxiv.org/abs/2006.05682 ,  14093kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2007.02042
+replaced with revised version Sun, 12 Jul 2020 09:36:36 GMT   (18035kb,D)
+
+Title: Single Image Brightening via Multi-Scale Exposure Fusion with Hybrid
+  Learning
+Authors: Chaobing Zheng, Zhengguo Li, Yi Yang and Shiqian Wu
+Categories: cs.CV eess.IV
+Comments: 11 pages
+\\ ( https://arxiv.org/abs/2007.02042 ,  18035kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2007.02355
+replaced with revised version Fri, 24 Jul 2020 07:12:13 GMT   (8041kb,D)
+
+Title: HoughNet: Integrating near and long-range evidence for bottom-up object
+  detection
+Authors: Nermin Samet, Samet Hicsonmez, Emre Akbas
+Categories: cs.CV
+Comments: ECCV 2020 camera-ready version
+\\ ( https://arxiv.org/abs/2007.02355 ,  8041kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2007.03639
+replaced with revised version Fri, 24 Jul 2020 15:49:44 GMT   (7633kb,D)
+
+Title: Human Trajectory Forecasting in Crowds: A Deep Learning Perspective
+Authors: Parth Kothari, Sven Kreiss, Alexandre Alahi
+Categories: cs.CV
+Comments: IEEE Notice added, Figures updated
+\\ ( https://arxiv.org/abs/2007.03639 ,  7633kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2007.08979
+replaced with revised version Fri, 24 Jul 2020 12:21:01 GMT   (10398kb,D)
+
+Title: URIE: Universal Image Enhancement for Visual Recognition in the Wild
+Authors: Taeyoung Son, Juwon Kang, Namyup Kim, Sunghyun Cho and Suha Kwak
+Categories: cs.CV
+Comments: Accepted as a conference paper at ECCV 2020
+\\ ( https://arxiv.org/abs/2007.08979 ,  10398kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2007.09763
+replaced with revised version Fri, 24 Jul 2020 17:02:41 GMT   (7995kb,D)
+
+Title: Connecting the Dots: Detecting Adversarial Perturbations Using Context
+  Inconsistency
+Authors: Shasha Li, Shitong Zhu, Sudipta Paul, Amit Roy-Chowdhury, Chengyu
+  Song, Srikanth Krishnamurthy, Ananthram Swami, Kevin S Chan
+Categories: cs.CV cs.LG
+Comments: The paper is accepted by ECCV 2020
+\\ ( https://arxiv.org/abs/2007.09763 ,  7995kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2007.11678
+replaced with revised version Fri, 24 Jul 2020 04:02:14 GMT   (8890kb,D)
+
+Title: Contact and Human Dynamics from Monocular Video
+Authors: Davis Rempe, Leonidas J. Guibas, Aaron Hertzmann, Bryan Russell, Ruben
+  Villegas, Jimei Yang
+Categories: cs.CV
+Comments: ECCV 2020
+\\ ( https://arxiv.org/abs/2007.11678 ,  8890kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2007.11823
+replaced with revised version Fri, 24 Jul 2020 11:47:42 GMT   (817kb,D)
+
+Title: WeightNet: Revisiting the Design Space of Weight Networks
+Authors: Ningning Ma, Xiangyu Zhang, Jiawei Huang, Jian Sun
+Categories: cs.CV
+Comments: ECCV 2020
+\\ ( https://arxiv.org/abs/2007.11823 ,  817kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2007.11824
+replaced with revised version Fri, 24 Jul 2020 11:45:43 GMT   (2437kb,D)
+
+Title: Funnel Activation for Visual Recognition
+Authors: Ningning Ma, Xiangyu Zhang, Jian Sun
+Categories: cs.CV
+Comments: ECCV 2020
+\\ ( https://arxiv.org/abs/2007.11824 ,  2437kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2007.11855
+replaced with revised version Fri, 24 Jul 2020 02:16:03 GMT   (7884kb,D)
+
+Title: Neural Geometric Parser for Single Image Camera Calibration
+Authors: Jinwoo Lee and Minhyuk Sung and Hyunjoon Lee and Junho Kim
+Categories: cs.CV cs.LG
+Comments: ECCV 2020
+\\ ( https://arxiv.org/abs/2007.11855 ,  7884kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2007.04842
+replaced with revised version Fri, 24 Jul 2020 15:49:53 GMT   (4919kb,D)
+
+Title: An Interior Point Method Solving Motion Planning Problems with Narrow
+  Passages
+Authors: Jim Mainprice and Nathan Ratliff and Marc Toussaint and Stefan Schaal
+Categories: cs.RO cs.CG
+Comments: IEEE RO-MAN 2020, 6 pages
+\\ ( https://arxiv.org/abs/2007.04842 ,  4919kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2002.08118
+replaced with revised version Thu, 23 Jul 2020 21:20:51 GMT   (5685kb,D)
+
+Title: Randomized Smoothing of All Shapes and Sizes
+Authors: Greg Yang, Tony Duan, J. Edward Hu, Hadi Salman, Ilya Razenshteyn,
+  Jerry Li
+Categories: cs.LG cs.CV cs.NE stat.ML
+Comments: 9 pages main text, 49 pages total
+\\ ( https://arxiv.org/abs/2002.08118 ,  5685kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2003.08983
+replaced with revised version Thu, 23 Jul 2020 22:15:43 GMT   (390kb,D)
+
+Title: A unifying mutual information view of metric learning: cross-entropy vs.
+  pairwise losses
+Authors: Malik Boudiaf, J\'er\^ome Rony, Imtiaz Masud Ziko, Eric Granger, Marco
+  Pedersoli, Pablo Piantanida, Ismail Ben Ayed
+Categories: cs.LG cs.CV stat.ML
+Comments: ECCV 2020 (Spotlight) - Code available at:
+  https://github.com/jeromerony/dml_cross_entropy
+\\ ( https://arxiv.org/abs/2003.08983 ,  390kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2004.09665
+replaced with revised version Fri, 24 Jul 2020 00:47:01 GMT   (3005kb,D)
+
+Title: Local Clustering with Mean Teacher for Semi-supervised Learning
+Authors: Zexi Chen, Benjamin Dutton, Bharathkumar Ramachandra, Tianfu Wu, Ranga
+  Raju Vatsavai
+Categories: cs.LG cs.CV stat.ML
+Comments: 8 pages, 7 figures
+\\ ( https://arxiv.org/abs/2004.09665 ,  3005kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2007.05033
+replaced with revised version Thu, 23 Jul 2020 22:51:27 GMT   (4478kb,D)
+
+Title: Adversarially-learned Inference via an Ensemble of Discrete Undirected
+  Graphical Models
+Authors: Adarsh K. Jeewajee, Leslie P. Kaelbling
+Categories: cs.LG cs.CV stat.ML
+Comments: 11 pages, 4 figures, 2 tables. Submitted to NeurIPS 2020
+\\ ( https://arxiv.org/abs/2007.05033 ,  4478kb)
+------------------------------------------------------------------------------
+\\
+arXiv:1810.01161 (*cross-listing*)
+replaced with revised version Thu, 23 Jul 2020 22:49:35 GMT   (23kb,D)
+
+Title: Sharp bounds for the chromatic number of random Kneser graphs
+Authors: Sergei Kiselev, Andrey Kupavskii
+Categories: math.CO cs.DM
+\\ ( https://arxiv.org/abs/1810.01161 ,  23kb)
+------------------------------------------------------------------------------
+\\
+arXiv:1903.12050 (*cross-listing*)
+replaced with revised version Fri, 24 Jul 2020 03:33:28 GMT   (17kb)
+
+Title: Finding a planted clique by adaptive probing
+Authors: Mikl\'os Z. R\'acz, Benjamin Schiffer
+Categories: math.CO cs.DM cs.DS math.PR
+Comments: 14 pages, 1 figure
+\\ ( https://arxiv.org/abs/1903.12050 ,  17kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2003.06036 (*cross-listing*)
+replaced with revised version Thu, 23 Jul 2020 22:32:30 GMT   (15kb)
+
+Title: A Polyhedral Approach to Bisubmodular Function Minimization
+Authors: Qimeng Yu, Simge Kucukyavuz
+Categories: math.OC cs.DM
+\\ ( https://arxiv.org/abs/2003.06036 ,  15kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2004.04512 (*cross-listing*)
+replaced with revised version Fri, 24 Jul 2020 14:15:09 GMT   (417kb,D)
+
+Title: A Mathematical Assessment of the Isolation Tree Method for Outliers
+  Detection in Big Data
+Authors: Fernando A. Morales, Jorge M. Ram\'irez, and Edgar A. Ramos
+Categories: stat.ME cs.DM math.CO math.PR
+Comments: 22 pages, 14 figures, 3 tables
+MSC-class: 65C05, 68U01, 68W20
+\\ ( https://arxiv.org/abs/2004.04512 ,  417kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2004.07217
+replaced with revised version Thu, 23 Jul 2020 21:20:36 GMT   (11kb)
+
+Title: Slightly Improved Upper Bound on the Integrality Ratio for the $s-t$
+  Path TSP
+Authors: Xianghui Zhong
+Categories: cs.DS cs.DM math.CO
+\\ ( https://arxiv.org/abs/2004.07217 ,  11kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2007.07464 (*cross-listing*)
+replaced with revised version Fri, 24 Jul 2020 15:03:56 GMT   (14kb)
+
+Title: Further results on Hendry's Conjecture
+Authors: Manuel Lafond, Ben Seamone, Rezvan Sherkati
+Categories: math.CO cs.DM
+Comments: 11 pages, 2 figures. The results in this manuscript were originally
+  presented at the Canadian Discrete and Algorithmic Mathematics Conference
+  (CanaDAM) in 2015. v2: Edited to acknowledge recent similar results obtained
+  by Rong at al (arXiv:2007.04698 [cs.DM])
+\\ ( https://arxiv.org/abs/2007.07464 ,  14kb)
+%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---

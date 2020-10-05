@@ -1,0 +1,1312 @@
+Delivered-To: brucelu2013@gmail.com
+Received: by 2002:ab4:a06d:0:0:0:0:0 with SMTP id cz13csp243953ecb;
+        Wed, 9 Sep 2020 02:49:00 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJw8kx9VjxIiwS0XayNNL6JT9tYiqK0FsJgg9MzIFFbtBwBDcaf8dxnj1NeZZp5Us/OaMO09
+X-Received: by 2002:aed:2c61:: with SMTP id f88mr2374445qtd.388.1599644940477;
+        Wed, 09 Sep 2020 02:49:00 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1599644940; cv=none;
+        d=google.com; s=arc-20160816;
+        b=c75kck6QXTzsQh/9XEW6tS3T32BYmXYzkHCcIGG7WntEImt/7ytO7ORRodFPYsSAK7
+         wlP1NzZgKphUBQBQ5IHyLoEP0a2eIrDCPQFHOdHD45rGnH3N85NQvEyMYYtgKCsVYLlR
+         NrvJgnPWe9/5vUHq301JTMf/v2EhFUyMZHx6RJU0i7Kgt8uqsEtgHZ/joBjI2fykEDCs
+         5DN8fAFY1vbkoxR7We6eA04w57iMLuct5vEe6rAi0C+N6h+sW+L/HLA4Z914JtLCcKJR
+         2Gce4SEc+sE20W7XQoiq7S40wq/7kKYGlHZnZYfPEiF95B8uj7LAbLH7oreLaedgNtYm
+         1sBA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=subject:to:reply-to:from:precedence:message-id:date;
+        bh=DViNk3DQm3qlYoQMo6B/HOUvgvy4xrdWr0QOtu5E5hY=;
+        b=n2mDKeW6D6sHSz9NbglYFYwRzQed2U4liADpsO8mhQeegsoueY1PN+e3e6kzQjm1jK
+         W1WmGnVPDBFa9jWay3uRtGengAq5rY703nzADTEMU+AYWSuMv3BomsuS2hnERzBP6rs5
+         Ge3iR9W7fV0asGIiCP3ZmkyAixsoKgj6GY3Rb5MyEWLofXvMEWgn6qzlv9bsDurLPeHu
+         jxlIQZLoyxkEDDJPhDyX/NsitPjnB+Wc088BFS/+NLEjO2osAZnf/laBsPP/KMt/mT6V
+         uASPA7lXmuWT4SWclghh/Z5hBO9DmDdOJkpo3raV0pgTYVrCT9gg/R8jlzblzoaiNfoa
+         Xc6g==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=pass (google.com: domain of no-reply@arxiv.org designates 128.84.4.11 as permitted sender) smtp.mailfrom=no-reply@arxiv.org;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=arxiv.org
+Return-Path: <no-reply@arxiv.org>
+Received: from lib-arxiv-015.serverfarm.cornell.edu (mail.arxiv.org. [128.84.4.11])
+        by mx.google.com with ESMTPS id r11si1189485qtm.85.2020.09.09.02.49.00
+        for <brucelu2013@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 09 Sep 2020 02:49:00 -0700 (PDT)
+Received-SPF: pass (google.com: domain of no-reply@arxiv.org designates 128.84.4.11 as permitted sender) client-ip=128.84.4.11;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of no-reply@arxiv.org designates 128.84.4.11 as permitted sender) smtp.mailfrom=no-reply@arxiv.org;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=arxiv.org
+Received: from lib-arxiv-007.serverfarm.cornell.edu (lib-arxiv-007.serverfarm.cornell.edu [128.84.4.12])
+	by lib-arxiv-015.serverfarm.cornell.edu (8.14.4/8.14.4) with ESMTP id 0899mxMf028483;
+	Wed, 9 Sep 2020 05:48:59 -0400
+Received: from lib-arxiv-007.serverfarm.cornell.edu (localhost [127.0.0.1])
+	by lib-arxiv-007.serverfarm.cornell.edu (8.14.4/8.14.4) with ESMTP id 0899mxPw031571;
+	Wed, 9 Sep 2020 05:48:59 -0400
+Received: (from e-prints@localhost)
+	by lib-arxiv-007.serverfarm.cornell.edu (8.14.4/8.14.4/Submit) id 0899mxQM031570;
+	Wed, 9 Sep 2020 05:48:59 -0400
+Date: Wed, 9 Sep 2020 05:48:59 -0400
+Message-Id: <202009090948.0899mxQM031570@lib-arxiv-007.serverfarm.cornell.edu>
+X-Authentication-Warning: lib-arxiv-007.serverfarm.cornell.edu: e-prints set sender to no-reply@arXiv.org using -f
+Precedence: bulk
+From: no-reply@arXiv.org (send mail ONLY to cs)
+Reply-To: cs@arXiv.org
+To: rabble@arXiv.org (cs daily title/abstract distribution)
+Subject: cs daily Subj-class mailing 2840 1
+Content-Type: text/plain
+MIME-Version: 1.0
+
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Send any comments regarding submissions directly to submitter.
+------------------------------------------------------------------------------
+Archives at http://arxiv.org/
+To unsubscribe, e-mail To: cs@arXiv.org, Subject: cancel
+------------------------------------------------------------------------------
+ Submissions to:
+Computer Vision and Pattern Recognition
+Discrete Mathematics
+Graphics
+ received from  Mon  7 Sep 20 18:00:00 GMT  to  Tue  8 Sep 20 18:00:00 GMT
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+\\
+arXiv:2009.03456
+Date: Mon, 7 Sep 2020 23:46:08 GMT   (2375kb,D)
+
+Title: ePointDA: An End-to-End Simulation-to-Real Domain Adaptation Framework
+  for LiDAR Point Cloud Segmentation
+Authors: Sicheng Zhao, Yezhen Wang, Bo Li, Bichen Wu, Yang Gao, Pengfei Xu,
+  Trevor Darrell, Kurt Keutzer
+Categories: cs.CV cs.AI
+\\
+  Due to its robust and precise distance measurements, LiDAR plays an important
+role in scene understanding for autonomous driving. Training deep neural
+networks (DNNs) on LiDAR data requires large-scale point-wise annotations,
+which are time-consuming and expensive to obtain. Instead, simulation-to-real
+domain adaptation (SRDA) trains a DNN using unlimited synthetic data with
+automatically generated labels and transfers the learned model to real
+scenarios. Existing SRDA methods for LiDAR point cloud segmentation mainly
+employ a multi-stage pipeline and focus on feature-level alignment. They
+require prior knowledge of real-world statistics and ignore the pixel-level
+dropout noise gap and the spatial feature gap between different domains. In
+this paper, we propose a novel end-to-end framework, named ePointDA, to address
+the above issues. Specifically, ePointDA consists of three components:
+self-supervised dropout noise rendering, statistics-invariant and
+spatially-adaptive feature alignment, and transferable segmentation learning.
+The joint optimization enables ePointDA to bridge the domain shift at the
+pixel-level by explicitly rendering dropout noise for synthetic LiDAR and at
+the feature-level by spatially aligning the features between different domains,
+without requiring the real-world statistics. Extensive experiments adapting
+from synthetic GTA-LiDAR to real KITTI and SemanticKITTI demonstrate the
+superiority of ePointDA for LiDAR point cloud segmentation.
+\\ ( https://arxiv.org/abs/2009.03456 ,  2375kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2009.03465
+Date: Tue, 8 Sep 2020 00:31:56 GMT   (37650kb,D)
+
+Title: LaSOT: A High-quality Large-scale Single Object Tracking Benchmark
+Authors: Heng Fan, Hexin Bai, Liting Lin, Fan Yang, Peng Chu, Ge Deng, Sijia
+  Yu, Harshit, Mingzhen Huang, Juehuan Liu, Yong Xu, Chunyuan Liao, Lin Yuan,
+  Haibin Ling
+Categories: cs.CV
+Comments: Tech Report
+\\
+  Despite great recent advances in visual tracking, its further development,
+including both algorithm design and evaluation, is limited due to lack of
+dedicated large-scale benchmarks. To address this problem, we present LaSOT, a
+high-quality Large-scale Single Object Tracking benchmark. LaSOT contains a
+diverse selection of 85 object classes, and offers 1,550 totaling more than
+3.87 million frames. Each video frame is carefully and manually annotated with
+a bounding box. This makes LaSOT, to our knowledge, the largest densely
+annotated tracking benchmark. Our goal in releasing LaSOT is to provide a
+dedicated high quality platform for both training and evaluation of trackers.
+The average video length of LaSOT is around 2,500 frames, where each video
+contains various challenge factors that exist in real world video footage,such
+as the targets disappearing and re-appearing. These longer video lengths allow
+for the assessment of long-term trackers. To take advantage of the close
+connection between visual appearance and natural language, we provide language
+specification for each video in LaSOT. We believe such additions will allow for
+future research to use linguistic features to improve tracking. Two protocols,
+full-overlap and one-shot, are designated for flexible assessment of trackers.
+We extensively evaluate 48 baseline trackers on LaSOT with in-depth analysis,
+and results reveal that there still exists significant room for improvement.
+The complete benchmark, tracking results as well as analysis are available at
+https://www.cs.stonybrook.edu/~cvl/projects/lasot/.
+\\ ( https://arxiv.org/abs/2009.03465 ,  37650kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2009.03477
+Date: Tue, 8 Sep 2020 01:44:34 GMT   (5194kb,D)
+
+Title: A Residual Solver and Its Unfolding Neural Network for Total Variation
+  Regularized Models
+Authors: Yuanhao Gong
+Categories: cs.CV eess.IV math.OC
+\\
+  This paper proposes to solve the Total Variation regularized models by
+finding the residual between the input and the unknown optimal solution. After
+analyzing a previous method, we developed a new iterative algorithm, named as
+Residual Solver, which implicitly solves the model in gradient domain. We
+theoretically prove the uniqueness of the gradient field in our algorithm. We
+further numerically confirm that the residual solver can reach the same global
+optimal solutions as the classical method on 500 natural images. Moreover, we
+unfold our iterative algorithm into a convolution neural network (named as
+Residual Solver Network). This network is unsupervised and can be considered as
+an "enhanced version" of our iterative algorithm. Finally, both the proposed
+algorithm and neural network are successfully applied on several problems to
+demonstrate their effectiveness and efficiency, including image smoothing,
+denoising, and biomedical image reconstruction. The proposed network is general
+and can be applied to solve other total variation regularized models.
+\\ ( https://arxiv.org/abs/2009.03477 ,  5194kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2009.03508
+Date: Tue, 8 Sep 2020 03:53:10 GMT   (1983kb,D)
+
+Title: Few-Shot Hyperspectral Image Classification With Unknown Classes Using
+  Multitask Deep Learning
+Authors: Shengjie Liu, Qian Shi, and Liangpei Zhang
+Categories: cs.CV
+Comments: Accepted by IEEE TGRS
+\\
+  Current hyperspectral image classification assumes that a predefined
+classification system is closed and complete, and there are no unknown or novel
+classes in the unseen data. However, this assumption may be too strict for the
+real world. Often, novel classes are overlooked when the classification system
+is constructed. The closed nature forces a model to assign a label given a new
+sample and may lead to overestimation of known land covers (e.g., crop area).
+To tackle this issue, we propose a multitask deep learning method that
+simultaneously conducts classification and reconstruction in the open world
+(named MDL4OW) where unknown classes may exist. The reconstructed data are
+compared with the original data; those failing to be reconstructed are
+considered unknown, based on the assumption that they are not well represented
+in the latent features due to the lack of labels. A threshold needs to be
+defined to separate the unknown and known classes; we propose two strategies
+based on the extreme value theory for few-shot and many-shot scenarios. The
+proposed method was tested on real-world hyperspectral images; state-of-the-art
+results were achieved, e.g., improving the overall accuracy by 4.94% for the
+Salinas data. By considering the existence of unknown classes in the open
+world, our method achieved more accurate hyperspectral image classification,
+especially under the few-shot context.
+\\ ( https://arxiv.org/abs/2009.03508 ,  1983kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2009.03558
+Date: Tue, 8 Sep 2020 07:29:05 GMT   (3200kb,D)
+
+Title: Region Comparison Network for Interpretable Few-shot Image
+  Classification
+Authors: Zhiyu Xue, Lixin Duan, Wen Li, Lin Chen and Jiebo Luo
+Categories: cs.CV cs.AI
+\\
+  While deep learning has been successfully applied to many real-world computer
+vision tasks, training robust classifiers usually requires a large amount of
+well-labeled data. However, the annotation is often expensive and
+time-consuming. Few-shot image classification has thus been proposed to
+effectively use only a limited number of labeled examples to train models for
+new classes. Recent works based on transferable metric learning methods have
+achieved promising classification performance through learning the similarity
+between the features of samples from the query and support sets. However, rare
+of them explicitly considers the model interpretability, which can actually be
+revealed during the training phase.
+  For that, in this work, we propose a metric learning based method named
+Region Comparison Network (RCN), which is able to reveal how few-shot learning
+works as in a neural network as well as to find out specific regions that are
+related to each other in images coming from the query and support sets.
+Moreover, we also present a visualization strategy named Region Activation
+Mapping (RAM) to intuitively explain what our method has learned by visualizing
+intermediate variables in our network. We also present a new way to generalize
+the interpretability from the level of tasks to categories, which can also be
+viewed as a method to find the prototypical parts for supporting the final
+decision of our RCN. Extensive experiments on four benchmark datasets clearly
+show the effectiveness of our method over existing baselines.
+\\ ( https://arxiv.org/abs/2009.03558 ,  3200kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2009.03671
+Date: Sat, 5 Sep 2020 16:06:04 GMT   (5093kb,D)
+
+Title: A Self-Supervised Gait Encoding Approach with Locality-Awareness for 3D
+  Skeleton Based Person Re-Identification
+Authors: Haocong Rao, Siqi Wang, Xiping Hu, Mingkui Tan, Yi Guo, Jun Cheng, Bin
+  Hu, and Xinwang Liu
+Categories: cs.CV cs.LG
+Comments: Codes are available at
+  https://github.com/Kali-Hac/Locality-Awareness-SGE. This article is an
+  extended version of our conference (IJCAI-2020) paper at
+  https://www.ijcai.org/proceedings/2020/0125. arXiv admin note: substantial
+  text overlap with arXiv:2008.09435
+\\
+  Person re-identification (Re-ID) via gait features within 3D skeleton
+sequences is a newly-emerging topic with several advantages. Existing solutions
+either rely on hand-crafted descriptors or supervised gait representation
+learning. This paper proposes a self-supervised gait encoding approach that can
+leverage unlabeled skeleton data to learn gait representations for person
+Re-ID. Specifically, we first create self-supervision by learning to
+reconstruct unlabeled skeleton sequences reversely, which involves richer
+high-level semantics to obtain better gait representations. Other pretext tasks
+are also explored to further improve self-supervised learning. Second, inspired
+by the fact that motion's continuity endows adjacent skeletons in one skeleton
+sequence and temporally consecutive skeleton sequences with higher correlations
+(referred as locality in 3D skeleton data), we propose a locality-aware
+attention mechanism and a locality-aware contrastive learning scheme, which aim
+to preserve locality-awareness on intra-sequence level and inter-sequence level
+respectively during self-supervised learning. Last, with context vectors
+learned by our locality-aware attention mechanism and contrastive learning
+scheme, a novel feature named Constrastive Attention-based Gait Encodings
+(CAGEs) is designed to represent gait effectively. Empirical evaluations show
+that our approach significantly outperforms skeleton-based counterparts by
+15-40% Rank-1 accuracy, and it even achieves superior performance to numerous
+multi-modal methods with extra RGB or depth information. Our codes are
+available at https://github.com/Kali-Hac/Locality-Awareness-SGE.
+\\ ( https://arxiv.org/abs/2009.03671 ,  5093kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2009.03683
+Date: Sun, 6 Sep 2020 21:08:41 GMT   (42540kb,D)
+
+Title: Rain rendering for evaluating and improving robustness to bad weather
+Authors: Maxime Tremblay, Shirsendu Sukanta Halder, Raoul de Charette,
+  Jean-Fran\c{c}ois Lalonde
+Categories: cs.CV
+Comments: 19 pages, 19 figures, IJCV 2020 preprint. arXiv admin note: text
+  overlap with arXiv:1908.10335
+DOI: 10.1007/s11263-020-01366-3
+\\
+  Rain fills the atmosphere with water particles, which breaks the common
+assumption that light travels unaltered from the scene to the camera. While it
+is well-known that rain affects computer vision algorithms, quantifying its
+impact is difficult. In this context, we present a rain rendering pipeline that
+enables the systematic evaluation of common computer vision algorithms to
+controlled amounts of rain. We present three different ways to add synthetic
+rain to existing images datasets: completely physic-based; completely
+data-driven; and a combination of both. The physic-based rain augmentation
+combines a physical particle simulator and accurate rain photometric modeling.
+We validate our rendering methods with a user study, demonstrating our rain is
+judged as much as 73% more realistic than the state-of-theart. Using our
+generated rain-augmented KITTI, Cityscapes, and nuScenes datasets, we conduct a
+thorough evaluation of object detection, semantic segmentation, and depth
+estimation algorithms and show that their performance decreases in degraded
+weather, on the order of 15% for object detection, 60% for semantic
+segmentation, and 6-fold increase in depth estimation error. Finetuning on our
+augmented synthetic data results in improvements of 21% on object detection,
+37% on semantic segmentation, and 8% on depth estimation.
+\\ ( https://arxiv.org/abs/2009.03683 ,  42540kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2009.03696
+Date: Tue, 8 Sep 2020 12:40:10 GMT   (1425kb,D)
+
+Title: Convolutional Neural Networks for Automatic Detection of Artifacts from
+  Independent Components Represented in Scalp Topographies of EEG Signals
+Authors: Giuseppe Placidi, Luigi Cinque, Matteo Polsinelli
+Categories: cs.CV cs.AI
+\\
+  Electroencephalography (EEG) measures the electrical brain activity in
+real-time by using sensors placed on the scalp. Artifacts, due to eye movements
+and blink, muscular/cardiac activity and generic electrical disturbances, have
+to be recognized and eliminated to allow a correct interpretation of the useful
+brain signals (UBS) of EEG. Independent Component Analysis (ICA) is effective
+to split the signal into independent components (ICs) whose re-projections on
+2D scalp topographies (images), also called topoplots, allow to
+recognize/separate artifacts and by UBS. Until now, IC topoplot analysis, a
+gold standard in EEG, has been carried on visually by human experts and, hence,
+not usable in automatic, fast-response EEG. We present a completely automatic
+and effective framework for EEG artifact recognition by IC topoplots, based on
+2D Convolutional Neural Networks (CNNs), capable to divide topoplots in 4
+classes: 3 types of artifacts and UBS. The framework setup is described and
+results are presented, discussed and compared with those obtained by other
+competitive strategies. Experiments, carried on public EEG datasets, have shown
+an overall accuracy of above 98%, employing 1.4 sec on a standard PC to
+classify 32 topoplots, that is to drive an EEG system of 32 sensors. Though not
+real-time, the proposed framework is efficient enough to be used in
+fast-response EEG-based Brain-Computer Interfaces (BCI) and faster than other
+automatic methods based on ICs.
+\\ ( https://arxiv.org/abs/2009.03696 ,  1425kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2009.03728
+Date: Tue, 8 Sep 2020 13:21:55 GMT   (3674kb,D)
+
+Title: Adversarial Machine Learning in Image Classification: A Survey Towards
+  the Defender's Perspective
+Authors: Gabriel Resende Machado, Eug\^enio Silva and Ronaldo Ribeiro
+  Goldschmidt
+Categories: cs.CV
+\\
+  Deep Learning algorithms have achieved the state-of-the-art performance for
+Image Classification and have been used even in security-critical applications,
+such as biometric recognition systems and self-driving cars. However, recent
+works have shown those algorithms, which can even surpass the human
+capabilities, are vulnerable to adversarial examples. In Computer Vision,
+adversarial examples are images containing subtle perturbations generated by
+malicious optimization algorithms in order to fool classifiers. As an attempt
+to mitigate these vulnerabilities, numerous countermeasures have been
+constantly proposed in literature. Nevertheless, devising an efficient defense
+mechanism has proven to be a difficult task, since many approaches have already
+shown to be ineffective to adaptive attackers. Thus, this self-containing paper
+aims to provide all readerships with a review of the latest research progress
+on Adversarial Machine Learning in Image Classification, however with a
+defender's perspective. Here, novel taxonomies for categorizing adversarial
+attacks and defenses are introduced and discussions about the existence of
+adversarial examples are provided. Further, in contrast to exisiting surveys,
+it is also given relevant guidance that should be taken into consideration by
+researchers when devising and evaluating defenses. Finally, based on the
+reviewed literature, it is discussed some promising paths for future research.
+\\ ( https://arxiv.org/abs/2009.03728 ,  3674kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2009.03782
+Date: Mon, 31 Aug 2020 08:07:32 GMT   (4252kb,D)
+
+Title: Analysis and Prediction of Deforming 3D Shapes using Oriented Bounding
+  Boxes and LSTM Autoencoders
+Authors: Sara Hahner, Rodrigo Iza-Teran, Jochen Garcke
+Categories: cs.CV cs.LG stat.ML
+\\
+  For sequences of complex 3D shapes in time we present a general approach to
+detect patterns for their analysis and to predict the deformation by making use
+of structural components of the complex shape. We incorporate long short-term
+memory (LSTM) layers into an autoencoder to create low dimensional
+representations that allow the detection of patterns in the data and
+additionally detect the temporal dynamics in the deformation behavior. This is
+achieved with two decoders, one for reconstruction and one for prediction of
+future time steps of the sequence. In a preprocessing step the components of
+the studied object are converted to oriented bounding boxes which capture the
+impact of plastic deformation and allow reducing the dimensionality of the data
+describing the structure. The architecture is tested on the results of 196 car
+crash simulations of a model with 133 different components, where material
+properties are varied. In the latent representation we can detect patterns in
+the plastic deformation for the different components. The predicted bounding
+boxes give an estimate of the final simulation result and their quality is
+improved in comparison to different baselines.
+\\ ( https://arxiv.org/abs/2009.03782 ,  4252kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2009.03807
+Date: Tue, 8 Sep 2020 15:01:56 GMT   (17644kb,D)
+
+Title: Understanding Compositional Structures in Art Historical Images using
+  Pose and Gaze Priors
+Authors: Prathmesh Madhu, Tilman Marquart, Ronak Kosti, Peter Bell, Andreas
+  Maier and Vincent Christlein
+Categories: cs.CV eess.IV
+Comments: To be Published in ECCV 2020 Workshops (VISART V)
+\\
+  Image compositions as a tool for analysis of artworks is of extreme
+significance for art historians. These compositions are useful in analyzing the
+interactions in an image to study artists and their artworks. Max Imdahl in his
+work called Ikonik, along with other prominent art historians of the 20th
+century, underlined the aesthetic and semantic importance of the structural
+composition of an image. Understanding underlying compositional structures
+within images is challenging and a time consuming task. Generating these
+structures automatically using computer vision techniques (1) can help art
+historians towards their sophisticated analysis by saving lot of time;
+providing an overview and access to huge image repositories and (2) also
+provide an important step towards an understanding of man made imagery by
+machines. In this work, we attempt to automate this process using the existing
+state of the art machine learning techniques, without involving any form of
+training. Our approach, inspired by Max Imdahl's pioneering work, focuses on
+two central themes of image composition: (a) detection of action regions and
+action lines of the artwork; and (b) pose-based segmentation of foreground and
+background. Currently, our approach works for artworks comprising of
+protagonists (persons) in an image. In order to validate our approach
+qualitatively and quantitatively, we conduct a user study involving experts and
+non-experts. The outcome of the study highly correlates with our approach and
+also demonstrates its domain-agnostic capability. We have open-sourced the code
+at https://github.com/image-compostion-canvas-group/image-compostion-canvas.
+\\ ( https://arxiv.org/abs/2009.03807 ,  17644kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2009.03817
+Date: Mon, 7 Sep 2020 15:48:48 GMT   (20707kb,D)
+
+Title: VisCode: Embedding Information in Visualization Images using
+  Encoder-Decoder Network
+Authors: Peiying Zhang, Chenhui Li, Changbo Wang
+Categories: cs.CV cs.HC
+Comments: 11 pages, 16 figures, conference
+MSC-class: 68U99
+\\
+  We present an approach called VisCode for embedding information into
+visualization images. This technology can implicitly embed data information
+specified by the user into a visualization while ensuring that the encoded
+visualization image is not distorted. The VisCode framework is based on a deep
+neural network. We propose to use visualization images and QR codes data as
+training data and design a robust deep encoder-decoder network. The designed
+model considers the salient features of visualization images to reduce the
+explicit visual loss caused by encoding. To further support large-scale
+encoding and decoding, we consider the characteristics of information
+visualization and propose a saliency-based QR code layout algorithm. We present
+a variety of practical applications of VisCode in the context of information
+visualization and conduct a comprehensive evaluation of the perceptual quality
+of encoding, decoding success rate, anti-attack capability, time performance,
+etc. The evaluation results demonstrate the effectiveness of VisCode.
+\\ ( https://arxiv.org/abs/2009.03817 ,  20707kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2009.03820
+Date: Tue, 8 Sep 2020 15:30:45 GMT   (1680kb)
+
+Title: Understanding and Exploiting Dependent Variables with Deep Metric
+  Learning
+Authors: Niall O' Mahony, Sean Campbell, Anderson Carvalho, Lenka Krpalkova,
+  Gustavo Velasco-Hernandez, Daniel Riordan, Joseph Walsh
+Categories: cs.CV cs.AI
+Journal-ref: Proceedings of the 2020 Intelligent Systems Conference
+  (IntelliSys) Volume 1, B. R. Arai K., Kapoor S., Ed. Springer, Cham, 2020,
+  pp. 97 to 113
+DOI: 10.1007/978-3-030-55180-3_8
+\\
+  Deep Metric Learning (DML) approaches learn to represent inputs to a
+lower-dimensional latent space such that the distance between representations
+in this space corresponds with a predefined notion of similarity. This paper
+investigates how the mapping element of DML may be exploited in situations
+where the salient features in arbitrary classification problems vary over time
+or due to changing underlying variables. Examples of such variable features
+include seasonal and time-of-day variations in outdoor scenes in place
+recognition tasks for autonomous navigation and age/gender variations in
+human/animal subjects in classification tasks for medical/ethological studies.
+Through the use of visualisation tools for observing the distribution of DML
+representations per each query variable for which prior information is
+available, the influence of each variable on the classification task may be
+better understood. Based on these relationships, prior information on these
+salient background variables may be exploited at the inference stage of the DML
+approach by using a clustering algorithm to improve classification performance.
+This research proposes such a methodology establishing the saliency of query
+background variables and formulating clustering algorithms for better
+separating latent-space representations at run-time. The paper also discusses
+online management strategies to preserve the quality and diversity of data and
+the representation of each class in the gallery of embeddings in the DML
+approach. We also discuss latent works towards understanding the relevance of
+underlying/multiple variables with DML.
+\\ ( https://arxiv.org/abs/2009.03820 ,  1680kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2009.03871
+Date: Tue, 8 Sep 2020 17:19:31 GMT   (945kb,D)
+
+Title: Intraoperative Liver Surface Completion with Graph Convolutional VAE
+Authors: Simone Foti, Bongjin Koo, Thomas Dowrick, Joao Ramalhinho, Moustafa
+  Allam, Brian Davidson, Danail Stoyanov and Matthew J. Clarkson
+Categories: cs.CV cs.LG
+\\
+  In this work we propose a method based on geometric deep learning to predict
+the complete surface of the liver, given a partial point cloud of the organ
+obtained during the surgical laparoscopic procedure. We introduce a new data
+augmentation technique that randomly perturbs shapes in their frequency domain
+to compensate the limited size of our dataset. The core of our method is a
+variational autoencoder (VAE) that is trained to learn a latent space for
+complete shapes of the liver. At inference time, the generative part of the
+model is embedded in an optimisation procedure where the latent representation
+is iteratively updated to generate a model that matches the intraoperative
+partial point cloud. The effect of this optimisation is a progressive non-rigid
+deformation of the initially generated shape. Our method is qualitatively
+evaluated on real data and quantitatively evaluated on synthetic data. We
+compared with a state-of-the-art rigid registration algorithm, that our method
+outperformed in visible areas.
+\\ ( https://arxiv.org/abs/2009.03871 ,  945kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2009.03809
+Date: Tue, 8 Sep 2020 15:04:33 GMT   (118kb,D)
+
+Title: Edge Degeneracy: Algorithmic and Structural Results
+Authors: Stratis Limnios, Christophe Paul, Joanny Perret, Dimitrios M. Thilikos
+Categories: cs.DM
+Comments: The paper has appeared as "Stratis Limnios, Christophe Paul, Joanny
+  Perret, Dimitrios M. Thilikos: Edge degeneracy: Algorithmic and structural
+  results. Theor. Comput. Sci. 839: 164-175 (2020)". This is a new version
+  where a typo has been corrected. In particular, "$1,2,3$" is now "$1,2$" and
+  "$\Bbb{N}_{\geq 4}$" is now "$\Bbb{N}_{\geq 3}$"
+MSC-class: 05C85
+ACM-class: G.2.2
+Journal-ref: Theoretical Computer Science 839:164-175 (2020)
+DOI: 10.1016/j.tcs.2020.06.006
+\\
+  We consider a cops and robber game where the cops are blocking edges of a
+graph, while the robber occupies its vertices. At each round of the game, the
+cops choose some set of edges to block and right after the robber is obliged to
+move to another vertex traversing at most $s$ unblocked edges ($s$ can be seen
+as the speed of the robber). Both parts have complete knowledge of the
+opponent's moves and the cops win when they occupy all edges incident to the
+robbers position. We introduce the capture cost on $G$ against a robber of
+speed $s$. This defines a hierarchy of invariants, namely $\delta^{1}_{\rm
+e},\delta^{2}_{\rm e},\ldots,\delta^{\infty}_{\rm e}$, where
+$\delta^{\infty}_{\rm e}$ is an edge-analogue of the admissibility graph
+invariant, namely the {\em edge-admissibility} of a graph. We prove that the
+problem asking wether $\delta^{s}_{\rm e}(G)\leq k$, is polynomially solvable
+when $s\in \{1,2,\infty\}$ while, otherwise, it is NP-complete. Our main result
+is a structural theorem for graphs of bounded edge-admissibility. We prove that
+every graph of edge-admissibility at most $k$ can be constructed using $(\leq
+k)$-edge-sums, starting from graphs whose all vertices, except possibly from
+one, have degree at most $k$. Our structural result is approximately tight in
+the sense that graphs generated by this construction always have
+edge-admissibility at most $2k-1$. Our proofs are based on a precise structural
+characterization of the graphs that do not contain $\theta_{r}$ as an
+immersion, where $\theta_{r}$ is the graph on two vertices and $r$ parallel
+edges.
+\\ ( https://arxiv.org/abs/2009.03809 ,  118kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2009.03385
+Date: Mon, 7 Sep 2020 19:30:01 GMT   (8432kb,D)
+
+Title: Responsive Matrix Cells: A Focus+Context Approach for Exploring and
+  Editing Multivariate Graphs
+Authors: Tom Horak, Philip Berger, Heidrun Schumann, Raimund Dachselt,
+  Christian Tominski
+Categories: cs.GR cs.HC
+Comments: Tom Horak and Philip Berger are joint first authors
+\\
+  Matrix visualizations are a useful tool to provide a general overview of a
+graph's structure. For multivariate graphs, a remaining challenge is to cope
+with the attributes that are associated with nodes and edges. Addressing this
+challenge, we propose responsive matrix cells as a focus+context approach for
+embedding additional interactive views into a matrix. Responsive matrix cells
+are local zoomable regions of interest that provide auxiliary data exploration
+and editing facilities for multivariate graphs. They behave responsively by
+adapting their visual contents to the cell location, the available display
+space, and the user task. Responsive matrix cells enable users to reveal
+details about the graph, compare node and edge attributes, and edit data values
+directly in a matrix without resorting to external views or tools. We report
+the general design considerations for responsive matrix cells covering the
+visual and interactive means necessary to support a seamless data exploration
+and editing. Responsive matrix cells have been implemented in a web-based
+prototype based on which we demonstrate the utility of our approach. We
+describe a walk-through for the use case of analyzing a graph of soccer players
+and report on insights from a preliminary user feedback session.
+\\ ( https://arxiv.org/abs/2009.03385 ,  8432kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2009.03434
+Date: Mon, 7 Sep 2020 21:41:44 GMT   (432kb,D)
+
+Title: A Fast Parametric Ellipse Algorithm
+Authors: Jerry R. Van Aken
+Categories: cs.GR
+Comments: 19 pages, 6 figures, C++ source code
+\\
+  This paper describes a 2-D graphics algorithm that uses shifts and adds to
+precisely plot a series of points on an ellipse of any shape and orientation.
+The algorithm can also plot an elliptic arc that starts and ends at arbitrary
+angles. The ellipse algorithm described here is largely based on earlier papers
+by Van Aken and Simar [1,2], which extend Marvin Minsky's well-known circle
+algorithm [3,4,5] to ellipses, and show how to cancel out the sources of error
+in Minsky's original algorithm. A new flatness test is presented for
+automatically controlling the spacing between points plotted on an ellipse or
+elliptic arc. Most of the calculations performed by the ellipse algorithm and
+flatness test use fixed-point addition and shift operations, and thus are
+well-suited to run on less-powerful processors. C++ source code listings are
+included.
+  Keywords: parametric ellipse algorithm, rotated ellipse, Minsky circle
+algorithm, flatness, elliptic arc, conjugate diameters, affine invariance
+\\ ( https://arxiv.org/abs/2009.03434 ,  432kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2009.03667
+Date: Tue, 8 Sep 2020 12:14:37 GMT   (27325kb,D)
+
+Title: Computational Design of Cold Bent Glass Fa\c{c}ades
+Authors: Konstantinos Gavriil, Ruslan Guseinov, Jes\'us P\'erez, Davide Pellis,
+  Paul Henderson, Florian Rist, Helmut Pottmann, Bernd Bickel
+Categories: cs.GR cs.LG
+DOI: 10.1145/3414685.3417843
+\\
+  Cold bent glass is a promising and cost-efficient method for realizing doubly
+curved glass fa\c{c}ades. They are produced by attaching planar glass sheets to
+curved frames and require keeping the occurring stress within safe limits.
+However, it is very challenging to navigate the design space of cold bent glass
+panels due to the fragility of the material, which impedes the form-finding for
+practically feasible and aesthetically pleasing cold bent glass fa\c{c}ades. We
+propose an interactive, data-driven approach for designing cold bent glass
+fa\c{c}ades that can be seamlessly integrated into a typical architectural
+design pipeline. Our method allows non-expert users to interactively edit a
+parametric surface while providing real-time feedback on the deformed shape and
+maximum stress of cold bent glass panels. Designs are automatically refined to
+minimize several fairness criteria while maximal stresses are kept within glass
+limits. We achieve interactive frame rates by using a differentiable Mixture
+Density Network trained from more than a million simulations. Given a curved
+boundary, our regression model is capable of handling multistable
+configurations and accurately predicting the equilibrium shape of the panel and
+its corresponding maximal stress. We show predictions are highly accurate and
+validate our results with a physical realization of a cold bent glass surface.
+\\ ( https://arxiv.org/abs/2009.03667 ,  27325kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2009.03707
+Date: Tue, 8 Sep 2020 12:52:43 GMT   (2409kb,D)
+
+Title: GPU Parallel Computation of Morse-Smale Complexes
+Authors: Varshini Subhash, Karran Pandey, Vijay Natarajan
+Categories: cs.GR
+\\
+  The Morse-Smale complex is a well studied topological structure that
+represents the gradient flow behavior of a scalar function. It supports
+multi-scale topological analysis and visualization of large scientific data.
+Its computation poses significant algorithmic challenges when considering large
+scale data and increased feature complexity. Several parallel algorithms have
+been proposed towards the fast computation of the 3D Morse-Smale complex. The
+non-trivial structure of the saddle-saddle connections are not amenable to
+parallel computation. This paper describes a fine grained parallel method for
+computing the Morse-Smale complex that is implemented on a GPU. The
+saddle-saddle reachability is first determined via a transformation into a
+sequence of vector operations followed by the path traversal, which is achieved
+via a sequence of matrix operations. Computational experiments show that the
+method achieves up to 7x speedup over current shared memory implementations.
+\\ ( https://arxiv.org/abs/2009.03707 ,  2409kb)
+%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-
+------------------------------------------------------------------------------
+\\
+arXiv:2009.03301 (*cross-listing*)
+Date: Fri, 4 Sep 2020 20:14:59 GMT   (1293kb,D)
+
+Title: Sensors, Safety Models and A System-Level Approach to Safe and Scalable
+  Automated Vehicles
+Authors: Jack Weast
+Categories: cs.RO cs.AI cs.CV cs.LG
+\\
+  When considering the accuracy of sensors in an automated vehicle (AV), it is
+not sufficient to evaluate the performance of any given sensor in isolation.
+Rather, the performance of any individual sensor must be considered in the
+context of the overall system design. Techniques like redundancy and different
+sensing modalities can reduce the chances of a sensing failure. Additionally,
+the use of safety models is essential to understanding whether any particular
+sensing failure is relevant. Only when the entire system design is taken into
+account can one properly understand the meaning of safety-relevant sensing
+failures in an AV. In this paper, we will consider what should actually
+constitute a sensing failure, how safety models play an important role in
+mitigating potential failures, how a system-level approach to safety will
+deliver a safe and scalable AV, and what an acceptable sensing failure rate
+should be considering the full picture of an AV's architecture.
+\\ ( https://arxiv.org/abs/2009.03301 ,  1293kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2009.03303 (*cross-listing*)
+Date: Mon, 7 Sep 2020 07:57:13 GMT   (451kb,D)
+
+Title: Going deeper with brain morphometry using neural networks
+Authors: Rodrigo Santa Cruz, L\'eo Lebrat, Pierrick Bourgeat, Vincent Dor\'e,
+  Jason Dowling, Jurgen Fripp, Clinton Fookes, Olivier Salvado
+Categories: eess.IV cs.CV cs.LG
+\\
+  Brain morphometry from magnetic resonance imaging (MRI) is a consolidated
+biomarker for many neurodegenerative diseases. Recent advances in this domain
+indicate that deep convolutional neural networks can infer morphometric
+measurements within a few seconds. Nevertheless, the accuracy of the devised
+model for insightful bio-markers (mean curvature and thickness) remains
+unsatisfactory. In this paper, we propose a more accurate and efficient neural
+network model for brain morphometry named HerstonNet. More specifically, we
+develop a 3D ResNet-based neural network to learn rich features directly from
+MRI, design a multi-scale regression scheme by predicting morphometric measures
+at feature maps of different resolutions, and leverage a robust optimization
+method to avoid poor quality minima and reduce the prediction variance. As a
+result, HerstonNet improves the existing approach by 24.30% in terms of
+intraclass correlation coefficient (agreement measure) to FreeSurfer
+silver-standards while maintaining a competitive run-time.
+\\ ( https://arxiv.org/abs/2009.03303 ,  451kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2009.03364 (*cross-listing*)
+Date: Mon, 7 Sep 2020 18:35:35 GMT   (2434kb,D)
+
+Title: Adversarial attacks on deep learning models for fatty liver disease
+  classification by modification of ultrasound image reconstruction method
+Authors: Michal Byra, Grzegorz Styczynski, Cezary Szmigielski, Piotr
+  Kalinowski, Lukasz Michalowski, Rafal Paluszkiewicz, Bogna
+  Ziarkiewicz-Wroblewska, Krzysztof Zieniewicz, Andrzej Nowicki
+Categories: eess.IV cs.CV physics.med-ph
+Comments: 4 pages, 3 figures
+\\
+  Convolutional neural networks (CNNs) have achieved remarkable success in
+medical image analysis tasks. In ultrasound (US) imaging, CNNs have been
+applied to object classification, image reconstruction and tissue
+characterization. However, CNNs can be vulnerable to adversarial attacks, even
+small perturbations applied to input data may significantly affect model
+performance and result in wrong output. In this work, we devise a novel
+adversarial attack, specific to ultrasound (US) imaging. US images are
+reconstructed based on radio-frequency signals. Since the appearance of US
+images depends on the applied image reconstruction method, we explore the
+possibility of fooling deep learning model by perturbing US B-mode image
+reconstruction method. We apply zeroth order optimization to find small
+perturbations of image reconstruction parameters, related to attenuation
+compensation and amplitude compression, which can result in wrong output. We
+illustrate our approach using a deep learning model developed for fatty liver
+disease diagnosis, where the proposed adversarial attack achieved success rate
+of 48%.
+\\ ( https://arxiv.org/abs/2009.03364 ,  2434kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2009.03458 (*cross-listing*)
+Date: Mon, 7 Sep 2020 23:52:57 GMT   (17732kb,D)
+
+Title: Horus: Using Sensor Fusion to Combine Infrastructure and On-board
+  Sensing to Improve Autonomous Vehicle Safety
+Authors: Sanjay Seshan
+Categories: cs.RO cs.CV cs.NI
+Comments: Presented at Intel ISEF 2019
+ACM-class: I.2.9; I.2.10
+\\
+  Studies predict that demand for autonomous vehicles will increase tenfold
+between 2019 and 2026. However, recent high-profile accidents have
+significantly impacted consumer confidence in this technology. The cause for
+many of these accidents can be traced back to the inability of these vehicles
+to correctly sense the impending danger. In response, manufacturers have been
+improving the already extensive on-vehicle sensor packages to ensure that the
+system always has access to the data necessary to ensure safe navigation.
+However, these sensor packages only provide a view from the vehicle's
+perspective and, as a result, autonomous vehicles still require frequent human
+intervention to ensure safety.
+  To address this issue, I developed a system, called Horus, that combines
+on-vehicle and infrastructure-based sensors to provide a more complete view of
+the environment, including areas not visible from the vehicle. I built a
+small-scale experimental testbed as a proof of concept. My measurements of the
+impact of sensor failures showed that even short outages (1 second) at slow
+speeds (25 km/hr scaled velocity) prevents vehicles that rely on on-vehicle
+sensors from navigating properly. My experiments also showed that Horus
+dramatically improves driving safety and that the sensor fusion algorithm
+selected plays a significant role in the quality of the navigation. With just a
+pair of infrastructure sensors, Horus could tolerate sensors that fail 40% of
+the time and still navigate safely. These results are a promising first step
+towards safer autonomous vehicles.
+\\ ( https://arxiv.org/abs/2009.03458 ,  17732kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2009.03632 (*cross-listing*)
+Date: Tue, 8 Sep 2020 10:28:18 GMT   (6649kb,D)
+
+Title: Imbalanced Continual Learning with Partitioning Reservoir Sampling
+Authors: Chris Dongjoo Kim, Jinseo Jeong, and Gunhee Kim
+Categories: cs.LG cs.AI cs.CV stat.ML
+Comments: Published to ECCV2020
+\\
+  Continual learning from a sequential stream of data is a crucial challenge
+for machine learning research. Most studies have been conducted on this topic
+under the single-label classification setting along with an assumption of
+balanced label distribution. This work expands this research horizon towards
+multi-label classification. In doing so, we identify unanticipated adversity
+innately existent in many multi-label datasets, the long-tailed distribution.
+We jointly address the two independently solved problems, Catastropic
+Forgetting and the long-tailed label distribution by first empirically showing
+a new challenge of destructive forgetting of the minority concepts on the tail.
+Then, we curate two benchmark datasets, COCOseq and NUS-WIDEseq, that allow the
+study of both intra- and inter-task imbalances. Lastly, we propose a new
+sampling strategy for replay-based approach named Partitioning Reservoir
+Sampling (PRS), which allows the model to maintain a balanced knowledge of both
+head and tail classes. We publicly release the dataset and the code in our
+project page.
+\\ ( https://arxiv.org/abs/2009.03632 ,  6649kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2009.03651 (*cross-listing*)
+Date: Tue, 8 Sep 2020 11:45:27 GMT   (1963kb,D)
+
+Title: Learning more expressive joint distributions in multimodal variational
+  methods
+Authors: Sasho Nedelkoski, Mihail Bogojeski, Odej Kao
+Categories: cs.LG cs.AI cs.CV stat.ML
+Comments: 12 pages, Accepted and presented at LOD 2020
+\\
+  Data often are formed of multiple modalities, which jointly describe the
+observed phenomena. Modeling the joint distribution of multimodal data requires
+larger expressive power to capture high-level concepts and provide better data
+representations. However, multimodal generative models based on variational
+inference are limited due to the lack of flexibility of the approximate
+posterior, which is obtained by searching within a known parametric family of
+distributions. We introduce a method that improves the representational
+capacity of multimodal variational methods using normalizing flows. It
+approximates the joint posterior with a simple parametric distribution and
+subsequently transforms into a more complex one. Through several experiments,
+we demonstrate that the model improves on state-of-the-art multimodal methods
+based on variational inference on various computer vision tasks such as
+colorization, edge and mask detection, and weakly supervised learning. We also
+show that learning more powerful approximate joint distributions improves the
+quality of the generated samples. The code of our model is publicly available
+at https://github.com/SashoNedelkoski/BPFDMVM.
+\\ ( https://arxiv.org/abs/2009.03651 ,  1963kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2009.03665 (*cross-listing*)
+Date: Fri, 4 Sep 2020 13:22:28 GMT   (334kb,D)
+
+Title: GPU-based Self-Organizing Maps for Post-Labeled Few-Shot Unsupervised
+  Learning
+Authors: Lyes Khacef, Vincent Gripon, Benoit Miramond
+Categories: cs.NE cs.CV
+Comments: Accepted for publication in the International Conference on Neural
+  Information Processing (ICONIP) 2020. arXiv admin note: text overlap with
+  arXiv:2009.02174
+\\
+  Few-shot classification is a challenge in machine learning where the goal is
+to train a classifier using a very limited number of labeled examples. This
+scenario is likely to occur frequently in real life, for example when data
+acquisition or labeling is expensive. In this work, we consider the problem of
+post-labeled few-shot unsupervised learning, a classification task where
+representations are learned in an unsupervised fashion, to be later labeled
+using very few annotated examples. We argue that this problem is very likely to
+occur on the edge, when the embedded device directly acquires the data, and the
+expert needed to perform labeling cannot be prompted often. To address this
+problem, we consider an algorithm consisting of the concatenation of transfer
+learning with clustering using Self-Organizing Maps (SOMs). We introduce a
+TensorFlow-based implementation to speed-up the process in multi-core CPUs and
+GPUs. Finally, we demonstrate the effectiveness of the method using standard
+off-the-shelf few-shot classification benchmarks.
+\\ ( https://arxiv.org/abs/2009.03665 ,  334kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2009.03693 (*cross-listing*)
+Date: Mon, 7 Sep 2020 11:11:18 GMT   (12753kb,D)
+
+Title: Deep Cyclic Generative Adversarial Residual Convolutional Networks for
+  Real Image Super-Resolution
+Authors: Rao Muhammad Umer, Christian Micheloni
+Categories: eess.IV cs.CV
+Comments: In proceedings of European Conference on Computer Vision (ECCV)
+  Workshops. arXiv admin note: substantial text overlap with arXiv:2005.00953
+\\
+  Recent deep learning based single image super-resolution (SISR) methods
+mostly train their models in a clean data domain where the low-resolution (LR)
+and the high-resolution (HR) images come from noise-free settings (same domain)
+due to the bicubic down-sampling assumption. However, such degradation process
+is not available in real-world settings. We consider a deep cyclic network
+structure to maintain the domain consistency between the LR and HR data
+distributions, which is inspired by the recent success of CycleGAN in the
+image-to-image translation applications. We propose the Super-Resolution
+Residual Cyclic Generative Adversarial Network (SRResCycGAN) by training with a
+generative adversarial network (GAN) framework for the LR to HR domain
+translation in an end-to-end manner. We demonstrate our proposed approach in
+the quantitative and qualitative experiments that generalize well to the real
+image super-resolution and it is easy to deploy for the mobile/embedded
+devices. In addition, our SR results on the AIM 2020 Real Image SR Challenge
+datasets demonstrate that the proposed SR approach achieves comparable results
+as the other state-of-art methods.
+\\ ( https://arxiv.org/abs/2009.03693 ,  12753kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2009.03787 (*cross-listing*)
+Date: Tue, 8 Sep 2020 14:30:21 GMT   (2089kb,D)
+
+Title: Self-Supervised Scale Recovery for Monocular Depth and Egomotion
+  Estimation
+Authors: Brandon Wagstaff, Jonathan Kelly
+Categories: cs.RO cs.CV
+Comments: Manuscript submitted to IEEE Robotics and Automation Letters (RA-L)
+  and ICRA 2021
+\\
+  The self-supervised loss formulation for jointly training depth and egomotion
+neural networks with monocular images is well studied and has demonstrated
+state-of-the-art accuracy. One of the main limitations of this approach,
+however, is that the depth and egomotion estimates are only determined up to an
+unknown scale. In this paper, we present a novel \textit{scale recovery loss}
+that enforces consistency between a known camera height and the estimated
+camera height, generating metric (scaled) depth and egomotion predictions. % We
+show that our proposed method is competitive with other scale recovery
+techniques (i.e., pose supervision and stereo left/right consistency
+constraints). Further, we demonstrate how our method facilitates network
+retraining within new environments, whereas other scale-resolving approaches
+are incapable of doing so. Notably, our egomotion network is able to produce
+more accurate estimates than a similar method that only recovers scale at test
+time.
+\\ ( https://arxiv.org/abs/2009.03787 ,  2089kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2009.03863 (*cross-listing*)
+Date: Tue, 8 Sep 2020 16:59:28 GMT   (1282kb,D)
+
+Title: TanhSoft -- a family of activation functions combining Tanh and Softplus
+Authors: Koushik Biswas, Sandeep Kumar, Shilpak Banerjee, Ashish Kumar Pandey
+Categories: cs.NE cs.AI cs.CV cs.LG
+Comments: 11 pages
+\\
+  Deep learning at its core, contains functions that are composition of a
+linear transformation with a non-linear function known as activation function.
+In past few years, there is an increasing interest in construction of novel
+activation functions resulting in better learning. In this work, we propose a
+family of novel activation functions, namely TanhSoft, with four undetermined
+hyper-parameters of the form
+tanh({\alpha}x+{\beta}e^{{\gamma}x})ln({\delta}+e^x) and tune these
+hyper-parameters to obtain activation functions which are shown to outperform
+several well known activation functions. For instance, replacing ReLU with
+xtanh(0.6e^x)improves top-1 classification accuracy on CIFAR-10 by 0.46% for
+DenseNet-169 and 0.7% for Inception-v3 while with tanh(0.87x)ln(1 +e^x) top-1
+classification accuracy on CIFAR-100 improves by 1.24% for DenseNet-169 and
+2.57% for SimpleNet model.
+\\ ( https://arxiv.org/abs/2009.03863 ,  1282kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2009.03878 (*cross-listing*)
+Date: Tue, 8 Sep 2020 17:36:24 GMT   (941kb,D)
+
+Title: Convolution Neural Networks for diagnosing colon and lung cancer
+  histopathological images
+Authors: Sanidhya Mangal, Aanchal Chaurasia and Ayush Khajanchi
+Categories: eess.IV cs.CV
+Comments: 10 pages, 4 figures, 2 tables
+\\
+  Lung and Colon cancer are one of the leading causes of mortality and
+morbidity in adults. Histopathological diagnosis is one of the key components
+to discern cancer type. The aim of the present research is to propose a
+computer aided diagnosis system for diagnosing squamous cell carcinomas and
+adenocarcinomas of lung as well as adenocarcinomas of colon using convolutional
+neural networks by evaluating the digital pathology images for these cancers.
+Hereby, rendering artificial intelligence as useful technology in the near
+future. A total of 2500 digital images were acquired from LC25000 dataset
+containing 5000 images for each class. A shallow neural network architecture
+was used classify the histopathological slides into squamous cell carcinomas,
+adenocarcinomas and benign for the lung. Similar model was used to classify
+adenocarcinomas and benign for colon. The diagnostic accuracy of more than 97%
+and 96% was recorded for lung and colon respectively.
+\\ ( https://arxiv.org/abs/2009.03878 ,  941kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2009.03416 (*cross-listing*)
+Date: Mon, 7 Sep 2020 20:54:41 GMT   (10kb,D)
+
+Title: Probabilistic analysis of algorithms for cost constrained minimum
+  weighted combinatorial objects
+Authors: Alan Frieze and Tomasz Tkocz
+Categories: cs.DS cs.DM math.CO
+Comments: 8 pages
+\\
+  We consider cost constrained versions of the minimum spanning tree problem
+and the assignment problem. We assume edge weights are independent copies of a
+continuous random variable $Z$ that satisfies $F(x)=\Pr(Z\leq x)\approx
+x^\alpha$ as $x\to0$, where $\alpha\geq 1$. Also, there are $r=O(1)$ budget
+constraints with edge costs chosen from the same distribution. We use
+Lagrangean duality to construct polynomial time algorithms that produce
+asymptotically optimal solutions. For the spanning tree problem, we allow
+$r>1$, but for the assignment problem we can only analyse the case $r=1$.
+\\ ( https://arxiv.org/abs/2009.03416 ,  10kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2009.03747 (*cross-listing*)
+Date: Tue, 8 Sep 2020 13:37:47 GMT   (366kb,D)
+
+Title: Connectivity matters: Construction and exact random sampling of
+  connected graphs
+Authors: Szabolcs Horv\'at and Carl D. Modes
+Categories: physics.soc-ph cs.DM math.CO
+\\
+  We describe a new method for the random sampling of connected graphs with a
+specified degree sequence. We consider both the case of simple graphs and that
+of loopless multigraphs. Our method builds on a recently introduced novel
+sampling approach that constructs graphs independently (unlike edge-switching
+Markov Chain Monte Carlo methods) and efficiently (unlike the configuration
+model), and extends it to incorporate the constraint of connectivity.
+Additionally, we present a simple and elegant algorithm for directly
+constructing a single connected realization of a degree sequence, either as a
+simple graph or a multigraph. Finally, we demonstrate our sampling method on a
+realistic scale-free example, as well as on degree sequences of connected
+real-world networks.
+\\ ( https://arxiv.org/abs/2009.03747 ,  366kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2009.03788 (*cross-listing*)
+Date: Tue, 8 Sep 2020 14:35:48 GMT   (578kb,D)
+
+Title: Tight List-Sizes for Oblivious AVCs under Constraints
+Authors: Yihan Zhang, Sidharth Jaggi, Amitalok J. Budkuley
+Categories: cs.IT cs.CC cs.DM math.CO math.IT
+\\
+  We study list-decoding over adversarial channels governed by oblivious
+adversaries (a.k.a. oblivious Arbitrarily Varying Channels (AVCs)). This type
+of adversaries aims to maliciously corrupt the communication without knowing
+the actual transmission from the sender. For any oblivious AVCs potentially
+with constraints on the sender's transmitted sequence and the adversary's noise
+sequence, we determine the exact value of the minimum list-size that can
+support a reliable communication at positive rate. This generalizes a classical
+result by Hughes (IEEE Transactions on Information Theory, 1997) and answers an
+open question posed by Sarwate and Gastpar (IEEE Transactions on Information
+Theory, 2012). A lower bound on the list-decoding capacity (whenever positive)
+is presented. Under a certain combinatorial conjecture, we also prove a
+matching upper bound. En route to a tight characterization of the list-decoding
+capacity, we propose a method for subcode construction towards the resolution
+of the combinatorial conjecture.
+\\ ( https://arxiv.org/abs/2009.03788 ,  578kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2009.03784 (*cross-listing*)
+Date: Tue, 8 Sep 2020 14:25:16 GMT   (4809kb)
+
+Title: Improving Engagement of Animated Visualization with Visual Foreshadowing
+Authors: Wenchao Li, Yun Wang, Haidong Zhang, Huamin Qu
+Categories: cs.HC cs.GR
+\\
+  Animated visualization is becoming increasingly popular as a compelling way
+to illustrate changes in time series data. However, maintaining the viewer's
+focus throughout the entire animation is difficult because of its
+time-consuming nature. Viewers are likely to become bored and distracted during
+the ever-changing animated visualization. Informed by the role of foreshadowing
+that builds the expectation in film and literature, we introduce visual
+foreshadowing to improve the engagement of animated visualizations. In
+specific, we propose designs of visual foreshadowing that engage the audience
+while watching the animation. To demonstrate our approach, we built a
+proof-of-concept animated visualization authoring tool that incorporates visual
+foreshadowing techniques with various styles. Our user study indicates the
+effectiveness of our foreshadowing techniques on improving engagement for
+animated visualization.
+\\ ( https://arxiv.org/abs/2009.03784 ,  4809kb)
+%%--%%--%%--%%--%%--%%--%%--%%--%%--%%--%%--%%--%%--%%--%%--%%--%%--%%--%%--%%
+------------------------------------------------------------------------------
+\\
+arXiv:1904.04621
+replaced with revised version Tue, 8 Sep 2020 15:53:55 GMT   (9348kb,D)
+
+Title: Towards Analyzing Semantic Robustness of Deep Neural Networks
+Authors: Abdullah Hamdi, Bernard Ghanem
+Categories: cs.CV cs.CR cs.LG
+Comments: Presented at European conference on computer vision (ECCV 2020)
+  Workshop on Adversarial Robustness in the Real World (
+  https://eccv20-adv-workshop.github.io/ ) [best paper award]. The code is
+  available at https://github.com/ajhamdi/semantic-robustness
+ACM-class: I.2.10; I.4; I.4; I.2.6; D.4.6; E.3
+\\ ( https://arxiv.org/abs/1904.04621 ,  9348kb)
+------------------------------------------------------------------------------
+\\
+arXiv:1909.02215
+replaced with revised version Mon, 7 Sep 2020 18:25:34 GMT   (48136kb,D)
+
+Title: Synthesizing Coupled 3D Face Modalities by Trunk-Branch Generative
+  Adversarial Networks
+Authors: Baris Gecer, Alexander Lattas, Stylianos Ploumpis, Jiankang Deng,
+  Athanasios Papaioannou, Stylianos Moschoglou, Stefanos Zafeiriou
+Categories: cs.CV cs.GR
+Comments: Check project page: https://github.com/barisgecer/TBGAN for the full
+  resolution results and the accompanying video
+\\ ( https://arxiv.org/abs/1909.02215 ,  48136kb)
+------------------------------------------------------------------------------
+\\
+arXiv:1911.13008
+replaced with revised version Tue, 8 Sep 2020 06:46:22 GMT   (532kb,D)
+
+Title: Collaborative Attention Network for Person Re-identification
+Authors: Wenpeng Li, Yongli Sun, Jinjun Wang, Han Xu, Xiangru Yang, Long Cui
+Categories: cs.CV
+\\ ( https://arxiv.org/abs/1911.13008 ,  532kb)
+------------------------------------------------------------------------------
+\\
+arXiv:1912.04465
+replaced with revised version Tue, 8 Sep 2020 13:27:22 GMT   (3863kb,D)
+
+Title: SoccerDB: A Large-Scale Database for Comprehensive Video Understanding
+Authors: Yudong Jiang, Kaixu Cui, Leilei Chen, Canjin Wang, Changliang Xu
+Categories: cs.CV
+Comments: accepted by MM2020 sports workshop
+DOI: 10.1145/3422844.3423051
+\\ ( https://arxiv.org/abs/1912.04465 ,  3863kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2002.06810
+replaced with revised version Tue, 8 Sep 2020 00:44:12 GMT   (8837kb,D)
+
+Title: Discernible Image Compression
+Authors: Zhaohui Yang, Yunhe Wang, Chang Xu, Peng Du, Chao Xu, Chunjing Xu, Qi
+  Tian
+Categories: cs.CV
+Comments: Accepted by ACMMM 2020
+DOI: 10.1145/3394171.3413968
+\\ ( https://arxiv.org/abs/2002.06810 ,  8837kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2002.10119
+replaced with revised version Tue, 8 Sep 2020 08:44:11 GMT   (5312kb,D)
+
+Title: DeepSign: Deep On-Line Signature Verification
+Authors: Ruben Tolosana, Ruben Vera-Rodriguez, Julian Fierrez and Javier
+  Ortega-Garcia
+Categories: cs.CV cs.HC
+\\ ( https://arxiv.org/abs/2002.10119 ,  5312kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2003.06472
+replaced with revised version Tue, 8 Sep 2020 13:36:11 GMT   (1725kb,D)
+
+Title: Inducing Optimal Attribute Representations for Conditional GANs
+Authors: Binod Bhattarai and Tae-Kyun Kim
+Categories: cs.CV
+\\ ( https://arxiv.org/abs/2003.06472 ,  1725kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2003.08440
+replaced with revised version Tue, 8 Sep 2020 02:42:54 GMT   (4035kb,D)
+
+Title: Synthesize then Compare: Detecting Failures and Anomalies for Semantic
+  Segmentation
+Authors: Yingda Xia, Yi Zhang, Fengze Liu, Wei Shen, Alan Yuille
+Categories: cs.CV
+Comments: ECCV 2020 Oral. The first two authors contributed equally to this
+  work. Code available at https://github.com/YingdaXia/SynthCP
+\\ ( https://arxiv.org/abs/2003.08440 ,  4035kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2005.13140
+replaced with revised version Mon, 7 Sep 2020 20:16:31 GMT   (4872kb,D)
+
+Title: SSM-Net for Plants Disease Identification in Low Data Regime
+Authors: Shruti Jadon
+Categories: cs.CV cs.LG eess.IV
+Comments: 5 pages, 7 Figures
+\\ ( https://arxiv.org/abs/2005.13140 ,  4872kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2005.14288
+replaced with revised version Mon, 7 Sep 2020 22:29:24 GMT   (202kb,D)
+
+Title: ePillID Dataset: A Low-Shot Fine-Grained Benchmark for Pill
+  Identification
+Authors: Naoto Usuyama, Natalia Larios Delgado, Amanda K. Hall, Jessica Lundin
+Categories: cs.CV cs.IR
+Comments: CVPR 2020 VL3. Project Page:
+  https://github.com/usuyama/ePillID-benchmark
+\\ ( https://arxiv.org/abs/2005.14288 ,  202kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2006.04150
+replaced with revised version Mon, 7 Sep 2020 19:26:54 GMT   (666kb,D)
+
+Title: Decentralised Learning from Independent Multi-Domain Labels for Person
+  Re-Identification
+Authors: Guile Wu and Shaogang Gong
+Categories: cs.CV
+Comments: Major Revisions
+\\ ( https://arxiv.org/abs/2006.04150 ,  666kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2006.06668
+replaced with revised version Tue, 8 Sep 2020 14:12:09 GMT   (6320kb,D)
+
+Title: Disentangled Non-Local Neural Networks
+Authors: Minghao Yin and Zhuliang Yao and Yue Cao and Xiu Li and Zheng Zhang
+  and Stephen Lin and Han Hu
+Categories: cs.CV cs.CL cs.LG
+\\ ( https://arxiv.org/abs/2006.06668 ,  6320kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2006.15938
+replaced with revised version Tue, 8 Sep 2020 02:01:57 GMT   (561kb,D)
+
+Title: Hybrid Tensor Decomposition in Neural Network Compression
+Authors: Bijiao Wu, Dingheng Wang, Guangshe Zhao, Lei Deng and Guoqi Li
+Categories: cs.CV
+Comments: submitted to <<Neural Networks>> on Apr.18,2020; accepted on
+  Sep.08,2020
+\\ ( https://arxiv.org/abs/2006.15938 ,  561kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2007.14628
+replaced with revised version Tue, 8 Sep 2020 02:51:35 GMT   (25346kb,AD)
+
+Title: Solving the Blind Perspective-n-Point Problem End-To-End With Robust
+  Differentiable Geometric Optimization
+Authors: Dylan Campbell, Liu Liu, Stephen Gould
+Categories: cs.CV
+Comments: Presented at ECCV 2020 (Oral)
+\\ ( https://arxiv.org/abs/2007.14628 ,  25346kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2008.02745
+replaced with revised version Tue, 8 Sep 2020 02:06:33 GMT   (0kb,I)
+
+Title: Towards Accurate Pixel-wise Object Tracking by Attention Retrieval
+Authors: Zhipeng Zhang, Bing Li, Weiming Hu, Houwen Peng
+Categories: cs.CV
+Comments: Some technical errors. We would provide new versions later
+\\ ( https://arxiv.org/abs/2008.02745 ,  0kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2009.01110
+replaced with revised version Tue, 8 Sep 2020 09:39:09 GMT   (4197kb,D)
+
+Title: Perceptual Deep Neural Networks: Adversarial Robustness through Input
+  Recreation
+Authors: Danilo Vasconcellos Vargas, Bingli Liao, Takahiro Kanzaki
+Categories: cs.CV cs.AI cs.CR cs.LG
+\\ ( https://arxiv.org/abs/2009.01110 ,  4197kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2009.01636
+replaced with revised version Tue, 8 Sep 2020 12:06:23 GMT   (46kb)
+
+Title: Multi-domain semantic segmentation with pyramidal fusion
+Authors: Marin Or\v{s}i\'c, Petra Bevandi\'c, Ivan Grubi\v{s}i\'c, Josip
+  \v{S}ari\'c, and Sini\v{s}a \v{S}egvi\'c
+Categories: cs.CV
+Comments: 2 pages, 3 tables
+\\ ( https://arxiv.org/abs/2009.01636 ,  46kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2009.02418
+replaced with revised version Tue, 8 Sep 2020 16:37:29 GMT   (750kb)
+
+Title: Explanation of Unintended Radiated Emission Classification via LIME
+Authors: Tom Grimes, Eric Church, William Pitts, Lynn Wood
+Categories: cs.CV cs.LG
+Comments: 7 pages, 11 Figures
+\\ ( https://arxiv.org/abs/2009.02418 ,  750kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2009.02523
+replaced with revised version Tue, 8 Sep 2020 01:04:13 GMT   (8458kb)
+
+Title: Visual Object Tracking by Segmentation with Graph Convolutional Network
+Authors: Bo Jiang, Panpan Zhang, Lili Huang
+Categories: cs.CV
+\\ ( https://arxiv.org/abs/2009.02523 ,  8458kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2009.02650
+replaced with revised version Tue, 8 Sep 2020 12:43:56 GMT   (314kb,D)
+
+Title: A Genetic Feature Selection Based Two-stream Neural Network for Anger
+  Veracity Recognition
+Authors: Chaoxing Huang, Xuanying Zhu, Tom Gedeon
+Categories: cs.CV cs.HC
+Comments: This paper has been accepted by the 27th International Conference on
+  Neural Information Processing
+\\ ( https://arxiv.org/abs/2009.02650 ,  314kb)
+------------------------------------------------------------------------------
+\\
+arXiv:1910.07048 (*cross-listing*)
+replaced with revised version Tue, 8 Sep 2020 00:50:12 GMT   (8007kb,D)
+
+Title: Wasserstein GANs for MR Imaging: from Paired to Unpaired Training
+Authors: Ke Lei, Morteza Mardani, John M. Pauly, Shreyas S. Vasanawala
+Categories: eess.IV cs.CV
+\\ ( https://arxiv.org/abs/1910.07048 ,  8007kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2002.08158 (*cross-listing*)
+replaced with revised version Mon, 7 Sep 2020 22:25:12 GMT   (9367kb,D)
+
+Title: Variational Bayesian Quantization
+Authors: Yibo Yang, Robert Bamler and Stephan Mandt
+Categories: eess.IV cs.CV cs.LG stat.ML
+Comments: 9 pages + detailed supplement with additional full resolution
+  reconstructed images; ICML 2020 final camera-ready version, title changed to
+  "Variational Bayesian Quantization" following reviewer feedback
+\\ ( https://arxiv.org/abs/2002.08158 ,  9367kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2004.04432 (*cross-listing*)
+replaced with revised version Tue, 8 Sep 2020 08:56:01 GMT   (675kb)
+
+Title: Automatic detection of acute ischemic stroke using non-contrast computed
+  tomography and two-stage deep learning model
+Authors: Mizuho Nishio, Sho Koyasu, Shunjiro Noguchi, Takao Kiguchi, Kanako
+  Nakatsu, Thai Akasaka, Hiroki Yamada, Kyo Itoh
+Categories: eess.IV cs.CV cs.LG
+Journal-ref: Computer Methods and Programs in Biomedicine 196 (2020) 105711
+DOI: 10.1016/j.cmpb.2020.105711
+\\ ( https://arxiv.org/abs/2004.04432 ,  675kb)
+------------------------------------------------------------------------------
+\\
+arXiv:2005.00724
+replaced with revised version Tue, 8 Sep 2020 15:52:28 GMT   (1490kb,D)
+
+Title: Obtaining Faithful Interpretations from Compositional Neural Networks
+Authors: Sanjay Subramanian, Ben Bogin, Nitish Gupta, Tomer Wolfson, Sameer
+  Singh, Jonathan Berant, Matt Gardner
+Categories: cs.CL cs.AI cs.CV cs.LG
+Comments: ACL 2020; first three authors contributed equally
+\\ ( https://arxiv.org/abs/2005.00724 ,  1490kb)
+%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---
